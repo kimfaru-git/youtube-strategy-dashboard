@@ -1,0 +1,52 @@
+[
+  {
+    "video_id": "Xw6VTVUnsO4",
+    "production_quality": "고퀄리티",
+    "lighting_style": "인공조명",
+    "color_mood": "따뜻함",
+    "editing_pace": "보통",
+    "motion_graphic": "보조적",
+    "video_format": "제품리뷰",
+    "first_3sec": "인물",
+    "background_style": "스튜디오",
+    "top_colors": [
+      "노란색",
+      "갈색",
+      "흰색"
+    ],
+    "person_ratio": 0.85,
+    "face_ratio": 0.75,
+    "text_ratio": 0.6,
+    "reason": "깔끔한 스튜디오 배경에서 인공조명을 활용하여 제품을 리뷰하는 영상입니다. 자막과 로고 등 모션 그래픽이 보조적으로 사용되었으며, 전반적으로 따뜻한 색감과 보통의 편집 속도를 보입니다. 영상 대부분에 인물과 얼굴, 텍스트가 등장합니다.",
+    "avg_brightness": 174.11,
+    "avg_blue": 149.13,
+    "avg_green": 169.51,
+    "avg_red": 191.06,
+    "채널명": "CU official"
+  },
+  {
+    "video_id": "hFVf3w_7Mv8",
+    "production_quality": "일반",
+    "lighting_style": "인공조명",
+    "color_mood": "따뜻함",
+    "editing_pace": "빠름",
+    "motion_graphic": "보조적",
+    "video_format": "제품리뷰",
+    "first_3sec": "인물",
+    "background_style": "실내",
+    "top_colors": [
+      "베이지색",
+      "노란색",
+      "보라색"
+    ],
+    "person_ratio": 0.85,
+    "face_ratio": 0.8,
+    "text_ratio": 0.9,
+    "reason": "밝은 인공조명 아래 실내에서 진행된 제품 리뷰 영상입니다. 인물과 제품 클로즈업, 텍스트 자막이 빠르게 전환되며 제품의 특징과 맛을 설명합니다. 배경색과 제품의 색상이 따뜻한 분위기를 연출합니다.",
+    "avg_brightness": 164.65,
+    "avg_blue": 142.42,
+    "avg_green": 161.13,
+    "avg_red": 177.53,
+    "채널명": "CU official"
+  }
+]

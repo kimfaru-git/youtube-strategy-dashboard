@@ -1,0 +1,864 @@
+comment_id,video_id,sentiment,is_korean,is_event,reason
+UgwTXE28sXY-Dn0v6vl4AaABAg,d3n8-Tbbkwc,긍정,True,False,음식의 조합을 칭찬하며 맛집이라고 표현하고 있어 긍정적인 감정이 담긴 댓글로 판단됩니다.
+UgzoUP-fPW2w2aqZprN4AaABAg,d3n8-Tbbkwc,긍정,True,False,제품 조합에 대한 긍정적인 제안과 함께 완벽하다는 표현을 사용하여 만족감과 기대감을 나타내고 있습니다.
+UgyhVHpCJzIeq9D_fAF4AaABAg,d3n8-Tbbkwc,긍정,True,False,치킨 메뉴를 언급하며 진리라고 표현하는 등 음식에 대한 만족감과 긍정적인 감정을 강하게 드러내고 있습니다.
+UgwSNhUj6-6W8nDKUk94AaABAg,d3n8-Tbbkwc,긍정,True,False,노래가 신난다는 표현은 영상의 콘텐츠에 대해 긍정적인 만족감을 나타내고 있습니다.
+UgwRLFq6hQIAxZHZ0_Z4AaABAg,d3n8-Tbbkwc,중립,True,True,"이벤트 참여를 위해 특정 제품명을 나열한 댓글로, 감정 표현보다는 정보 전달의 목적이 강해 중립으로 분류함."
+UgzWknbzqR0zwdTQeS14AaABAg,d3n8-Tbbkwc,긍정,True,False,음식의 맛에 대한 개인적인 만족감과 함께 잘 어울리는 조합을 추천하며 긍정적인 감정을 표현하고 있습니다.
+UgwVhRPdaf5T5Ayg4lR4AaABAg,d3n8-Tbbkwc,긍정,True,False,"메뉴 조합에 대한 만족감을 표현하고 있으며, 음식의 궁합이 좋다는 긍정적인 평가를 담고 있습니다."
+UgxJT6mI13l2tYOzZSJ4AaABAg,d3n8-Tbbkwc,긍정,True,False,영상에 소개된 메뉴를 언급하며 하트 이모티콘을 사용하여 제품에 대한 만족감과 긍정적인 반응을 보이고 있습니다.
+Ugzw30j5COiNEqDBwfN4AaABAg,d3n8-Tbbkwc,긍정,True,False,영상에 소개된 음식 메뉴를 나열하며 하트 이모티콘을 사용하여 긍정적인 반응을 보이고 있습니다.
+UgxJrlIR8xN2yuMObVR4AaABAg,83dChXgD_IQ,부정,True,False,서비스나 기능이 없으면 대화가 불가능하다는 불편함과 아쉬움을 토로하고 있으므로 부정으로 분류함.
+Ugx2kxYYfL0av-cLgHZ4AaABAg,83dChXgD_IQ,긍정,True,False,"배우의 이름을 언급하며 팬심을 표현하는 댓글로, 긍정적인 감정이 담겨 있다고 판단됩니다."
+UgyZBmkv_1Ik1Biu6D54AaABAg,83dChXgD_IQ,긍정,True,False,상대방의 외모에 대한 강한 호감과 애정을 유머러스하게 표현한 댓글로 긍정적인 감정이 담겨 있습니다.
+UgzTN7PLteSPcnAZrcV4AaABAg,83dChXgD_IQ,긍정,True,False,편의점 티저 영상이 재미있다는 긍정적인 감상을 표현하고 있으므로 긍정으로 분류함.
+UgyDViRmcwKdFnhBl6N4AaABAg,d3n8-Tbbkwc,긍정,True,False,영상에 등장하는 메뉴를 언급하며 노래가 중독성 있다는 긍정적인 감상을 표현하고 있습니다.
+UgwnCJUJam3VqYMLGR14AaABAg,2GdYGaZoi40,긍정,True,False,하트 이모티콘은 작성자의 긍정적인 감정이나 호감을 표현하는 것으로 해석됩니다.
+UgwcGZbR6jpXFxmX3ZZ4AaABAg,83dChXgD_IQ,긍정,False,False,영상에 대해 재미있어 보인다는 긍정적인 감상을 영어로 표현하고 있습니다.
+UgyfkKix5xgyeH9w3-p4AaABAg,83dChXgD_IQ,긍정,True,False,티저 영상에 대한 큰 재미와 기대감을 표현하고 있어 긍정적인 감정으로 분류하였습니다.
+Ugyqf9gBL535kR1EhRt4AaABAg,83dChXgD_IQ,긍정,True,False,배우를 발견하고 반가워하며 기쁨을 표현하고 있으므로 긍정적인 감정으로 분류하였습니다.
+Ugy6nZrzQTLHG0itrpN4AaABAg,d3n8-Tbbkwc,중립,True,False,음식 조합에 대한 개인적인 의견이나 메뉴 추천을 담고 있는 중립적인 정보 공유성 댓글입니다.
+UgzMcbj0WVySz1eSxVp4AaABAg,2GdYGaZoi40,긍정,True,False,자신만의 맛있는 음식 조합을 추천하며 긍정적인 경험을 공유하고 있으므로 긍정으로 분류했습니다.
+UgzN6U8Jot0m9FAg7EV4AaABAg,2GdYGaZoi40,긍정,True,False,영상 콘텐츠에 대한 먹방 요청과 함께 씨유 디저트의 다양성에 대해 긍정적인 만족감을 표현하고 있습니다.
+UgxF5iKF_aBdRXD2Umd4AaABAg,d3n8-Tbbkwc,긍정,True,False,샌드위치와 우유의 조합이 맛있을 것 같다는 기대감과 긍정적인 반응을 보이고 있습니다.
+Ugw9vraCRJAx2e4bRv14AaABAg,d3n8-Tbbkwc,긍정,True,False,음식 조합에 대해 긍정적으로 평가하며 완벽하다고 표현하고 있어 긍정적인 감정으로 분류하였습니다.
+Ugy8ZtlkdSC9_Vd2-3d4AaABAg,d3n8-Tbbkwc,긍정,True,False,영상에 소개된 메뉴를 활용해 홈 레스토랑을 만들고 싶다는 기대와 긍정적인 의지가 담겨 있습니다.
+UgwuQKhudx5GjkyAq5F4AaABAg,d3n8-Tbbkwc,긍정,True,False,두 메뉴의 조합이 좋을 것이라고 기대하며 긍정적으로 평가하고 있습니다.
+UgxmE7EejCSLiKDXHTV4AaABAg,d3n8-Tbbkwc,긍정,True,False,음식 조합을 추천하며 긍정적인 경험을 공유하고 있으므로 긍정으로 분류하였습니다.
+UgzIeDYGsDTnAxI29Q94AaABAg,d3n8-Tbbkwc,긍정,True,False,치킨과 사이다 조합에 대해 만족감을 표현하며 긍정적인 감정을 나타내고 있습니다.
+Ugwywt0gipa0-l8QsG14AaABAg,d3n8-Tbbkwc,긍정,True,False,음식의 조합이 레스토랑만큼 훌륭하다며 만족감과 긍정적인 평가를 표현하고 있습니다.
+UgygBZV0g9z1BfPoMmx4AaABAg,d3n8-Tbbkwc,긍정,True,False,음식의 맛과 조합에 대해 구체적으로 만족감을 표현하고 있어 긍정적인 댓글로 분류했습니다.
+Ugyxrlr3gYQ4RYjm0vR4AaABAg,d3n8-Tbbkwc,긍정,True,False,음식 조합에 대한 만족감과 최고라는 긍정적인 표현이 명확하게 드러나 있습니다.
+UgxD5KnhybWbHaOeajh4AaABAg,d3n8-Tbbkwc,부정,True,False,제품 조합에 대한 의문과 함께 다소 애매하다는 부정적인 의견을 제시하고 있어 부정으로 분류했습니다.
+UgwaD5G2jquBlI2WLf94AaABAg,d3n8-Tbbkwc,중립,True,True,"영상에서 제시한 퀴즈나 이벤트의 정답을 나열한 것으로 보이며, 감정 표현 없이 사실 정보만 전달하고 있습니다."
+UgysAXJDoCSgPfd7gS94AaABAg,d3n8-Tbbkwc,긍정,True,False,음식과 맥주 조합에 대한 기대감을 긍정적인 어조로 표현하고 있어 긍정으로 분류함.
+UgxfnsaHI8lQAP3l0Cl4AaABAg,d3n8-Tbbkwc,긍정,True,False,음식 메뉴를 언급하며 하트 이모지를 사용해 만족감과 긍정적인 감정을 표현하고 있습니다.
+UgwSi0YQ5Dt8u2GF9Vh4AaABAg,d3n8-Tbbkwc,중립,True,True,"이벤트 참여를 위해 정답을 나열한 댓글로, 특별한 감정 표현이 포함되어 있지 않아 중립으로 분류했습니다."
+Ugz_jxUzQYP7EKdRyB54AaABAg,d3n8-Tbbkwc,중립,True,True,"영상에 등장하는 메뉴의 이름을 나열한 것으로, 이벤트 참여를 위한 정답 작성으로 판단되어 중립으로 분류함."
+UgyYJG6zqwaof_z5nm94AaABAg,d3n8-Tbbkwc,긍정,True,False,"음식 조합에 대한 기대감과 맛에 대한 만족스러운 평가가 담겨 있으며, 전반적으로 긍정적인 어조로 작성되었습니다."
+UgwLAN-qPs4XWLqiyx14AaABAg,d3n8-Tbbkwc,긍정,True,False,치킨과 맥주의 조합이 훌륭하고 안주가 맛있다는 긍정적인 평가와 함께 즐거운 감정이 잘 드러나 있습니다.
+UgyzBpaheFZqEs3LCtF4AaABAg,d3n8-Tbbkwc,긍정,True,False,영상에 소개된 음식 조합에 대해 매우 만족하며 좋아하는 감정을 직접적으로 표현하고 있습니다.
+UgxYMVA4QcnejM1fPaN4AaABAg,d3n8-Tbbkwc,긍정,True,False,음식 메뉴를 언급하며 경양식 세트가 완성되었다는 만족감과 함께 긍정적인 이모티콘을 사용하여 즐거운 감정을 표현하고 있습니다.
+Ugx2NL1FMGFSO6ArpxF4AaABAg,d3n8-Tbbkwc,긍정,True,False,영상에 나오는 음식 조합에 대해 기대감을 가지고 즐겁게 먹겠다는 긍정적인 의사를 표현하고 있습니다.
+Ugy595q_deQhfUdyk9B4AaABAg,2GdYGaZoi40,중립,True,False,"라면과 베지밀을 조합하는 개인적인 취향을 언급한 것으로, 특별한 감정이 담겨 있지 않은 사실 전달에 해당합니다."
+UgxkaqADdW1-r6jnfrZ4AaABAg,2GdYGaZoi40,중립,True,False,"음식 조합을 추천하는 내용으로, 특별한 감정 표현 없이 사실적인 정보를 전달하고 있어 중립으로 분류했습니다."
+Ugxak1kwYfEjK-JvNph4AaABAg,2GdYGaZoi40,긍정,True,False,피자와 소세지 조합에 대해 긍정적인 기대나 만족감을 표현한 것으로 보입니다.
+UgyQqNKs6A0hF6ZYMbt4AaABAg,2GdYGaZoi40,긍정,True,False,매운맛과 달콤한 조합이 예술이라며 음식에 대한 만족감과 긍정적인 경험을 표현하고 있습니다.
+UgxOsD9EV7c4qcRWa5d4AaABAg,2GdYGaZoi40,긍정,True,False,불닭볶음면과 참치김밥의 조합을 꿀조합이라 칭하며 긍정적으로 표현하고 있어 긍정으로 분류함.
+UgyIFT6j9QLtEETtXnl4AaABAg,2GdYGaZoi40,긍정,True,False,불닭볶음면을 맛있게 먹는 자신만의 방법을 공유하며 즐거움을 표현하고 있으므로 긍정으로 분류했습니다.
+UgymNXYJizcp9vW38Vt4AaABAg,2GdYGaZoi40,긍정,True,False,씨유 도시락과 두유 조합이 든든하다며 만족감을 표현하고 있어 긍정적인 댓글로 분류했습니다.
+Ugz88h0o8_FapFnzysJ4AaABAg,2GdYGaZoi40,긍정,True,False,불닭볶음면과 참치마요삼각김밥 조합에 대한 개인적인 선호와 만족감을 표현하고 있습니다.
+UgxrQvTxrpJtc4PQiFV4AaABAg,2GdYGaZoi40,긍정,True,False,음식의 맛에 대해 '진짜 맛있어요'라고 직접적으로 만족감을 표현하고 있으므로 긍정으로 분류하였습니다.
+UgynRJconxA_ofiy39t4AaABAg,d3n8-Tbbkwc,긍정,True,False,음식 조합에 대해 기대감을 표현하며 긍정적인 감정을 나타내고 있으므로 긍정으로 분류하였습니다.
+Ugw3UaIuzK-MAGGNE8V4AaABAg,d3n8-Tbbkwc,긍정,True,False,특정 메뉴 조합을 최고라고 언급하며 긍정적인 기대감을 표현하고 있으므로 긍정으로 분류하였습니다.
+UgyUmlrHbYI9zEXjByZ4AaABAg,2GdYGaZoi40,긍정,True,False,"불닭볶음면과 치즈의 조합을 추천하는 내용으로, 개인적인 취향을 공유하는 긍정적인 맥락의 댓글입니다."
+UgyynRj_3v0JxD9jQ6N4AaABAg,d3n8-Tbbkwc,긍정,True,False,음식에 대한 긍정적인 평가와 함께 먹어보고 싶다는 기대감을 표현하고 있어 긍정으로 분류했습니다.
+UgyG8xWnllSa3h0jBWN4AaABAg,d3n8-Tbbkwc,긍정,True,False,"상품의 가격과 퀄리티에 대해 매우 만족하고 있으며, 주변에 추천까지 할 정도로 긍정적인 경험을 공유하고 있습니다."
+UgzThp97CUIcBqxDYrN4AaABAg,d3n8-Tbbkwc,긍정,True,False,새로운 메뉴 조합에 대한 기대감과 맛에 대한 긍정적인 평가를 담고 있어 긍정으로 분류했습니다.
+Ugxi3Djk0MgTxm9X12F4AaABAg,d3n8-Tbbkwc,긍정,True,False,음식 메뉴에 대해 '최고'라는 표현을 사용하여 만족감과 긍정적인 평가를 명확하게 드러내고 있습니다.
+Ugw-OGtf2b6DZvQpjC94AaABAg,d3n8-Tbbkwc,긍정,True,False,음식 조합에 대해 맛있을 것 같다는 기대감과 긍정적인 감정을 표현하고 있습니다.
+UgwKfyL2LmwX31CyA_54AaABAg,d3n8-Tbbkwc,긍정,True,False,"제품의 맛과 가성비에 대해 매우 만족하고 있으며, 지속적인 출시를 바라는 등 긍정적인 경험과 기대감이 잘 드러나 있습니다."
+UgyFdg1-W-1XV1Mecsx4AaABAg,d3n8-Tbbkwc,중립,True,True,영상 속 제품명을 나열하며 이벤트 참여를 목적으로 작성된 댓글로 판단되어 중립으로 분류함.
+Ugzfc68Qrt7wUs1K0J94AaABAg,d3n8-Tbbkwc,중립,True,True,해당 댓글은 영상 속 메뉴를 언급하며 이벤트 정답을 맞히는 형식으로 작성되었으므로 중립으로 분류함.
+UgwPugsyuJR7-9CvGiN4AaABAg,d3n8-Tbbkwc,긍정,True,False,영상 속 음식과 다른 음식을 조합해 먹는 방법을 제안하며 긍정적인 기대감을 표현하고 있습니다.
+UgxhwyOQZW75ksmxo8Z4AaABAg,d3n8-Tbbkwc,긍정,True,False,영상에 소개된 음식 조합에 대해 만족감을 표현하며 긍정적인 반응을 보이고 있습니다.
+Ugxh5gexudsrtKpwmJd4AaABAg,d3n8-Tbbkwc,긍정,True,False,"제품의 맛과 가성비에 대해 매우 만족하고 있으며, 최고라고 표현하며 긍정적인 감정을 직접적으로 드러내고 있습니다."
+UgyjTLa_Df9sOEvyG4J4AaABAg,d3n8-Tbbkwc,긍정,True,False,치킨과 맥주의 조합을 환상적이라고 표현하며 음식에 대한 만족감과 긍정적인 감정을 드러내고 있습니다.
+UgxHF1LkXUmWZfBff4x4AaABAg,d3n8-Tbbkwc,긍정,True,False,음식 조합에 대해 만족감을 드러내며 긍정적인 평가를 하고 있으므로 긍정으로 분류함.
+Ugw_-2Q5ni816F9SRFl4AaABAg,d3n8-Tbbkwc,긍정,True,False,두 메뉴의 조합이 최고라며 맛에 대해 매우 만족하고 긍정적인 경험을 공유하고 있습니다.
+Ugx5NR3W51fyblsSzVx4AaABAg,d3n8-Tbbkwc,긍정,True,False,치킨과 맥주의 조합을 최고라고 표현하며 긍정적인 감정을 나타내고 있습니다.
+UgyzW-zNRX02wJu6I9B4AaABAg,d3n8-Tbbkwc,긍정,True,True,이벤트 정답인 메뉴명을 언급하며 노래에 대한 칭찬과 응원을 덧붙였으므로 긍정으로 분류함.
+UgwaLEzCIKIqltm32ht4AaABAg,d3n8-Tbbkwc,긍정,True,True,영상 속 메뉴를 언급하며 노래에 대한 칭찬과 응원을 보내고 있어 긍정적인 감정으로 판단했습니다.
+UgzlWpbHGCSzj--EYGF4AaABAg,d3n8-Tbbkwc,긍정,True,False,영상 속 음식에 대한 긍정적인 반응과 함께 배가 고파진다는 공감의 표현이 담겨 있어 긍정으로 분류했습니다.
+UgxDxycnnKC09fERhZl4AaABAg,d3n8-Tbbkwc,긍정,True,False,"제품 조합에 대한 기대감과 만족스러운 평가를 담고 있으며, 긍정적인 맥락으로 작성된 댓글입니다."
+UgwOGivj5PCKWHomWVZ4AaABAg,d3n8-Tbbkwc,긍정,True,False,음식의 양과 맛에 대해 '압도적'이라는 표현을 반복하며 매우 만족스럽고 긍정적인 경험을 강조하고 있습니다.
+UgyHFGy8cOzuoamyBhl4AaABAg,d3n8-Tbbkwc,긍정,True,False,도시락과 즉석국 조합이 든든한 한 끼가 될 것이라는 긍정적인 기대와 만족감을 표현하고 있습니다.
+Ugx3w90UGtnfK5juxPV4AaABAg,d3n8-Tbbkwc,긍정,True,False,음식 조합에 대한 만족감과 맛에 대한 긍정적인 감정을 반복적인 감탄사를 통해 표현하고 있습니다.
+Ugzubfv2Z8bvLAGe_op4AaABAg,d3n8-Tbbkwc,긍정,True,False,음식 조합에 대한 만족감과 푸짐하다는 긍정적인 평가를 담고 있어 긍정으로 분류하였습니다.
+Ugx2KRcyAIMKEMwztBF4AaABAg,d3n8-Tbbkwc,긍정,True,False,"음식 조합에 대한 즐거운 상상과 기대감을 표현하고 있으며, 전체적으로 긍정적인 분위기가 느껴지는 댓글입니다."
+UgysUTx6MV5XJCHzEHF4AaABAg,d3n8-Tbbkwc,긍정,True,False,"언급된 메뉴들의 조합에 대해 기대감을 표현하고 있으며, 맛의 조화를 구체적으로 상상하며 긍정적인 반응을 보이고 있습니다."
+Ugwl__EkGwj_VXWHs954AaABAg,d3n8-Tbbkwc,긍정,True,False,음식 조합에 대해 맛있어 보인다는 긍정적인 기대와 만족감을 표현하고 있습니다.
+Ugy8pjsFbwCiUtwtewx4AaABAg,d3n8-Tbbkwc,긍정,True,False,추석 명절에 푸짐한 한상이 될 것 같다는 기대감과 긍정적인 반응을 보이고 있습니다.
+UgzE_AjU9sQCCbnGPH54AaABAg,d3n8-Tbbkwc,긍정,True,False,음식 조합에 대한 만족감과 배부름에 대한 즐거움을 유쾌하게 표현하고 있어 긍정적인 댓글로 판단됨.
+Ugzp0qkJzthCIh-9TRN4AaABAg,d3n8-Tbbkwc,긍정,True,False,영상 속 음식에 대한 긍정적인 기대감과 추천을 담고 있어 긍정으로 분류하였습니다.
+Ugy8Un0w9xbBHYAgj6V4AaABAg,d3n8-Tbbkwc,중립,True,True,영상에서 진행하는 이벤트의 정답을 맞히기 위해 작성된 댓글로 판단되어 중립으로 분류하였습니다.
+UgxLh82yafuDKqLmIZd4AaABAg,d3n8-Tbbkwc,중립,True,True,영상에서 제시한 질문에 대한 답변으로 이벤트 참여 목적의 댓글이므로 중립으로 분류하였습니다.
+Ugy3Z8-2yfRvV5Nf6hJ4AaABAg,d3n8-Tbbkwc,긍정,True,True,이벤트 정답인 메뉴명과 함께 노래에 대한 긍정적인 감상평이 포함되어 있어 긍정으로 분류하였습니다.
+UgxnAmiXnaqTGfrXYOt4AaABAg,d3n8-Tbbkwc,긍정,True,True,영상에 등장하는 메뉴를 언급하며 노래가 좋다는 칭찬과 함께 응원의 메시지를 보내고 있어 긍정으로 분류했습니다.
+UgwwFLPyDdIiD3dop_l4AaABAg,d3n8-Tbbkwc,긍정,True,False,음식 조합에 대해 든든할 것 같다는 긍정적인 기대와 만족감을 표현하고 있습니다.
+UgzMaD8qtAW3yy3huod4AaABAg,d3n8-Tbbkwc,중립,True,True,영상에서 제안하는 조합에 대한 의견을 묻는 질문에 답변하는 이벤트 참여 목적의 댓글로 판단됨.
+UgwyshSxIfQSlNgyOxV4AaABAg,d3n8-Tbbkwc,긍정,True,False,치킨과 하이볼의 조합을 최고의 궁합이라 칭하며 스트레스가 풀린다고 표현한 매우 긍정적인 댓글입니다.
+UgyFgtU_XwMeBwFECuV4AaABAg,d3n8-Tbbkwc,부정,True,False,"돈까스 맛에 대해서는 긍정적으로 평가했으나, 밥과 샐러드 양이 적다는 아쉬움을 명확히 언급하고 있어 부정으로 분류했습니다."
+UgydmnI2JZAIEdRXLl94AaABAg,d3n8-Tbbkwc,긍정,True,False,음식 조합에 대한 긍정적인 기대감과 배고픔이라는 감정을 자연스럽게 표현하고 있어 긍정으로 분류함.
+Ugw2_ZPNQFjmVHyIq2J4AaABAg,83dChXgD_IQ,긍정,True,False,영상에 대한 기대감을 직접적으로 표현하고 있어 긍정적인 감정으로 분류하였습니다.
+UgxPyB1X71Ij7SqAaXB4AaABAg,mc3QpN_VQKo,긍정,True,False,두산이라는 대상에 대해 '살앙해'라는 표현을 사용하여 애정과 긍정적인 감정을 직접적으로 드러내고 있습니다.
+UgxDd6049Lzl_kTKU1t4AaABAg,b-V3PQQSbWM,긍정,True,False,제품에 대해 만족감을 느끼고 있으며 매일 이용한다는 긍정적인 경험을 공유하고 있습니다.
+UgyyJW_UwFZL74KSmRF4AaABAg,83dChXgD_IQ,부정,True,False,영상의 내용이나 진행 방식에 대해 부정적인 의견을 표현하고 있으므로 부정으로 분류했습니다.
+Ugw1Hh9rER7j7WmKX-F4AaABAg,akdi-FE1YDM,긍정,True,False,음식에 대해 맛있어 보인다는 긍정적인 평가와 함께 이모지를 사용하여 만족감을 표현하고 있습니다.
+UgxHujvqvzIQQH_BpAN4AaABAg,VKDbaMl0knI,부정,True,False,행사 운영 점포를 확인할 수 없다는 불편함과 정보 제공의 미흡함을 지적하고 있어 부정적인 감정으로 분류했습니다.
+Ugyyd8OKzgdINICaWzt4AaABAg,zXcLTWVx838,중립,True,False,단순한 감탄사로 감정이 드러나지 않는 인지 및 수용 반응이므로 중립으로 분류하였습니다.
+UgwCPDcgcCQnkjQBZ7p4AaABAg,d3n8-Tbbkwc,중립,True,False,"외부 링크를 포함한 광고성 댓글로, 감정이 드러나지 않는 정보 전달 목적의 댓글입니다."
+Ugw_XHTyby4FkQpAILR4AaABAg,d3n8-Tbbkwc,긍정,True,False,"영상 속 제품 조합에 대해 긍정적인 기대감을 표현하고 있으며, 만족스러운 느낌을 주는 댓글입니다."
+UgzyfiJ3Gieh2Vq780x4AaABAg,d3n8-Tbbkwc,긍정,True,False,음식 조합에 대한 만족감과 기대감을 긍정적인 어조로 표현하고 있어 긍정으로 분류함.
+UgyksvU5SbNk25uQNtN4AaABAg,d3n8-Tbbkwc,긍정,True,False,영상 제작자의 노고에 대해 감사와 격려를 표하는 긍정적인 내용의 댓글입니다.
+UgyRFoJXNqiuk7cxNGN4AaABAg,d3n8-Tbbkwc,긍정,True,False,도시락의 고기 증량과 맛에 대해 구체적으로 언급하며 최고라고 칭찬하고 있어 긍정적인 감정으로 판단됨.
+UgxOMO0YujIbnAao92B4AaABAg,d3n8-Tbbkwc,긍정,True,False,영상에 나온 음식들을 언급하며 맛있게 먹는 방법을 추천하는 긍정적인 맥락의 댓글입니다.
+UgzoClmVwF5w0vs-bq54AaABAg,d3n8-Tbbkwc,긍정,True,False,음식 조합에 대한 만족감과 영상 콘텐츠에 대한 긍정적인 감상을 구체적으로 표현하고 있습니다.
+UgwFF9qsj6CR77Deg7F4AaABAg,d3n8-Tbbkwc,긍정,True,False,행사 정보에 대한 감사 인사와 함께 추천 메뉴를 언급하며 긍정적인 반응을 보이고 있습니다.
+UgxTSVawtkZZWhaWZw14AaABAg,d3n8-Tbbkwc,긍정,True,False,영상에 소개된 음식에 대해 맛있겠다는 긍정적인 기대와 만족감을 표현하고 있습니다.
+UgyMRT4sh7LDWKbzupx4AaABAg,d3n8-Tbbkwc,긍정,True,False,"제품에 대한 만족감과 브랜드에 대한 칭찬이 담겨 있으며, 기대감을 표현하고 있어 긍정적인 댓글로 판단됩니다."
+UgzC93cak5jihThzxzx4AaABAg,d3n8-Tbbkwc,긍정,True,False,제품에 대한 기대감과 함께 메뉴 조합에 대한 만족스러운 평가를 담고 있어 긍정적인 댓글로 판단됩니다.
+UgyQ7zdMe08BnNwX0A94AaABAg,d3n8-Tbbkwc,긍정,True,False,영상에서 제시한 메뉴 조합에 대해 자신의 선호도를 밝히며 즐겁게 의견을 나누고 있는 긍정적인 댓글입니다.
+UgxjUJOgn_IibO_rYAB4AaABAg,2GdYGaZoi40,긍정,True,False,"닭강정과 바나나우유라는 특정 조합을 추천하는 내용으로, 긍정적인 제안의 의미를 담고 있습니다."
+UgyStUVZOOtENNoyJ5F4AaABAg,2GdYGaZoi40,중립,True,False,마라탕 컵라면과 우유 조합이라는 음식 조합을 단순히 언급하고 있어 감정이 드러나지 않는 중립적인 댓글입니다.
+UgybjC2gWdK7ZDbEHiV4AaABAg,2GdYGaZoi40,중립,True,False,"음식 조합에 대한 단순한 사실을 언급하고 있으며, 특별한 감정이나 평가가 드러나지 않아 중립으로 분류했습니다."
+Ugztl-Li9jLj2YYRAC94AaABAg,2GdYGaZoi40,긍정,True,False,닭강정과 오지치즈후라이 조합을 보며 맛있겠다는 기대감과 즐거움을 표현하고 있어 긍정으로 분류함.
+UgxpHX1Lz95N7LS94r14AaABAg,2GdYGaZoi40,긍정,True,False,"불닭볶음면과 참치마요의 조합이 아주 좋다는 의미로, 음식 조합에 대한 공감과 만족을 표현하고 있습니다."
+UgyrGKPybZCbnQLXYUR4AaABAg,2GdYGaZoi40,긍정,True,False,음식 조합에 대해 '굿'이라는 표현을 사용하여 만족감을 나타내고 있으므로 긍정으로 분류했습니다.
+UgzUxBCgmQsZwnaU-fx4AaABAg,2GdYGaZoi40,긍정,True,False,불닭볶음면과 참치마요 김밥의 조합을 보고 웃음과 함께 긍정적인 반응을 보이고 있습니다.
+UgxvcIYzheLyPksyV6J4AaABAg,2GdYGaZoi40,중립,True,False,"음식 조합을 추천하는 내용으로, 특별한 감정적 표현 없이 사실적인 정보를 전달하고 있어 중립으로 분류했습니다."
+Ugz-gQRXQG05ZCJpZzF4AaABAg,2GdYGaZoi40,긍정,True,False,음식 조합을 추천하며 진짜 맛있다는 긍정적인 경험과 만족감을 표현하고 있기 때문에 긍정으로 분류함.
+UgzbJ1EVYjlEaM_VCs14AaABAg,2GdYGaZoi40,긍정,True,False,불닭볶음면과 참치마요 조합이 최고라는 긍정적인 평가와 만족감을 표현하고 있습니다.
+Ugz6ucf9jcwpPVaWPt14AaABAg,2GdYGaZoi40,긍정,True,False,삼각김밥과 라면 조합에 대해 긍정적인 반응을 보이며 맛있다는 표현을 사용하여 만족감을 나타내고 있습니다.
+UgxJHpulvdz6Nn__sM14AaABAg,2GdYGaZoi40,긍정,True,False,까르보나라와 만두 조합을 직접 추천하며 맛있다는 긍정적인 경험을 공유하고 있습니다.
+UgwVGm7r6Zcqy7TGWId4AaABAg,2GdYGaZoi40,긍정,True,False,음식의 맛과 만족감을 직접적으로 표현하며 긍정적인 감정을 나타내고 있습니다.
+UgxbZuvmbq3hIjdOrSl4AaABAg,2GdYGaZoi40,긍정,True,False,"음식 조합에 대한 만족감과 추천 의사가 명확하게 드러나 있으며, 긍정적인 경험을 공유하고 있으므로 긍정으로 분류함."
+UgyQqv4J7uzW8soCwhB4AaABAg,2GdYGaZoi40,긍정,True,False,비빔면과 족발의 조합이 맛있다는 긍정적인 경험과 만족감을 표현하고 있습니다.
+UgxrxxwAga0cSKtTVGl4AaABAg,2GdYGaZoi40,중립,True,True,"영상에서 제시한 퀴즈나 이벤트의 정답을 나열한 것으로 보이며, 별도의 감정 표현이 없어 중립으로 분류함."
+UgyKvgmSychtUExh8ql4AaABAg,2GdYGaZoi40,긍정,True,False,불닭볶음면과 삼각김밥의 조합을 긍정적으로 언급하며 만족감을 표현하고 있습니다.
+Ugyi3I27g0y_YDrSh0J4AaABAg,2GdYGaZoi40,중립,True,False,"영상 내용과 관련된 음식 조합을 단순히 나열한 것으로, 특별한 감정 표현이 포함되지 않은 중립적인 댓글입니다."
+UgyYvnG7OrnoZQDoQsp4AaABAg,2GdYGaZoi40,긍정,True,False,마라탕 컵라면과 핫도그의 조합을 언급하며 하트 이모티콘을 사용해 만족감과 즐거움을 표현하고 있습니다.
+UgzYMNOb7IFnzHc6OUN4AaABAg,2GdYGaZoi40,긍정,True,False,음식 조합을 추천하며 '맛도리'라는 표현을 사용하여 음식에 대한 만족감과 긍정적인 평가를 나타내고 있습니다.
+UgwZEbwz5RJF1YK9HcR4AaABAg,2GdYGaZoi40,긍정,True,False,영상에 소개된 음식 조합에 대해 만족감을 표현하며 긍정적인 감정을 나타내고 있습니다.
+UgyXZtiCawOELcNiHz94AaABAg,2GdYGaZoi40,긍정,True,False,"불닭볶음면과 바나나우유의 조합을 추천하는 내용으로, 음식 조합에 대한 긍정적인 만족감과 공감이 느껴집니다."
+Ugzjhsob4StKkbY1Avp4AaABAg,2GdYGaZoi40,중립,True,True,"영상 내용과 관련된 퀴즈의 정답을 나열한 것으로 보이며, 이벤트 참여 목적의 댓글로 판단되어 중립으로 분류하였습니다."
+UgwKqTKeAtti8Nn2c1B4AaABAg,2GdYGaZoi40,긍정,True,False,"불닭볶음면과 핫바, 쿨피스 조합이 매우 맛있다는 만족감과 긍정적인 경험을 표현하고 있습니다."
+UgzVydIA1sWYihPQTBB4AaABAg,2GdYGaZoi40,긍정,True,False,삼각김밥과 불닭볶음면의 조합을 운명적이라고 표현하며 음식 조합에 대한 긍정적인 기대와 만족감을 나타내고 있습니다.
+Ugx8b9x7J6j_z6pbVg14AaABAg,2GdYGaZoi40,긍정,True,False,불닭볶음면과 참치마요 조합에 대해 긍정적인 반응을 보이며 만족감을 표현하고 있습니다.
+Ugy96_ovJYKniMz-mrB4AaABAg,2GdYGaZoi40,긍정,True,False,불닭볶음면과 콘치즈 조합이 너무 맛있다는 긍정적인 경험과 추천을 공유하고 있어 긍정으로 분류했습니다.
+Ugx_AL4o6MdCViTHG8p4AaABAg,2GdYGaZoi40,중립,True,False,"음식 조합을 단순히 나열한 댓글로, 특별한 감정 표현이나 이벤트 참여 목적이 보이지 않아 중립으로 분류하였습니다."
+UgwjSLfo0UwLG6WTJ5t4AaABAg,2GdYGaZoi40,긍정,True,False,"닭강정과 치즈 조합을 추천하는 내용으로, 음식에 대한 긍정적인 제안을 담고 있어 긍정으로 분류했습니다."
+UgwxwgyyQxd4SYKTf4x4AaABAg,2GdYGaZoi40,긍정,True,False,떡볶이와 핫도그 조합이 매우 맛있다는 긍정적인 경험과 만족감을 표현하고 있습니다.
+UgzUPqKmcLothJiRBWx4AaABAg,2GdYGaZoi40,긍정,True,False,삼각김밥과 컵라면의 조합이 최고라는 공감과 동의를 나타내는 긍정적인 표현입니다.
+UgwGPNZub-eFgE8VpQt4AaABAg,bTiYfuIoAdQ,긍정,True,False,제주도의 여유로운 느낌과 아름다운 경치에 대해 긍정적인 감정을 표현하고 있습니다.
+UgzHfH4PulImuUB0t3l4AaABAg,2GdYGaZoi40,긍정,True,False,불닭볶음면과 스트링 치즈의 조합이 최고라는 표현을 통해 음식에 대한 만족감과 긍정적인 감정을 명확하게 드러내고 있습니다.
+UgycbRJfnnnfPkTqdOB4AaABAg,bTiYfuIoAdQ,중립,True,False,"속초를 자주 방문한다는 개인적인 경험을 담담하게 서술한 댓글로, 특별한 감정이나 의견이 포함되어 있지 않아 중립으로 분류했습니다."
+Ugyljy7qJSl4DGfeVNl4AaABAg,bTiYfuIoAdQ,중립,True,False,여름철 여행지에 대한 개인적인 경험을 담담하게 서술한 댓글로 감정적 요소가 없습니다.
+UgzYE1FXgR5WOTo8KBV4AaABAg,bTiYfuIoAdQ,긍정,True,False,여름 바다의 낭만에 대해 긍정적으로 공감하며 즐거운 감정을 표현하고 있습니다.
+UgwSPb4GiNh54adWV2N4AaABAg,bTiYfuIoAdQ,긍정,True,False,부산으로 여름 휴가를 자주 간다는 개인적인 경험과 선호를 밝힌 내용으로 긍정적인 감정이 포함되어 있습니다.
+UgwifObZmPKKNjkMjmh4AaABAg,bTiYfuIoAdQ,긍정,True,False,제주도 여행을 언급하면서도 여름에는 호캉스가 최고라는 개인적인 만족감과 선호를 표현하고 있어 긍정으로 분류하였습니다.
+Ugz148Z6HDXgXu3L4054AaABAg,bTiYfuIoAdQ,긍정,True,False,바다가 있는 곳이 좋다는 개인적인 선호와 긍정적인 감정을 이모티콘과 함께 표현하고 있습니다.
+Ugzb75DHUCyMhieMvQp4AaABAg,bTiYfuIoAdQ,긍정,True,False,여름 피서지로 양양을 가장 먼저 떠올린다는 긍정적인 경험과 생각을 공유하고 있습니다.
+UgwaPOGidAtXZrFEWxF4AaABAg,bTiYfuIoAdQ,긍정,True,False,제주도라는 장소에 대해 아름답다는 긍정적인 감정을 표현하고 있어 긍정으로 분류하였습니다.
+UgxaLVOv7qt4G0as8Tl4AaABAg,2GdYGaZoi40,긍정,True,False,자이언트 마라 떡볶이와 소세지 조합을 추천하며 긍정적인 감정을 표현하고 있습니다.
+UgyKtks8PHJPK7_CglN4AaABAg,bTiYfuIoAdQ,긍정,True,False,부산 여름 바다가 예쁘다는 긍정적인 감상을 표현하고 있어 긍정으로 분류하였습니다.
+UgzZX-KbKpgUsxiS2w14AaABAg,2GdYGaZoi40,긍정,True,False,영상 속 음식 조합에 대해 긍정적인 의견을 제시하며 하트 이모티콘을 사용하여 만족감을 표현하고 있습니다.
+UgysP2qpp-YM04-_5_p4AaABAg,2GdYGaZoi40,긍정,True,False,언급된 음식 조합에 대해 최고라고 표현하며 매우 만족스러운 감정을 드러내고 있습니다.
+Ugz9nXMR1W1wSf8-4t94AaABAg,2GdYGaZoi40,중립,True,True,"이벤트 참여를 위해 정답을 제시한 댓글로, 특별한 감정 표현 없이 정답만 나열되어 있어 중립으로 분류함."
+UgxWeBGCRgWq7JFA8KF4AaABAg,2GdYGaZoi40,중립,True,False,영상에서 제안하는 음식 조합에 대해 자신의 의견을 제시하는 중립적인 댓글입니다.
+UgwHda_BSMY34IeDKtJ4AaABAg,2GdYGaZoi40,중립,True,True,"영상 내용과 관련된 음식 조합을 언급한 것으로, 이벤트 참여 목적의 정답 혹은 단순 의견 제시로 보여 중립으로 분류함."
+Ugx2GWPTDSX1F0VkCvx4AaABAg,2GdYGaZoi40,긍정,True,False,불닭볶음면을 맛있게 먹는 방법을 공유하며 맛에 대해 매우 만족하고 긍정적으로 평가하고 있습니다.
+UgxjtWKvwtT486XashB4AaABAg,2GdYGaZoi40,긍정,True,False,샌드위치를 더 맛있게 먹는 자신만의 꿀팁을 공유하며 음식에 대한 긍정적인 태도를 보이고 있습니다.
+UgxaWXzTYvK1YB7NuOt4AaABAg,2GdYGaZoi40,긍정,True,False,"마라샹궈와 밀크티 조합을 추천하며 꿀맛, 최고라는 긍정적인 표현을 사용하여 만족감을 나타내고 있습니다."
+UgzOCsTIhWoLy7jwzyh4AaABAg,2GdYGaZoi40,긍정,True,False,핫도그를 맛있게 먹는 방법을 공유하며 긍정적인 평가와 함께 즐거운 감정을 표현하고 있습니다.
+UgypBbNpgkxhqfpFDsF4AaABAg,2GdYGaZoi40,중립,True,False,영상에서 제시한 독특한 조합을 언급하며 글로벌한 식문화에 대한 자신의 생각을 흥미롭게 표현하고 있습니다.
+Ugyah7SevNAJCEAmtPR4AaABAg,2GdYGaZoi40,긍정,True,False,제품을 활용한 맛있는 조합을 추천하며 브랜드에 대한 긍정적인 견해를 밝히고 있습니다.
+UgzmWXAgG55IYp--l6Z4AaABAg,2GdYGaZoi40,중립,True,False,"영상 내용과 관련된 음식 조합을 추천하는 정보성 댓글로, 특별한 감정이 드러나지 않아 중립으로 분류했습니다."
+Ugx_4ZSEGrZA5DT7RCN4AaABAg,2GdYGaZoi40,긍정,True,False,레시피에 대한 긍정적인 의견을 제시하며 하트 이모티콘을 사용하여 만족감을 표현하고 있습니다.
+Ugx-rJQMXGJAE4DIEcF4AaABAg,2GdYGaZoi40,중립,True,True,"영상에서 제시한 질문에 대한 답변으로, 이벤트 참여 목적의 댓글로 판단되어 중립으로 분류하였습니다."
+UgzMLDTkOtgyrc7jHpt4AaABAg,2GdYGaZoi40,긍정,True,False,영상 내용과 관련된 일상적인 식사 메뉴를 언급하며 긍정적인 분위기를 나타내고 있습니다.
+Ugw5SoJaicFaN2EfsA94AaABAg,2GdYGaZoi40,긍정,True,False,영상 콘텐츠와 관련된 새로운 레시피를 제안하며 기대감과 흥미를 표현하고 있어 긍정적인 댓글로 판단됩니다.
+Ugy6ewzC5JrlM_ufkv14AaABAg,2GdYGaZoi40,중립,True,False,"피자와 불닭볶음면을 조합해 먹는다는 개인적인 식습관을 공유하는 내용으로, 특별한 감정적 치우침이 없는 정보 전달성 댓글입니다."
+UgyvzZTXCeZ605rovMB4AaABAg,2GdYGaZoi40,긍정,True,False,불닭볶음면과 여러 재료를 조합해 먹는 것이 정말 좋다는 긍정적인 경험과 추천을 담고 있습니다.
+Ugwom3yJQkFNWIxnD3d4AaABAg,2GdYGaZoi40,중립,True,True,"단순히 음식 조합을 나열한 것으로, 이벤트 참여를 위한 정답이거나 개인적인 식단 공유로 보여 감정이 드러나지 않는 중립으로 분류했습니다."
+Ugy0U4C7zuZ3FEtbhJ14AaABAg,2GdYGaZoi40,중립,True,False,"영상에서 다루는 음식 조합을 단순히 언급하고 있으며, 특별한 감정이나 의견이 포함되지 않은 사실적인 내용입니다."
+Ugy4dF5b_4tL15sHN-p4AaABAg,2GdYGaZoi40,긍정,True,False,자떡과 삼김의 조합이 매우 훌륭하다는 긍정적인 평가와 만족감을 나타내고 있습니다.
+UgyJ6OAEfvesQDYkNwx4AaABAg,2GdYGaZoi40,긍정,True,False,"불닭볶음면과 치즈, 김밥, 맥주 조합을 긍정적으로 소개하며 추천하고 있어 긍정으로 분류함."
+UgzPls4jOXBF46EUNhx4AaABAg,D5fbqdj3xaE,긍정,True,False,영상 속 대상에 대해 예쁘다는 긍정적인 감정을 이모티콘과 함께 표현하고 있습니다.
+UgwfMqry1yrYS2hfy9p4AaABAg,2GdYGaZoi40,긍정,True,False,CU 도시락과 삼각김밥에 대해 아주 좋다는 표현을 사용하여 제품에 대한 만족감과 긍정적인 감정을 명확하게 드러내고 있습니다.
+UgxrpWjYlCLcFjKgnTB4AaABAg,D5fbqdj3xaE,긍정,True,False,박재범의 외모에 대해 칭찬하는 긍정적인 감정이 담긴 댓글입니다.
+UgxuASxgQ-Os-vOE3BJ4AaABAg,bTiYfuIoAdQ,중립,True,True,이벤트 참여를 유도하는 링크와 안내 문구로 구성된 광고성 댓글이므로 중립으로 분류하였습니다.
+UgxHv8LMODf7V9IGd-J4AaABAg,bTiYfuIoAdQ,긍정,True,False,여행지에 대한 개인적인 애정과 긍정적인 감정을 직접적으로 표현하고 있습니다.
+UgwMOqkLz4JzgESPShN4AaABAg,bTiYfuIoAdQ,긍정,True,False,"부산 여행지에 대한 긍정적인 경험과 추천을 담고 있으며, 전반적으로 도시의 매력을 높게 평가하고 있습니다."
+UgxwSn1T7ghluLPaBWV4AaABAg,bTiYfuIoAdQ,긍정,True,False,여수 여행지에 대한 긍정적인 정보와 매력을 상세하게 설명하고 있어 긍정적인 감정으로 판단했습니다.
+Ugy33Y755CAkKxLzOLx4AaABAg,bTiYfuIoAdQ,긍정,True,False,강릉의 관광지와 즐길 거리를 상세히 소개하며 긍정적인 여행 정보를 공유하고 있어 긍정으로 분류했습니다.
+UgwK1h3pghQlZm6viF94AaABAg,bTiYfuIoAdQ,긍정,True,False,부산 여행에 대한 기대감과 긍정적인 경험을 즐겁게 서술하고 있어 긍정적인 감정이 잘 드러납니다.
+Ugxx9OzjT1CO1citetF4AaABAg,bTiYfuIoAdQ,긍정,True,False,제주도를 최고의 여름 휴양지로 추천하며 자연과 음식 등 긍정적인 요소들을 구체적으로 언급하고 있어 긍정적인 감정이 담긴 댓글로 판단됩니다.
+UgzKDktW1Zb7-QMMw-h4AaABAg,bTiYfuIoAdQ,긍정,True,False,제주의 바다와 자연이 아름답다고 표현하며 긍정적인 감정을 드러내고 있습니다.
+Ugx-57_hFDo0Fy5c80l4AaABAg,bTiYfuIoAdQ,긍정,True,False,제주도 여행을 좋아하며 국내 최고의 휴양지라고 긍정적으로 평가하고 있습니다.
+UgzBxm6MBLm5V5C-NGR4AaABAg,bTiYfuIoAdQ,긍정,True,False,여름 제주도 풍경이 아름답다는 긍정적인 감상을 표현하고 있어 긍정으로 분류했습니다.
+UgzUXoVGwWSAODGp6nZ4AaABAg,bTiYfuIoAdQ,긍정,True,False,여름 여행지에 대한 개인적인 선호와 긍정적인 경험을 밝히고 있어 긍정적인 감정으로 판단됨.
+UgxBjHoAa1H3co4egaR4AaABAg,lvEM_7NphyY,중립,True,True,"영상에서 제시한 퀴즈의 정답을 맞히기 위해 작성된 댓글로, 감정이 드러나지 않는 이벤트 참여 목적의 댓글입니다."
+UgyuZ18ppbo-Dnr3s2p4AaABAg,lvEM_7NphyY,긍정,True,False,부대찌개덮밥이 취향을 저격했다는 표현과 맛집 퀄리티를 구현했다는 점에 대해 매우 긍정적인 반응을 보이고 있습니다.
+UgwpwbhuJT-H9-Uh2rJ4AaABAg,lvEM_7NphyY,긍정,True,True,부대찌개덮밥이라는 정답을 제시하며 한국인의 식습관에 대한 긍정적인 공감을 표현하고 있어 긍정으로 분류함.
+UgzfScdy9Xx5LeqT8s94AaABAg,lvEM_7NphyY,긍정,True,False,부대찌개와 라면의 조합을 긍정적으로 평가하며 공감을 표현하고 있어 긍정으로 분류함.
+UgxDuIMrolAI5JIXBaN4AaABAg,lvEM_7NphyY,긍정,True,False,부대찌개덮밥이라는 메뉴에 대해 든든하게 먹을 수 있어 좋다는 만족감과 긍정적인 반응을 보이고 있습니다.
+Ugx_u5qFqAS-5kUNDzx4AaABAg,lvEM_7NphyY,긍정,True,False,부대찌개와 라면의 조합이 좋다는 긍정적인 의견을 웃음 표현과 함께 나타내고 있습니다.
+Ugxjjz6Josu-Ug4SaAp4AaABAg,lvEM_7NphyY,중립,True,True,영상 속 메뉴인 부대찌개덮밥을 언급하며 찌개와 밥의 조합이 좋다는 의견을 남긴 이벤트 참여 목적의 댓글입니다.
+UgzaTgFp4EiOVLCBpD14AaABAg,lvEM_7NphyY,긍정,True,False,부대찌개에 라면사리가 필수라는 음식 취향에 대한 공감과 긍정적인 반응을 보이고 있습니다.
+UgyZWWx_cvzl9ZJn-JN4AaABAg,lvEM_7NphyY,중립,True,True,"이벤트 참여를 위한 정답과 함께 긍정적인 감정 표현이 포함되어 있으나, 이벤트 참여 목적이 주된 내용이므로 중립으로 분류함."
+UgxoBq1nEhfBqRd9Tc94AaABAg,lvEM_7NphyY,긍정,True,False,부대찌개와 라면사리의 조합이 매우 잘 어울린다는 만족감과 긍정적인 평가를 담고 있습니다.
+UgzOIvCCiJT39LiqrBR4AaABAg,bTiYfuIoAdQ,긍정,True,False,통영이라는 여행지를 아름다운 풍경과 낭만적인 도시라고 구체적으로 칭찬하며 추천하고 있어 긍정적인 감정으로 판단함.
+UgyCO3E9BKPO4YgoJxh4AaABAg,bTiYfuIoAdQ,긍정,True,False,여행지에 대한 만족감과 긍정적인 경험을 웃음 이모티콘과 함께 표현하고 있습니다.
+Ugyq2G_dRIW56r1jl_R4AaABAg,bTiYfuIoAdQ,긍정,True,False,제주도 여행에 대한 만족감과 행복하다는 긍정적인 감정을 직접적으로 표현하고 있습니다.
+UgyKf6VWvNd3iQAzdr54AaABAg,bTiYfuIoAdQ,긍정,True,False,남해 바다의 매력을 긍정적으로 언급하며 여행에 대한 만족감과 공감을 표현하고 있습니다.
+Ugxma7FZw7pGVdmmL3p4AaABAg,bTiYfuIoAdQ,긍정,True,False,여행지에 대한 만족감과 긍정적인 경험을 서술하고 있어 긍정적인 감정이 담긴 댓글로 판단됩니다.
+Ugzcx8OxHEkuoJj193R4AaABAg,bTiYfuIoAdQ,중립,True,True,이벤트 참여를 위한 퀴즈 정답을 제시하는 댓글로 판단되어 중립으로 분류하였습니다.
+UgzCpvB3NbfW3h7DiPB4AaABAg,bTiYfuIoAdQ,긍정,True,False,여름 여행지로 강릉을 가장 좋아한다고 자신의 취향을 긍정적으로 표현한 댓글입니다.
+UgxBTtP6x_Zc-3WpUER4AaABAg,bTiYfuIoAdQ,긍정,True,False,부산과 해운대라는 여행지에 대해 긍정적인 감정과 애정을 표현하고 있으므로 긍정으로 분류하였습니다.
+UgwBpRO0wrspMZSkvlN4AaABAg,bTiYfuIoAdQ,긍정,True,False,집에서 편안하게 휴식을 취하는 것이 최고라는 긍정적인 만족감과 행복함을 표현하고 있습니다.
+UgwKVgvTJwb-hdd_gWh4AaABAg,bTiYfuIoAdQ,중립,True,True,질문에 대한 단순 답변으로 이벤트 참여 목적의 댓글로 판단되어 중립으로 분류하였습니다.
+UgzzfHy8IyHD12N2TT14AaABAg,lvEM_7NphyY,긍정,True,False,부대찌개덮밥이라는 메뉴에 대해 맛있을 것 같다는 긍정적인 기대와 만족감을 표현하고 있습니다.
+UgwWoDpjonMUIWrOjXl4AaABAg,lvEM_7NphyY,긍정,True,False,부대찌개에 라면 사리가 필수라는 음식 조합에 대한 공감을 유쾌하게 표현하고 있어 긍정으로 분류함.
+UgwsNSSwx48-kT2kmSR4AaABAg,lvEM_7NphyY,긍정,True,False,음식에 대한 개인적인 취향과 만족스러운 의견을 부드럽게 표현하고 있어 긍정으로 분류함.
+UgzPksEQqL8y6-NF2v94AaABAg,lvEM_7NphyY,긍정,True,False,맛집 퀄리티를 맛볼 수 있다는 점에 대해 기대감을 표현하고 있으므로 긍정적인 댓글입니다.
+UgycQOaMmnX_xKiDVS54AaABAg,lvEM_7NphyY,긍정,True,False,부대찌개덮밥을 좋아한다는 만족감과 밥심에 대한 공감을 긍정적인 이모티콘과 함께 표현하고 있습니다.
+UgyHPkUzayflVyJRCiR4AaABAg,lvEM_7NphyY,중립,True,True,"부대찌개라면이라는 정답을 제시하고 있으며, 뒤에 붙은 문장도 이벤트 참여를 위한 형식적인 공감 표현으로 판단되어 중립으로 분류함."
+Ugx8Layc4cZKDfpFtx94AaABAg,lvEM_7NphyY,긍정,True,False,부대찌개라면에 라면사리가 필수라는 점에 공감하며 즐겁게 의견을 표현하고 있어 긍정으로 분류했습니다.
+UgzwN-a9ZjHKPgTzsB14AaABAg,lvEM_7NphyY,부정,True,False,부대찌개덮밥에 밥이 없으면 안 된다는 개선 요청 및 아쉬움이 담겨 있어 부정으로 분류함.
+UgyfIZfeoi-AqA3PQRJ4AaABAg,lvEM_7NphyY,중립,True,True,"이벤트 참여를 위한 선택지 답변이며, 음식 조합에 대한 개인적인 의견을 덧붙였으나 불만이나 비판이 없는 중립적인 내용입니다."
+UgwzjponWKOmDCawKv54AaABAg,lvEM_7NphyY,긍정,True,True,"이벤트 참여를 위해 부대찌개라면을 선택한다는 내용과 함께, 해당 음식에 대한 구체적인 긍정적 경험과 만족감을 상세히 서술하고 있습니다."
+UgxActL3BiBBWSA6Txl4AaABAg,bTiYfuIoAdQ,긍정,True,False,여름 바다에 대한 긍정적인 감정과 공감을 표현하고 있어 긍정으로 분류하였습니다.
+UgwDsVmYIahUX6oF8op4AaABAg,bTiYfuIoAdQ,긍정,True,False,제주도 여행에 대한 긍정적인 경험과 만족감을 하트 이모티콘과 함께 표현하고 있습니다.
+Ugxg3xh-QQSrb3LH_iJ4AaABAg,bTiYfuIoAdQ,중립,True,False,강릉 여행에 대한 개인적인 경험과 습관을 담담하게 서술하고 있어 특별히 긍정적이거나 부정적인 감정이 드러나지 않는 중립적인 댓글입니다.
+UgysseBNVQ9-xKhsf_J4AaABAg,bTiYfuIoAdQ,긍정,True,False,부산 해운대라는 특정 장소에 대해 좋다는 긍정적인 감정을 직접적으로 표현하고 있습니다.
+Ugxwpg8HWy5SLnTax6d4AaABAg,bTiYfuIoAdQ,긍정,True,False,여행지에 대한 질문과 함께 파도가 최고라는 긍정적인 감상을 표현하고 있어 긍정으로 분류했습니다.
+UgwCUDoQptD7YenECSt4AaABAg,bTiYfuIoAdQ,긍정,True,False,제주도라는 장소를 언급하며 긍정적인 이모지를 사용한 것으로 보아 여행이나 장소에 대한 긍정적인 감정을 표현한 것으로 판단됩니다.
+UgzbyTq58jl_Z-FM4WN4AaABAg,bTiYfuIoAdQ,긍정,True,False,"영상 제작자에 대한 지속적인 시청과 응원, 격려의 메시지가 담겨 있어 긍정적인 댓글로 판단됩니다."
+UgytEcE-6bzHufxCjk94AaABAg,bTiYfuIoAdQ,중립,True,True,"영상에서 요구하는 질문에 대한 답변 형식의 댓글이며, 개인적인 선호도를 밝히고 있어 이벤트 참여 목적으로 판단됨."
+UgzidchG_Xau0k5riLZ4AaABAg,bTiYfuIoAdQ,긍정,True,False,자신의 여름 여행지에 대한 긍정적인 경험과 추억을 공유하고 있어 긍정적인 감정으로 판단됨.
+UgwrIPufvGCqT0MhJUV4AaABAg,bTiYfuIoAdQ,긍정,True,False,울릉도 여행에 대한 만족감과 긍정적인 감정을 직접적으로 표현하고 있어 긍정으로 분류하였습니다.
+UgxIM4k3Y3Y1gYB5n1l4AaABAg,bTiYfuIoAdQ,중립,True,False,"강릉에서 서핑을 즐기고 싶다는 개인적인 소망을 나타낸 것으로, 긍정이나 부정의 감정이 담기지 않은 단순한 의사 표현입니다."
+UgzH7PN3kytzu8HarSx4AaABAg,bTiYfuIoAdQ,긍정,True,False,부산 여름의 에너지가 최고라고 언급하며 여행지에 대한 만족감과 긍정적인 감정을 표현하고 있습니다.
+UgxSP5uW7yXWPguHQ_54AaABAg,bTiYfuIoAdQ,중립,True,False,"여수 밤바다를 보러 가겠다는 단순한 계획이나 소망을 나타내는 문장으로, 특별한 감정적 치우침이 없는 중립적인 내용입니다."
+UgxDLShCoLINKk0bd-Z4AaABAg,lvEM_7NphyY,긍정,True,False,"제품의 맛과 간편함에 대해 매우 만족하고 있으며, 다른 사람들에게도 적극적으로 추천하고 있어 긍정적인 감정으로 분류하였습니다."
+Ugzq9qR687u4a4wV0XN4AaABAg,lvEM_7NphyY,긍정,True,False,부대찌개덮밥에 대한 개인적인 선호와 맛에 대한 긍정적인 평가를 상세히 서술하고 있습니다.
+Ugw2g9qbEPx-xxPbCkp4AaABAg,lvEM_7NphyY,긍정,True,False,부대찌개덮밥에 대한 개인적인 선호와 만족감을 구체적인 이유와 함께 상세히 서술하고 있습니다.
+UgyzQt969P01wbQjyAB4AaABAg,lvEM_7NphyY,긍정,True,False,"부대찌개라면에 대한 개인적인 선호와 만족감을 구체적으로 표현하였으며, 제품 출시에 대한 감사와 응원의 메시지가 담겨 있어 긍정으로 분류함."
+UgwMxmJ2Rok2WtmEXmN4AaABAg,lvEM_7NphyY,긍정,True,False,제품에 대한 구체적인 경험과 맛에 대한 만족감을 상세히 표현하며 다른 사람들에게도 추천하고 있어 긍정적인 댓글로 분류함.
+UgxQJc2SPdQFpyJj7c54AaABAg,lvEM_7NphyY,긍정,True,False,제품에 대한 구체적인 비교와 함께 긍정적인 경험을 바탕으로 추천 의견을 상세히 작성하였으므로 긍정으로 분류하였습니다.
+UgwBO-qRC6inuit93ol4AaABAg,lvEM_7NphyY,중립,True,True,영상 내용과 관련된 퀴즈 정답이나 이벤트 참여 목적으로 작성된 단어로 판단되어 중립으로 분류함.
+Ugyg0q4Rz182oV1qXqx4AaABAg,lvEM_7NphyY,긍정,True,False,부대찌개덮밥이라는 메뉴에 대해 맛있을 것 같다는 긍정적인 기대감을 표현하고 있습니다.
+UgzvH5XQ3KjdsTiYtOZ4AaABAg,lvEM_7NphyY,중립,True,False,부대찌개와 함께 먹는 면에 대한 개인적인 선호도를 담담하게 밝히고 있어 중립으로 분류했습니다.
+UgxqZbe_XJYiIj0qLER4AaABAg,lvEM_7NphyY,긍정,True,False,부대찌개라면에 라면사리가 필수라는 점에 깊이 공감하며 긍정적인 반응을 보이고 있습니다.
+Ugw7fRL89GteKAwtU_l4AaABAg,bTiYfuIoAdQ,긍정,True,False,제주도의 여름 풍경에 대해 매우 좋다는 긍정적인 감정을 직접적으로 표현하고 있습니다.
+Ugy3emB2ZiRe295l-Y94AaABAg,bTiYfuIoAdQ,중립,True,True,"영상에서 질문한 내용에 대한 답변으로 보이며, 이벤트 참여 목적의 단순 답변이므로 중립으로 분류함."
+UgxQKf5SRvdbwIzTf6d4AaABAg,bTiYfuIoAdQ,중립,True,False,여행지에 대한 개인적인 선호와 정보를 담고 있는 중립적인 문장입니다.
+Ugyn_fr2EWx57D5vRzx4AaABAg,bTiYfuIoAdQ,긍정,True,False,"전망 좋은 호텔에서 쉬고 싶다는 개인적인 소망을 나타낸 것으로, 긍정적인 기대감이 담겨 있어 긍정으로 분류했습니다."
+UgxA0MGGNYrP5VxLCPF4AaABAg,bTiYfuIoAdQ,중립,True,True,"영상에서 질문한 내용에 대한 답변으로 보이며, 이벤트 참여 목적의 정답으로 판단되어 중립으로 분류하였습니다."
+UgyBqlNRCRG4-8d3uWl4AaABAg,bTiYfuIoAdQ,긍정,True,False,집에서 하겐다즈를 먹으며 쉬는 상황에 대한 만족감과 편안함을 표현하고 있어 긍정으로 분류했습니다.
+UgzchO8h4lrtEt_Y0bB4AaABAg,bTiYfuIoAdQ,긍정,True,False,여행을 통해 스트레스가 풀린다는 긍정적인 경험과 만족감을 표현하고 있어 긍정으로 분류함.
+Ugwv6ShW0_IGFxHjQA94AaABAg,bTiYfuIoAdQ,긍정,True,False,제주도 여행에 대한 즐거운 기대감과 긍정적인 경험이 잘 드러나 있어 긍정으로 분류하였습니다.
+UgxhYz-oMmdQ4WR8OZh4AaABAg,bTiYfuIoAdQ,긍정,True,False,여름 여행지로 속초를 추천하며 바다와 먹거리에 대해 매우 만족스럽고 긍정적인 감정을 표현하고 있습니다.
+UgyaYWJ0S5dNkwpYq3x4AaABAg,bTiYfuIoAdQ,중립,True,True,"영상에서 질문한 내용에 대한 답변으로 보이며, 이벤트 참여 목적의 정답으로 판단되어 중립으로 분류하였습니다."
+UgxcskwWiTGf9NuQjMx4AaABAg,bTiYfuIoAdQ,중립,True,True,"영상에서 질문한 내용에 대한 답변으로 보이며, 이벤트 참여 목적의 정답으로 판단되어 중립으로 분류하였습니다."
+UgzGRs8-EoeELGdV7dJ4AaABAg,bTiYfuIoAdQ,긍정,True,False,여름 동해바다에 대한 긍정적인 감상과 추천의 의미를 담고 있어 긍정으로 분류하였습니다.
+UgwiItUoulBH2u3dfT94AaABAg,bTiYfuIoAdQ,긍정,True,False,제주도 바다에 대한 긍정적인 감정과 함께 좋다는 표현을 명확하게 드러내고 있습니다.
+UgwCivq-aG_ape5mcwh4AaABAg,bTiYfuIoAdQ,긍정,True,False,강릉 여행지에 대한 정보와 동해바다의 경치가 예쁘다는 긍정적인 감상을 표현하고 있습니다.
+UgyibKIHdiTwOymWGBZ4AaABAg,bTiYfuIoAdQ,긍정,True,False,강릉의 커피와 바다에 대해 긍정적인 경험을 바탕으로 만족감을 표현하고 있습니다.
+UgzZc30mb3qA9xGsnC54AaABAg,bTiYfuIoAdQ,긍정,True,False,제주도 바다를 보고 싶다는 개인적인 소망과 그리움을 표현하고 있어 긍정적인 감정으로 분류하였습니다.
+UgwlzTiDEfucR3mTorR4AaABAg,bTiYfuIoAdQ,긍정,True,False,제주도의 예쁜 풍경에 대해 긍정적인 감상을 표현하고 있어 긍정으로 분류하였습니다.
+UgwNwd702ok89Zj6AEl4AaABAg,bTiYfuIoAdQ,긍정,True,False,제주도 여행을 추천하며 바다를 보며 여름을 보내기 좋다는 긍정적인 경험과 만족감을 표현하고 있습니다.
+UgyHhpfGu9OsJtIKekx4AaABAg,bTiYfuIoAdQ,긍정,True,False,여름에 강릉 바다를 보러 가겠다는 기대감과 긍정적인 여행 계획을 밝히고 있어 긍정으로 분류함.
+UgzFCVl4gAstJyvelrN4AaABAg,bTiYfuIoAdQ,긍정,True,False,제주도 여행에 대한 긍정적인 기대감과 힐링 된다는 만족스러운 감정이 잘 드러나 있습니다.
+UgwduJmRIKbXp797zzh4AaABAg,bTiYfuIoAdQ,긍정,True,False,영상의 주제와 관련된 자신의 고향을 밝히며 여름 바다에 대한 긍정적인 감상을 표현하고 있습니다.
+UgybhuwgGtTsPOfDJ9p4AaABAg,bTiYfuIoAdQ,긍정,True,False,여름 휴가에 대한 즐거운 상상을 유머러스하게 표현하며 긍정적인 감정을 나타내고 있습니다.
+UgyMHmF6ml8JlPRSeM54AaABAg,lvEM_7NphyY,부정,True,False,이전 영상에 등장했던 귀여운 캐릭터나 인물이 보이지 않는 것에 대한 아쉬움과 그리움을 표현하고 있어 부정으로 분류했습니다.
+UgxIEHoOOI2poirsGd14AaABAg,lvEM_7NphyY,긍정,True,False,평소 좋아하던 식당의 간편식 출시를 매우 반가워하며 최고라고 칭찬하는 긍정적인 감정이 담겨 있습니다.
+UgwxGsDMMOroQgE_yXB4AaABAg,lvEM_7NphyY,부정,True,False,라면 가격이 4900원이라는 점에 대해 비싼 가격을 지적하며 불만을 표출하고 있으므로 부정으로 분류함.
+UgwVZiR7s_xbalg01z54AaABAg,lvEM_7NphyY,긍정,True,False,부대찌개덮밥이라는 메뉴에 대해 좋다는 긍정적인 평가를 명확하게 표현하고 있습니다.
+UgwwN_tbASfvwb6-u-N4AaABAg,lvEM_7NphyY,긍정,True,False,"부대찌개에 라면사리가 필수라는 개인적인 취향과 선호를 표현한 댓글로, 긍정적인 공감의 의미가 담겨 있습니다."
+UgzIlVywZtkp9vWMHEB4AaABAg,lvEM_7NphyY,긍정,True,False,음식에 대해 든든하다는 긍정적인 평가와 함께 만족감을 표현하고 있어 긍정으로 분류했습니다.
+UgybJCN4XawUJJJQuap4AaABAg,lvEM_7NphyY,중립,True,True,"댓글 내용이 영상의 주제나 퀴즈에 대한 정답으로 보이며, 특별한 감정 표현 없이 사실적인 답변만 하고 있어 중립으로 분류했습니다."
+UgzcUD_fHl5L_zgDkZJ4AaABAg,bTiYfuIoAdQ,긍정,True,False,발리라는 여행지에 대한 애정과 만족감을 긍정적인 이모티콘과 함께 표현하고 있습니다.
+Ugwy6ltLsFCyllK12yh4AaABAg,bTiYfuIoAdQ,긍정,True,False,"영상의 주제에 대한 개인적인 선호도를 밝히는 내용으로, 긍정적인 감정이 담겨 있어 긍정으로 분류했습니다."
+Ugxb4Le0MB3sA1ddK-R4AaABAg,bTiYfuIoAdQ,긍정,True,False,속초를 자주 방문한다는 개인적인 경험을 공유하며 긍정적인 태도를 보이고 있습니다.
+UgwW86LrxFjM3t29LtN4AaABAg,bTiYfuIoAdQ,중립,True,False,제주도라는 지명만 언급되어 있어 특별한 감정이나 의도가 드러나지 않는 중립적인 댓글입니다.
+UgzttvNQ8f142wpxz314AaABAg,lvEM_7NphyY,중립,True,True,영상 내용과 관련된 퀴즈의 정답을 맞히기 위해 작성된 댓글로 판단되어 중립으로 분류하였습니다.
+Ugy5q_nZ57WMmQ-tEqJ4AaABAg,bTiYfuIoAdQ,긍정,True,False,부산 여행에 대한 개인적인 만족감과 즐거움을 표현하고 있어 긍정적인 감정으로 분류하였습니다.
+Ugzae1ZJMmG4-Wp8zVR4AaABAg,bTiYfuIoAdQ,긍정,True,False,여름 부산 여행에 대한 기대감과 긍정적인 경험을 공유하고 있어 긍정적인 감정으로 분류하였습니다.
+Ugy5Dy2U7A1fGNPxBZB4AaABAg,bTiYfuIoAdQ,긍정,True,False,계곡의 시원함을 긍정적으로 표현하며 여름 더위를 날릴 수 있다는 즐거운 감정을 나타내고 있습니다.
+UgzR5pAmkAdFj51Dyv14AaABAg,bTiYfuIoAdQ,긍정,True,False,속초 여행지에 대한 만족감과 동해 바다를 보며 힐링한다는 긍정적인 감정이 잘 드러나 있습니다.
+UgxPfRGsDUatPRQxS4N4AaABAg,bTiYfuIoAdQ,긍정,True,False,영상에서 소개된 휴양지 추천에 대해 긍정적인 반응을 보이며 하트 이모티콘으로 만족감을 표현하고 있습니다.
+UgxAJ-ZCuKtjJUnseRB4AaABAg,bTiYfuIoAdQ,긍정,True,False,제주도 여행에 대한 기대감과 즐거움을 표현하고 있어 긍정적인 감정으로 분류하였습니다.
+UgwjdbXs_bVKmZ66AvZ4AaABAg,bTiYfuIoAdQ,긍정,True,False,부산 해운대 여행에 대한 긍정적인 경험과 만족감을 표현하고 있어 긍정으로 분류하였습니다.
+Ugy7bhzxkQgLQVe9MBp4AaABAg,bTiYfuIoAdQ,긍정,True,False,거제도 여행에서 즐거운 시간을 보냈고 행복한 기억으로 남았다는 긍정적인 경험을 공유하고 있습니다.
+Ugz6SiLl_uTZpiw1Eup4AaABAg,bTiYfuIoAdQ,중립,True,True,"영상에서 제시한 퀴즈에 대한 정답을 작성한 댓글로, 이벤트 참여 목적이 분명하므로 중립으로 분류함."
+Ugww2gwKG6toZEu0fNh4AaABAg,bTiYfuIoAdQ,긍정,True,False,계곡에 대한 개인적인 만족감과 즐거움을 긍정적인 어조로 표현하고 있어 긍정으로 분류함.
+Ugyb2uXPr5kKi9t3_6t4AaABAg,bTiYfuIoAdQ,긍정,True,False,"부산의 바다와 맛집에 대해 긍정적인 감정을 표현하고 있으며, 웃는 이모티콘을 사용하여 만족감을 드러내고 있습니다."
+UgxLMb0BygTNoPc6BQJ4AaABAg,bTiYfuIoAdQ,긍정,True,False,여수 여행지에 대한 만족감과 여수 밤바다를 좋아한다는 긍정적인 감정이 명확하게 드러나 있습니다.
+UgxVf01j4_Z6qNsSzAh4AaABAg,bTiYfuIoAdQ,긍정,True,False,부산 여행에 대한 즐거운 경험과 추억을 긍정적으로 서술하고 있어 긍정으로 분류했습니다.
+UgwZA0SncDP0aSNUExF4AaABAg,bTiYfuIoAdQ,긍정,True,False,부산 여행에 대한 긍정적인 경험과 기대감을 밝히며 즐거운 감정을 표현하고 있습니다.
+UgwTxuvgTgxFg8mxTad4AaABAg,bTiYfuIoAdQ,긍정,True,False,여름 휴가지로 부산 바다를 추천하며 긍정적인 기대감과 즐거움을 표현하고 있습니다.
+Ugw8PjcTanyk7I2Iqy14AaABAg,bTiYfuIoAdQ,긍정,True,False,제주도의 자연과 바다에 대해 좋다는 긍정적인 감정을 직접적으로 표현하고 있습니다.
+UgzIIMfkHAh652qg_oh4AaABAg,bTiYfuIoAdQ,긍정,True,False,부산 바닷가에 대한 긍정적인 감정과 만족감을 표현하고 있어 긍정으로 분류하였습니다.
+UgxDEvZfUu02-8R_m1t4AaABAg,bTiYfuIoAdQ,긍정,True,False,제주도를 여름 휴양지로 생각하며 긍정적인 감정을 표현하고 있어 긍정으로 분류하였습니다.
+UgxwWY71ZDzizeZaDkd4AaABAg,bTiYfuIoAdQ,긍정,True,False,"단순히 지역명을 언급하며 하트 이모티콘을 사용한 것으로, 특별한 감정이나 정보 전달 없이 긍정적인 분위기를 나타내는 댓글입니다."
+Ugwlht6GSv5aYE8qh5t4AaABAg,bTiYfuIoAdQ,긍정,True,False,경주 여행에 대한 깊은 애정과 여름 경주의 아름다움에 대한 만족감이 잘 드러나 있어 긍정으로 분류함.
+UgxyIMV0_POLIz4PfjJ4AaABAg,bTiYfuIoAdQ,긍정,True,False,제주도를 최애 여행지로 꼽으며 여름에 대한 긍정적인 추억과 애정을 표현하고 있습니다.
+UgwCcKhKh6gelfIoYON4AaABAg,bTiYfuIoAdQ,긍정,True,False,부산 여행과 바다에 대한 긍정적인 감정을 표현하고 있어 긍정으로 분류하였습니다.
+Ugyt10O04NmajcdT5DR4AaABAg,bTiYfuIoAdQ,긍정,True,False,제주도를 좋아하여 자주 방문한다는 긍정적인 경험과 만족감을 표현하고 있습니다.
+UgwC1uR1wbdl49T3pSB4AaABAg,bTiYfuIoAdQ,중립,True,False,"여수를 자주 찾았다는 개인적인 경험을 담담하게 서술한 내용으로, 특별한 감정이나 평가가 포함되어 있지 않은 중립적인 댓글입니다."
+UgyTTia9g7pEL-erd6x4AaABAg,bTiYfuIoAdQ,긍정,True,False,호캉스에 대한 만족감을 '최고'라는 단어를 반복하여 강하게 표현하고 있어 긍정적인 감정으로 분류하였습니다.
+UgxjEllPsnbZ2oD3c1x4AaABAg,bTiYfuIoAdQ,중립,True,False,속초라는 장소에 대해 단순히 자주 방문한다는 사실만을 언급하고 있어 감정이 드러나지 않는 중립적인 댓글입니다.
+Ugw6hp3CCRQuzBfAfXl4AaABAg,bTiYfuIoAdQ,긍정,True,False,에어컨을 틀고 넷플릭스를 보며 간식을 먹는 상황을 최고의 휴가라고 표현하며 긍정적인 만족감을 나타내고 있습니다.
+UgxkaLOyf0njXTjF13B4AaABAg,bTiYfuIoAdQ,긍정,True,False,부산의 여행지에 대해 긍정적인 경험과 즐길 거리가 많다는 점을 언급하며 여행을 추천하고 있습니다.
+Ugwm1w_vsJWK0_Sm5AZ4AaABAg,bTiYfuIoAdQ,긍정,True,False,제주도 여행에 대한 긍정적인 경험과 다시 가고 싶다는 기대감이 잘 드러나 있어 긍정으로 분류함.
+UgxdAGYnhl_igcufFX94AaABAg,lvEM_7NphyY,중립,True,False,"식사 습관에 대한 개인적인 생각을 담담하게 표현한 댓글로, 특별한 긍정이나 부정의 감정이 드러나지 않는 중립적인 내용입니다."
+UgzFSeLO_M6NcjSn7lx4AaABAg,lvEM_7NphyY,긍정,True,False,부대찌개덮밥이라는 음식에 대해 긍정적인 반응을 보이며 만족감을 표현하고 있습니다.
+Ugy9-EwBMJ5YSBy8-Cx4AaABAg,lvEM_7NphyY,중립,True,True,영상 내용과 관련된 퀴즈의 정답을 맞히기 위한 이벤트 참여 목적의 댓글로 판단됩니다.
+UgxS6vB3MIxQBJRiIvN4AaABAg,lvEM_7NphyY,긍정,True,False,"부대찌개 먹는 방식에 대한 공감과 즐거움이 드러나 있으며, '국룰'이라는 표현을 통해 긍정적인 반응을 보이고 있습니다."
+UgyudHJWgFYH0kbYy5l4AaABAg,lvEM_7NphyY,긍정,True,False,부대찌개라면의 조합이 매일 먹어도 질리지 않을 정도로 맛있다는 긍정적인 만족감을 표현하고 있습니다.
+UgxyiSLG0b7IDTYr24Z4AaABAg,lvEM_7NphyY,긍정,True,False,부대찌개덮밥이 맛있다는 구체적인 칭찬과 만족감을 표현하고 있으므로 긍정으로 분류하였습니다.
+UgwOSjT66pEkBFD5n0d4AaABAg,lvEM_7NphyY,긍정,True,False,라면의 면발에 대한 개인적인 선호와 만족감을 표현하고 있어 긍정적인 감정으로 분류하였습니다.
+Ugz1dxI-3V6IkNe3mfF4AaABAg,lvEM_7NphyY,긍정,True,False,부대찌개와 라면의 조합을 선호하며 브랜드에 대한 응원과 격려를 담고 있어 긍정적인 댓글로 판단됨.
+UgwU8hOyJI8aZeUvx954AaABAg,lvEM_7NphyY,중립,True,True,"이벤트 참여를 위해 메뉴 이름을 언급하며 먹고 싶다는 의사를 밝힌 댓글로, 이벤트 참여 목적이 주된 내용이므로 중립으로 분류함."
+Ugz2mRNb-ilfRHWJu1l4AaABAg,lvEM_7NphyY,중립,True,True,"이벤트 참여를 위한 정답으로 보이며, 별도의 감정 표현 없이 음식 이름만 언급되어 중립으로 분류함."
+UgwwxTzpIhU6VerlhMJ4AaABAg,lvEM_7NphyY,중립,True,True,영상에서 퀴즈나 질문에 대한 정답을 제시하는 이벤트 참여 목적의 댓글로 판단됩니다.
+UgyakG6xZPUUZkF6uNt4AaABAg,lvEM_7NphyY,긍정,True,False,부대찌개라면과 덮밥 조합에 대한 기대감과 긍정적인 의견을 밝히고 있어 긍정으로 분류함.
+Ugy_hwDEOo86VQenMER4AaABAg,lvEM_7NphyY,중립,True,True,영상에서 요구하는 퀴즈나 이벤트에 대한 정답을 작성한 것으로 판단되어 중립으로 분류하였습니다.
+UgyLCoAhRyWdtjBDGUB4AaABAg,lvEM_7NphyY,긍정,True,False,CU에서 맛집 제품을 만날 수 있어 행복하다는 표현을 통해 제품에 대한 기대감과 만족감을 긍정적으로 드러내고 있습니다.
+UgzMwU88rMNRhTziXbR4AaABAg,lvEM_7NphyY,중립,True,True,"영상에서 묻는 질문에 대한 답변으로 보이며, 이벤트 참여 목적의 댓글로 판단되어 중립으로 분류함."
+UgxVqNs93N6mFfXPfIp4AaABAg,lvEM_7NphyY,중립,True,True,"이벤트 참여를 위한 정답 제출로 판단되며, 감정이 드러나지 않는 단순 답변이므로 중립으로 분류하였습니다."
+UgwnsFWaYcR4senJHAV4AaABAg,lvEM_7NphyY,긍정,True,False,콜라보를 환영하며 메뉴에 대한 기대감을 긍정적으로 표현하고 있습니다.
+UgyHeERC7we7gOUGVrR4AaABAg,lvEM_7NphyY,중립,True,True,영상 내용과 관련된 퀴즈의 정답을 맞히기 위해 작성된 댓글로 판단되어 중립으로 분류하였습니다.
+UgxNNqbX7EH4BQfdjL14AaABAg,lvEM_7NphyY,중립,True,True,영상 내용과 관련된 퀴즈의 정답을 말하는 이벤트 참여 목적의 댓글로 판단됩니다.
+UgxomNIiVO4S_23lUHt4AaABAg,lvEM_7NphyY,긍정,True,False,부대찌개와 밥의 조합이 좋다는 긍정적인 의견을 표현하며 음식에 대한 만족감을 드러내고 있습니다.
+Ugzv_U21zC0dM2VtFJ14AaABAg,lvEM_7NphyY,중립,True,True,영상에서 요청한 퀴즈나 이벤트에 대한 정답을 작성한 것으로 판단되어 중립으로 분류하였습니다.
+UgzZ1lqEc06HhldNMzd4AaABAg,lvEM_7NphyY,중립,True,True,"영상에서 요구하는 퀴즈의 정답을 말하고 있으며, 별도의 감정 표현이 없어 이벤트 참여 목적으로 판단됨."
+Ugx9lwOSbrDVFxS7Onh4AaABAg,lvEM_7NphyY,긍정,True,False,부대찌개라면 조합에 대한 기대감과 먹고 싶다는 긍정적인 감정이 잘 드러나 있습니다.
+UgxqzOxH0Cmm6i3RUm14AaABAg,lvEM_7NphyY,긍정,True,True,이벤트 참여를 위한 정답(부대찌개라면)과 함께 제품 출시를 반기는 긍정적인 감정이 포함되어 있어 긍정으로 분류함.
+UgyUTCtoW7I421UP2QF4AaABAg,lvEM_7NphyY,중립,True,True,"이벤트 참여를 위한 정답 제출로 보이며, 특별한 감정 표현이 포함되어 있지 않아 중립으로 분류했습니다."
+UgzzQY5bV4p_iZb3_hp4AaABAg,lvEM_7NphyY,중립,True,True,영상에서 묻는 질문에 대한 답변으로 작성된 이벤트 참여 목적의 댓글이므로 중립으로 분류하였습니다.
+Ugx_fhk7bY_IomB7yJF4AaABAg,lvEM_7NphyY,긍정,True,True,"영상에서 제시한 선택지 중 하나를 고르는 이벤트 참여 목적의 댓글이며, 개인적인 선호도를 밝히며 긍정적으로 표현하고 있습니다."
+Ugx30Gu7pNuHol2C6lJ4AaABAg,lvEM_7NphyY,부정,True,False,"전반적으로 좋다는 긍정적인 평가를 했으나, 본인의 취향과는 맞지 않다는 아쉬움을 표현하고 있어 부정으로 분류했습니다."
+UgxtEk4z9Iw1jIXA-lx4AaABAg,lvEM_7NphyY,중립,True,True,영상 내용과 관련된 퀴즈나 질문에 대한 정답을 제시하는 이벤트 참여 목적의 댓글로 판단됩니다.
+Ugydb-EoGYHYzn7QKMR4AaABAg,lvEM_7NphyY,중립,True,False,"영상 내용과 관련된 단순한 음식 명칭을 언급한 것으로, 특별한 감정이나 의견이 포함되지 않은 중립적인 댓글입니다."
+Ugw2ULFOHAioExHMb3J4AaABAg,lvEM_7NphyY,긍정,True,True,이벤트 참여를 위한 정답과 함께 콜라보를 축하하는 긍정적인 메시지가 포함되어 있어 긍정으로 분류하였습니다.
+Ugy9XV1MSNyThNu_Bdt4AaABAg,lvEM_7NphyY,긍정,True,False,부대찌개와 라면사리의 조합을 '꿀조합'이라 표현하며 긍정적으로 평가하고 있어 긍정으로 분류함.
+Ugws8RANZUxFerT85QZ4AaABAg,lvEM_7NphyY,긍정,True,False,면요리를 좋아한다는 취향을 밝히며 부대찌개라면에 대해 긍정적인 기대와 만족감을 표현하고 있습니다.
+UgzaxH2gXGCQhntgrc14AaABAg,lvEM_7NphyY,긍정,True,False,부대찌개덮밥이라는 메뉴에 대한 만족감과 씨유 브랜드에 대한 칭찬이 담겨 있어 긍정으로 분류했습니다.
+UgwTukmdEOgbaZcqKRp4AaABAg,lvEM_7NphyY,긍정,True,True,이벤트 참여를 위한 정답(부대찌개덮밥)과 함께 제품에 대한 기대감을 긍정적으로 표현하고 있습니다.
+Ugz6BPlztXFTqrUmjcd4AaABAg,lvEM_7NphyY,중립,True,True,"이벤트 참여를 위해 특정 제품을 먹고 싶다는 의사를 밝힌 댓글로, 이벤트 참여 목적이 주된 내용이므로 중립으로 분류하였습니다."
+UgyG-4Rd3CtYD1P6_kJ4AaABAg,lvEM_7NphyY,긍정,True,False,부대찌개와 라면의 조합을 선호한다는 개인적인 취향과 만족감을 긍정적으로 표현하고 있습니다.
+UgyQpVvCQq-xRKDCDBF4AaABAg,lvEM_7NphyY,긍정,True,False,제품에 대한 기대감과 먹고 싶다는 긍정적인 의사를 표현하고 있으므로 긍정으로 분류함.
+UgyuwYc6iMJ9e_Nj9FF4AaABAg,lvEM_7NphyY,긍정,True,False,영상 속 음식에 대한 개인적인 선호와 기대감을 긍정적으로 표현하고 있습니다.
+Ugw1GoIhfI6_OGDMrex4AaABAg,lvEM_7NphyY,긍정,True,False,라면에 대한 개인적인 선호도를 밝히며 긍정적인 이모티콘을 사용하여 만족감을 표현하고 있습니다.
+UgzZkVvciXlAiRetrx14AaABAg,lvEM_7NphyY,긍정,True,False,부대찌개덮밥이라는 메뉴에 대해 긍정적인 의견을 표현하며 한국인의 식습관에 비추어 만족감을 나타내고 있습니다.
+UgzJys8HkOSMlPLE8DB4AaABAg,lvEM_7NphyY,긍정,True,False,부대찌개덮밥과 라면을 구매하여 저녁으로 먹겠다는 기대감과 만족스러운 구매 의사가 나타나 있어 긍정으로 분류함.
+Ugwo6RIh2uqhwAzwv1B4AaABAg,lvEM_7NphyY,긍정,True,False,부대찌개를 밥도둑이라고 표현하며 음식에 대한 긍정적인 공감과 만족감을 나타내고 있습니다.
+UgxiLt5Zru3AOVGtPFp4AaABAg,lvEM_7NphyY,긍정,True,False,부대찌개와 라면의 조합을 최고의 조합이라며 긍정적으로 평가하고 있어 긍정으로 분류함.
+UgyFw6nwfA7wwu-5fIB4AaABAg,lvEM_7NphyY,긍정,True,False,영상에서 제시한 두 가지 메뉴 중 선호하는 메뉴를 밝히며 긍정적인 기대감을 표현하고 있습니다.
+UgyjyowzLFFtCVffpnF4AaABAg,lvEM_7NphyY,긍정,True,False,CU에서 출시된 제품에 대해 행복하다는 감정을 표현하며 기대감을 나타내고 있으므로 긍정으로 분류하였습니다.
+UgxIIHRNCNtbA8JlJZJ4AaABAg,lvEM_7NphyY,긍정,True,False,영상 주제와 관련된 메뉴를 추천하며 응원의 메시지를 보내고 있어 긍정적인 감정으로 판단함.
+UgyEge_GPfmB4AomTrd4AaABAg,lvEM_7NphyY,중립,True,True,영상에서 요구하는 퀴즈의 정답을 제시하는 이벤트 참여 목적의 댓글로 판단됩니다.
+Ugwhb01k6vknv4lZpDR4AaABAg,lvEM_7NphyY,중립,True,True,영상에서 요구하는 퀴즈의 정답을 말하고 있는 이벤트 참여 목적의 댓글이므로 중립으로 분류하였습니다.
+UgzaEmzc_3M7iW8nA9t4AaABAg,lvEM_7NphyY,중립,True,True,영상 내용과 관련된 퀴즈의 정답을 말하는 이벤트 참여 목적의 댓글로 판단됩니다.
+UgxZ3fmTesRfEL8IVwh4AaABAg,lvEM_7NphyY,중립,True,True,"영상에서 제시한 퀴즈나 질문에 대한 정답을 작성한 것으로 보이며, 뒤에 덧붙인 문장도 단순한 의견 제시일 뿐 부정적 감정이 없어 중립으로 분류함."
+UgxIBZSxnQqifekOXGR4AaABAg,lvEM_7NphyY,긍정,True,False,특정 메뉴에 대한 개인적인 선호와 기대감을 표현하고 있어 긍정적인 감정으로 분류하였습니다.
+Ugz6tmS7qoC4CMXGqCF4AaABAg,lvEM_7NphyY,긍정,True,False,부대찌개라면의 맛에 대해 만족감을 표현하며 긍정적인 감정을 나타내고 있습니다.
+UgzGrEoAC4dpjXvjX6t4AaABAg,lvEM_7NphyY,긍정,True,False,쌀쌀한 날씨에 부대찌개라면이 먹고 싶다는 개인적인 선호와 기대감을 표현한 긍정적인 맥락의 댓글입니다.
+UgwDe0pZi-TeBZ23iVx4AaABAg,lvEM_7NphyY,긍정,True,False,부대찌개덮밥이 더 든든하다는 긍정적인 평가와 만족감을 표현하고 있습니다.
+Ugz5w_UA4VC6SC0RG3h4AaABAg,lvEM_7NphyY,중립,True,True,"이벤트 참여를 위해 부대찌개라면을 선택한 댓글로, 정답 외에 특별한 불만이나 비판 없이 개인적인 선호를 밝히고 있어 중립으로 분류함."
+UgydLgWTitxBFCzVa4V4AaABAg,lvEM_7NphyY,긍정,True,False,부대찌개 라면을 선호한다는 개인적인 취향과 기대감을 표현하고 있어 긍정적인 감정으로 분류하였습니다.
+UgxEGPo_bjz_SSS_w7l4AaABAg,lvEM_7NphyY,긍정,True,False,추운 날 라면을 먹는 것에 대한 즐거움과 만족감을 표현하고 있어 긍정적인 댓글로 판단됨.
+Ugy11GuoqcMdd75MLxB4AaABAg,lvEM_7NphyY,긍정,True,False,라면을 매우 좋아한다는 개인적인 취향을 밝히며 해당 제품을 먹고 싶다는 기대감을 긍정적으로 표현하고 있습니다.
+UgzqXXReRFT7YUDBOMB4AaABAg,lvEM_7NphyY,긍정,True,False,부대찌개와 밥의 조합이 최고라는 표현을 통해 음식에 대한 만족감과 긍정적인 평가를 나타내고 있습니다.
+UgwPeAjXNYlspsPgvdd4AaABAg,lvEM_7NphyY,긍정,True,False,부대찌개 라면에 대한 개인적인 선호와 기대감을 긍정적으로 표현하고 있는 댓글입니다.
+UgxWrWWPuYHCxmsICNp4AaABAg,lvEM_7NphyY,긍정,True,False,부대찌개라면을 가장 좋아한다고 언급하며 최고라고 표현하여 제품에 대한 만족감과 긍정적인 감정을 드러내고 있습니다.
+UgwhBBNXunW1kfhqiv54AaABAg,lvEM_7NphyY,긍정,True,False,라면의 맛을 긍정적으로 묘사하며 만족감을 표현하고 있으므로 긍정으로 분류하였습니다.
+Ugwldh3SQC4Nd6RW7aV4AaABAg,lvEM_7NphyY,긍정,True,False,부대찌개에 라면사리를 넣어 먹는 것을 좋아한다는 긍정적인 경험과 함께 맛있겠다는 기대감을 표현하고 있습니다.
+Ugx2JL6GTo3E12PVHF54AaABAg,lvEM_7NphyY,긍정,True,False,부대찌개와 쌀밥의 조합을 긍정적으로 표현하며 음식에 대한 만족감과 기대감을 나타내고 있습니다.
+UgzNVF5QJfjzYENcqc14AaABAg,lvEM_7NphyY,중립,True,True,이벤트 참여를 위해 정답을 제시하는 댓글로 판단되어 중립으로 분류하였습니다.
+UgxoRYb_JFP1pbJJve94AaABAg,lvEM_7NphyY,긍정,True,False,부대찌개라면에 대한 기대감과 국물 맛에 대한 긍정적인 평가가 담겨 있어 긍정으로 분류했습니다.
+UgwJ5nvScx84VwOmfLh4AaABAg,lvEM_7NphyY,중립,True,True,영상에서 제시한 퀴즈나 이벤트에 대한 정답을 제시하는 댓글로 판단되어 중립으로 분류하였습니다.
+UgzhpPihUgDB1lxXcYx4AaABAg,lvEM_7NphyY,긍정,True,False,부대찌개라면에 대한 긍정적인 공감과 만족감을 표현하고 있는 댓글입니다.
+UgyPULbZmbkrYUJAftl4AaABAg,lvEM_7NphyY,긍정,True,False,영상 내용에 공감하며 웃음 표현을 사용하여 긍정적인 태도를 보이고 있습니다.
+UgyK3VoFUP7oJKDa83N4AaABAg,f9oLAKLAp2Y,중립,True,False,"영상 제작자에게 특정 지역 방문을 요청하는 제안성 댓글로, 감정이 드러나지 않는 중립적인 내용입니다."
+UgzYpE8LhHLoDL4IGkJ4AaABAg,f9oLAKLAp2Y,긍정,True,False,"영상 제작자에게 특정 장소에서의 촬영을 정중하게 요청하는 내용으로, 부정적인 감정 없이 기대감을 담고 있어 긍정으로 분류함."
+UgxAXkkkXS2oFRK5TEt4AaABAg,f9oLAKLAp2Y,중립,True,False,"영상 제작자에게 특정 장소 방문을 요청하는 내용으로, 감정이 섞이지 않은 단순 제안이므로 중립으로 분류함."
+UgwsS-aPSQdGqu4cZIx4AaABAg,f9oLAKLAp2Y,중립,True,False,영상 제작자에게 특정 장소 방문을 요청하는 단순 제안성 댓글이므로 중립으로 분류했습니다.
+UgywrT3Wd0-us1OHmMN4AaABAg,f9oLAKLAp2Y,중립,True,False,"영상 제작자에게 특정 장소에 방문해달라는 요청을 담고 있으나, 불만이나 비판이 아닌 단순한 콘텐츠 제안이므로 중립으로 분류함."
+Ugyq6CVR9FW77uMRli54AaABAg,f9oLAKLAp2Y,긍정,True,False,아차산 해돋이 영상을 보고 싶다는 기대와 요청을 담고 있어 긍정적인 감정으로 분류하였습니다.
+UgwtS4ArsLhDFHCvkmd4AaABAg,f9oLAKLAp2Y,중립,True,False,영상 제작자에게 특정 장소의 풍경을 보여달라고 요청하는 정보 요청성 댓글이므로 중립으로 분류함.
+Ugy6Oc_ye5ySjqrWIQ94AaABAg,f9oLAKLAp2Y,중립,True,True,영상에서 제시한 퀴즈에 대한 정답을 맞히기 위해 작성된 댓글이므로 이벤트 참여 목적으로 분류하였습니다.
+UgyAVvBeV12ZdG_QF6p4AaABAg,f9oLAKLAp2Y,긍정,True,False,영상 제작자에게 특정 장소 방문을 제안하며 긍정적인 기대감을 표현하고 있어 긍정으로 분류함.
+UgwtJKUT7hj619VyBPp4AaABAg,lvEM_7NphyY,긍정,True,False,라면의 맛에 대해 중독성이 있다고 긍정적으로 평가하며 구체적인 맛의 비유를 들어 만족감을 표현하고 있습니다.
+UgyBEPvQV5RUtRh8tR54AaABAg,lvEM_7NphyY,긍정,True,False,음식에 대한 긍정적인 평가와 함께 하트 이모티콘을 사용하여 만족감을 표현하고 있습니다.
+UgxMW0fR7tDiuL80TMh4AaABAg,lvEM_7NphyY,긍정,True,False,부대찌개 덮밥이라는 새로운 메뉴에 대해 신기해하며 긍정적인 호기심을 표현하고 있습니다.
+UgxuQA1p9h7v2S8lZKB4AaABAg,lvEM_7NphyY,긍정,True,False,부대찌개 덮밥이라는 새로운 메뉴에 대해 호기심과 기대감을 긍정적으로 표현하고 있습니다.
+Ugy0AD4NanKln1qIij54AaABAg,lvEM_7NphyY,긍정,True,False,부대찌개와 밥의 조합을 긍정적으로 언급하며 둘 다 먹고 싶다는 기대감을 표현하고 있어 긍정으로 분류함.
+UgzJXD9QAEFgsPIWwD54AaABAg,lvEM_7NphyY,부정,True,False,영상 출연진이나 제작진이 마치 직원처럼 행동한다는 불만 섞인 비판을 담고 있어 부정으로 분류했습니다.
+Ugw9nqtA0_PbwMQrQuZ4AaABAg,f9oLAKLAp2Y,긍정,True,False,영상 제작자에게 특정 주제(겨울 제주 풍경)를 보고 싶다고 요청하며 기대감을 표현하고 있어 긍정으로 분류함.
+Ugwg4MdPHiEW-VfAyJx4AaABAg,lvEM_7NphyY,긍정,True,False,부대찌개라면을 맛있게 먹고 있다는 긍정적인 경험과 하트 이모지를 통해 만족감을 표현하고 있습니다.
+UgzRB-kfUrArh-XkfWV4AaABAg,lvEM_7NphyY,중립,True,True,"댓글 내용이 이벤트 참여를 위한 정답으로 보이며, 별도의 감정 표현이 없어 중립으로 분류하였습니다."
+UgxZu-rdCQLulCMZ_PN4AaABAg,lvEM_7NphyY,긍정,True,False,부대찌개라면이 자신의 취향에 맞는다는 만족감을 표현하고 있으므로 긍정적인 댓글입니다.
+UgztzHM1QjqAF7UdQKl4AaABAg,f9oLAKLAp2Y,긍정,True,False,바다바람을 맞으며 먹거리 골목을 순방하는 것이 좋다는 표현을 통해 만족감과 즐거움을 나타내고 있습니다.
+UgyNv3V6N0wt7kvhV1Z4AaABAg,f9oLAKLAp2Y,긍정,True,False,국밥 골목에 대한 긍정적인 선호와 기대감을 표현하고 있어 긍정적인 댓글로 판단하였습니다.
+Ugz_xoYLE8AYA_3iSap4AaABAg,f9oLAKLAp2Y,긍정,True,False,스키야키 영상에 대해 보고 싶다는 기대감과 긍정적인 이모지를 사용하여 만족스러운 감정을 표현하고 있습니다.
+Ugx7XJ22skDCvwQL_V14AaABAg,f9oLAKLAp2Y,긍정,True,False,홍대 거리 우동 먹방을 보고 싶다는 기대와 바람을 담고 있어 긍정적인 감정으로 분류하였습니다.
+UgzXpXeLPXj5a9LSpGp4AaABAg,f9oLAKLAp2Y,긍정,True,False,영상 속 장소에 대한 기대감과 대리만족을 원한다는 긍정적인 감정이 담겨 있습니다.
+UgyVmjudsN2OfPhvuBF4AaABAg,f9oLAKLAp2Y,긍정,True,False,영상 내용에 대한 추천 의견을 긍정적인 이모티콘과 함께 부드럽게 표현하고 있어 긍정으로 분류했습니다.
+UgyuCNrnlojQbnphCnR4AaABAg,f9oLAKLAp2Y,중립,True,True,영상에서 질문한 내용에 대한 정답을 맞히기 위해 작성된 이벤트 참여 목적의 댓글입니다.
+UgxsmOpIu16dz3Fq-iB4AaABAg,f9oLAKLAp2Y,중립,True,False,"영상 제작자에게 특정 장소에 대한 방문을 요청하는 제안성 댓글로, 특별한 감정이 담겨있지 않아 중립으로 분류했습니다."
+UgwFI_W_YEX5qshduct4AaABAg,f9oLAKLAp2Y,긍정,True,False,영상의 주제와 관련하여 부산 오륙도라는 구체적인 장소를 언급하며 더 맛있게 즐길 수 있는 방법을 긍정적으로 제안하고 있다.
+UgwAyl72MBfVZjUs1OF4AaABAg,f9oLAKLAp2Y,중립,True,False,"영상 제작자에게 특정 지역 방문을 요청하는 내용으로, 감정이 담기지 않은 단순 요청 사항이므로 중립으로 분류함."
+UgypI0UQ35mL70E_VQN4AaABAg,f9oLAKLAp2Y,중립,True,True,영상에서 요구하는 퀴즈의 정답을 맞히기 위해 작성된 댓글이므로 이벤트 참여 목적으로 분류하였습니다.
+UgzvO-x_FvmE2YfmX1Z4AaABAg,f9oLAKLAp2Y,중립,True,False,"특정 장소에 방문해 달라는 단순한 요청 사항으로, 부정적인 감정이나 비판 없이 정보성 제안을 담고 있어 중립으로 분류했습니다."
+Ugxo0p0rJB3xch0BZNZ4AaABAg,f9oLAKLAp2Y,긍정,True,False,강원도 여행을 추천하며 영상 제작자와 함께하고 싶다는 기대와 긍정적인 바람을 표현하고 있습니다.
+UgxxESWIyjE0vn6b3Ox4AaABAg,f9oLAKLAp2Y,긍정,True,False,"영상 속 주제와 관련하여 기대감을 표현하고 있으며, 긍정적인 태도로 내용을 서술하고 있습니다."
+Ugyb4fX2Wq6aOlfRKqB4AaABAg,f9oLAKLAp2Y,중립,True,False,"영상 제작자에게 특정 장소 방문을 제안하는 내용으로, 긍정이나 부정의 감정이 담기지 않은 단순 요청사항이므로 중립으로 분류했습니다."
+Ugwr9-ec8hdBeUjNUkV4AaABAg,f9oLAKLAp2Y,부정,True,False,특정 장소에 대한 방문을 요청하는 개선 건의 및 제안 성격의 댓글이므로 부정으로 분류하였습니다.
+UgycxcjtIgEVWhEc32B4AaABAg,f9oLAKLAp2Y,중립,True,False,"영상 제작자에게 특정 콘텐츠를 요청하는 내용으로, 부정적인 감정은 없으나 긍정적인 평가도 아닌 중립적인 요청 사항입니다."
+UgyDrgI4BrZOfgsxla94AaABAg,f9oLAKLAp2Y,중립,True,False,"영상 콘텐츠에 대한 새로운 아이디어를 제안하는 내용으로, 부정적인 감정 없이 건설적인 의견을 제시하고 있어 중립으로 분류했습니다."
+Ugzxv3s8oqGwMygZmQJ4AaABAg,f9oLAKLAp2Y,긍정,True,False,남산타워 방문을 제안하며 겨울철 실내 시티뷰라는 구체적인 추천 이유를 긍정적으로 제시하고 있습니다.
+Ugyh9T1iLIPA8uMMwAx4AaABAg,f9oLAKLAp2Y,긍정,True,False,"영상 제작에 대한 구체적인 아이디어를 제안하고 있으며, 부정적인 감정 없이 기대감을 담아 요청하고 있으므로 긍정으로 분류했습니다."
+UgwBuuRtRL6gyeY2U7V4AaABAg,lvEM_7NphyY,중립,True,True,영상에서 묻는 질문에 대한 답변으로 작성된 이벤트 참여 목적의 댓글이므로 중립으로 분류하였습니다.
+Ugx76A4dIAcinD7Y3_54AaABAg,lvEM_7NphyY,긍정,True,False,유명 맛집과의 콜라보에 대한 기대감과 긍정적인 감정이 명확하게 드러나 있어 긍정으로 분류함.
+UgxDQRK7cWnaXGtkpOl4AaABAg,lvEM_7NphyY,긍정,True,False,영상에서 제안한 메뉴에 대해 긍정적인 선호도를 밝히며 즐겁게 의견을 표현하고 있습니다.
+Ugys2MrNTxQMLOifh0J4AaABAg,lvEM_7NphyY,긍정,True,False,부대찌개와 라면의 조합이 꿀조합이라며 긍정적으로 평가하고 있어 긍정으로 분류했습니다.
+Ugzv9fGo0fND9Ne31_p4AaABAg,lvEM_7NphyY,긍정,True,False,부대찌개라면을 선택하겠다는 개인적인 취향을 밝히며 면 요리에 대한 애정을 유쾌하게 표현하고 있어 긍정적인 감정으로 분류함.
+UgxbCLHu11IRR7otBiR4AaABAg,lvEM_7NphyY,긍정,True,False,부대찌개와 라면사리의 조합에 대한 개인적인 만족감과 긍정적인 선호도를 표현하고 있습니다.
+UgwqSOuPDOy6OpnWTYd4AaABAg,f9oLAKLAp2Y,긍정,True,False,자신의 거주지를 밝히며 가볍게 웃음을 표현하고 있어 긍정적인 소통의 의도로 판단됩니다.
+Ugw59TdqYZrNgx_dAed4AaABAg,f9oLAKLAp2Y,긍정,True,False,"여수 밤바다의 풍경과 낭만에 대해 긍정적으로 표현하고 있으며, 가고 싶다는 기대감을 나타내고 있어 긍정으로 분류했습니다."
+UgxiAHE2_FiorZXkPFZ4AaABAg,f9oLAKLAp2Y,긍정,True,False,영상 속 시장의 활기찬 모습을 보고 싶다는 기대와 긍정적인 감정이 담겨 있어 긍정으로 분류했습니다.
+UgxHRs10c9z8DbHUlL94AaABAg,f9oLAKLAp2Y,긍정,True,False,영상 속 상황에 대한 긍정적인 기대감과 함께 작성자의 따뜻한 감상이 잘 드러나 있어 긍정으로 분류하였습니다.
+UgxUYuzRjLxi28yCCmp4AaABAg,NzS-4R7-lCw,긍정,True,False,"영상 속 인물에 대한 팬심이나 애정을 장난스럽게 표현한 것으로, 긍정적인 맥락의 댓글입니다."
+Ugwnr_CxiRgw3gQ89Dt4AaABAg,NzS-4R7-lCw,중립,True,False,"영상 내용과 관련하여 잘못 들었거나 착각했다는 단순한 반응으로, 특별히 긍정적이거나 부정적인 감정이 담겨 있지 않아 중립으로 분류함."
+UgybrTKqzHD3RriCzj94AaABAg,NzS-4R7-lCw,긍정,True,False,영상의 소리에 대해 매우 만족하며 긍정적인 감정을 표현하고 있습니다.
+Ugz_kPW5pAMTJ1GzJLZ4AaABAg,NzS-4R7-lCw,부정,True,False,여름이 지난 시점에서 영상을 보니 춥게 느껴진다는 아쉬움과 부정적인 감정이 담겨 있습니다.
+UgzK2nWE4H78IBI88YR4AaABAg,NzS-4R7-lCw,중립,True,False,"단순히 댓글 순서를 나타내는 표현으로, 특별한 감정이 담겨 있지 않아 중립으로 분류했습니다."
+UgxRjcZDxeHgWqWxCbh4AaABAg,NzS-4R7-lCw,긍정,True,False,'소리 미춌다'는 영상의 음향 품질에 대한 강한 감탄과 만족을 나타내는 표현이므로 긍정으로 분류했습니다.
+UgxlL1pavyulAeABqzN4AaABAg,NzS-4R7-lCw,긍정,True,False,"'꺄륵'은 즐거움이나 웃음을 나타내는 의성어로, 영상에 대한 긍정적인 반응으로 해석됩니다."
+UgzTGY8irT3FYahRswp4AaABAg,NzS-4R7-lCw,긍정,True,False,영상 내용에 대해 아주 좋다는 직접적인 만족감과 긍정적인 평가를 표현하고 있습니다.
+Ugw1xb8Z_UBaK2DP-El4AaABAg,NzS-4R7-lCw,중립,True,False,"영상 콘텐츠에 대한 향후 계획을 묻는 질문으로, 특별한 긍정이나 부정의 감정이 담겨 있지 않은 단순 정보 요청입니다."
+Ugx2uFGXBjXLwo6PKsl4AaABAg,NzS-4R7-lCw,긍정,True,False,하트 이모티콘은 작성자의 긍정적인 마음이나 영상에 대한 호감을 표현하는 것으로 해석됩니다.
+Ugy-Hr3YNATBjusZhF94AaABAg,ldKaz98x3MM,중립,True,False,"영상 속 상황에 대한 자신의 의견을 담담하게 서술하고 있으며, 긍정이나 부정의 감정이 강하게 드러나지 않는 중립적인 의견입니다."
+UgzneINnoZsjQegHUIV4AaABAg,ldKaz98x3MM,긍정,True,False,반가움과 함께 응석을 부리고 싶다는 감정을 표현하고 있어 영상에 대한 애정과 긍정적인 기대감이 느껴집니다.
+UgxsSncr21z3rZ45WGF4AaABAg,ldKaz98x3MM,긍정,True,False,자신의 다짐과 의지를 밝히며 긍정적인 태도로 미래를 기대하고 있어 긍정으로 분류했습니다.
+Ugwe5VqZuEPZNwO_XYF4AaABAg,ldKaz98x3MM,긍정,True,False,영상 내용에 공감하며 웃음이 난다는 긍정적인 반응을 보이고 있으므로 긍정으로 분류했습니다.
+UgwXK7NWuJE6nl0Zmep4AaABAg,ldKaz98x3MM,긍정,True,False,영상 내용에 대해 놀라움과 반가움을 표현하며 긍정적인 기대감을 드러내고 있습니다.
+UgyhQ9FMmyRA8gmvtK94AaABAg,ldKaz98x3MM,부정,True,False,영상 속 행동에 대해 개선을 요구하거나 지적하는 내용이 포함되어 있어 부정적인 감정으로 분류하였습니다.
+UgzGfxvpW85VcaJp_dB4AaABAg,ldKaz98x3MM,긍정,True,False,영상 속 인물의 다양한 모습을 기대하며 긍정적인 태도로 응원하는 내용을 담고 있습니다.
+UgzOAn-FFzt0p6NUE3V4AaABAg,ldKaz98x3MM,긍정,True,False,직원 마인드로 제품을 추천해 줄 것 같다는 기대감과 긍정적인 상상을 표현하고 있어 긍정으로 분류함.
+UgwsHKPCpfENzhy74194AaABAg,ldKaz98x3MM,긍정,True,False,부모님을 만나는 상황에 대해 긍정적인 기대와 행복한 감정을 표현하고 있으므로 긍정으로 분류했습니다.
+UgzAJ_wagNxosHXorwZ4AaABAg,egZeMtEjtWk,중립,True,True,"이벤트 참여를 유도하는 홍보성 댓글로, 특정 감정이 포함되지 않은 정보 전달 목적의 댓글입니다."
+Ugx6OnwrSLhW4xl6Av14AaABAg,egZeMtEjtWk,부정,True,False,커피 맛이 연해진 것에 대한 불만과 변경 이유를 묻는 비판적인 내용이 포함되어 있어 부정으로 분류했습니다.
+UgxjAGb9h0YX91_9JZJ4AaABAg,egZeMtEjtWk,중립,True,False,커피 주문 시 샷 추가를 요청하는 단순 정보 전달성 댓글이므로 중립으로 분류하였습니다.
+UgxhHo1Eqy4atAXVrXV4AaABAg,egZeMtEjtWk,긍정,True,False,'와우'라는 표현은 영상의 내용에 대한 감탄과 긍정적인 반응을 나타내는 짧은 감탄사입니다.
+UgwYGc2YDk_WYQLW1ql4AaABAg,egZeMtEjtWk,긍정,True,False,방송에 대한 감사함과 응원의 마음을 담고 있어 긍정적인 감정이 명확하게 드러납니다.
+UgzwDF9o6qttY3hjVmZ4AaABAg,egZeMtEjtWk,긍정,True,False,하트 이모티콘은 영상에 대한 긍정적인 반응이나 애정을 표현하는 것으로 해석됩니다.
+Ugy4fb0o3dwEV3Oy_W94AaABAg,5zevs9PFhA0,긍정,True,False,"영상 속 음식이나 상황 때문에 다이어트가 어렵다는 자조적인 농담으로, 영상의 내용에 공감하며 재미있게 반응하는 긍정적인 맥락의 댓글입니다."
+UgwdLVs3tdx_3R5Ygrp4AaABAg,5zevs9PFhA0,긍정,True,False,"영상 내용과 관련하여 자신의 선호도를 단순히 표현한 댓글로, 긍정적인 감정이 담겨 있어 긍정으로 분류함."
+UgwYLxTila755ZNdOO54AaABAg,_FB-whljrzE,긍정,True,False,영상 내용에 대해 아주 좋다는 표현을 사용하여 만족감과 긍정적인 감정을 명확하게 드러내고 있습니다.
+UgzmneTB7hIBIqDbIl54AaABAg,5zevs9PFhA0,긍정,True,False,영상에서 소개한 팁이 매우 유용하다는 긍정적인 반응과 함께 직접 실행해보겠다는 기대감이 드러나 있습니다.
+Ugz90hNDfqxA4C6q6at4AaABAg,TJc_oR703HA,긍정,True,False,영상이나 콘텐츠에 대해 아주 좋다는 직접적인 칭찬과 만족감을 표현하고 있습니다.
+Ugy0PDIaH3ZH9LE4PXB4AaABAg,-kHxd7xAqus,긍정,False,False,지혜라는 인물의 외모가 예쁘고 귀엽다는 칭찬과 애정을 담은 표현이므로 긍정으로 분류함.
+UgyGTpZeEnU5AAZjfyp4AaABAg,-kHxd7xAqus,중립,True,False,영상에 등장하는 인물이 아이린인지 확인하는 단순 질문성 댓글로 감정이 드러나지 않음.
+UgzpTG-7TK8fhSq-cwp4AaABAg,-kHxd7xAqus,긍정,True,False,영상이나 콘텐츠에 대해 아주 좋다는 표현을 사용하여 만족감과 긍정적인 감정을 직접적으로 드러내고 있습니다.
+UgzCn2G99IDes9YlN9V4AaABAg,-kHxd7xAqus,부정,True,False,영상이 망했다는 사실에 대해 슬픔과 아쉬움을 표현하고 있으므로 부정적인 감정으로 분류하였습니다.
+UgybXhjoQ6alKe_bGxF4AaABAg,-kHxd7xAqus,중립,True,False,영상에 가장 먼저 댓글을 달았다는 단순한 사실을 알리는 내용으로 특별한 감정이 담겨있지 않습니다.
+Ugx8wNm-gtyHnXkgDKd4AaABAg,nk1zR__8XZQ,긍정,True,False,영상의 내용과 무관하게 밤의 분위기를 즐기며 긍정적인 감정을 표현하고 있습니다.
+Ugz458-RcsokYlpbvTF4AaABAg,NzS-4R7-lCw,긍정,True,False,'중독성 쩌네'라는 표현은 영상의 매력을 높게 평가하며 긍정적인 감탄을 나타내는 표현입니다.
+UgxUDV5b--pLgP-vD7V4AaABAg,NzS-4R7-lCw,중립,True,True,"이벤트 참여를 유도하는 광고성 댓글로, 특정 감정이 포함되어 있지 않아 중립으로 분류하였습니다."
+UgzCwHnjfM1KXaiCnRB4AaABAg,f9oLAKLAp2Y,긍정,True,False,"영상 제작자에게 특정 장소와 음식 조합을 추천하는 내용으로, 긍정적인 제안의 성격을 띠고 있어 긍정으로 분류했습니다."
+UgwaOJmF4ErbtusP4Fh4AaABAg,f9oLAKLAp2Y,중립,True,False,"영상 제작자에게 특정 콘텐츠를 수행해달라고 요청하는 내용으로, 감정이 드러나지 않은 단순 요청사항이므로 중립으로 분류함."
+UgwGd4ar12ZdmsrTBPN4AaABAg,f9oLAKLAp2Y,긍정,True,False,한강뷰를 보고 싶다는 개인적인 소망과 기대감을 표현하고 있으므로 긍정적인 감정으로 분류하였습니다.
+UgzXBthqGFfcuHU9OGV4AaABAg,f9oLAKLAp2Y,중립,True,True,영상에서 제시한 퀴즈나 질문에 대한 정답을 작성한 이벤트 참여 목적의 댓글로 판단됩니다.
+Ugw_sXIXtsWPA2gzUJl4AaABAg,f9oLAKLAp2Y,중립,True,False,영상 제작자에게 특정 장소의 풍경을 보여달라고 요청하는 정보 요청성 댓글입니다.
+Ugx1IEk2ZsCn8ncytWN4AaABAg,f9oLAKLAp2Y,긍정,True,False,"강원도 평창 여행을 추천하는 내용으로, 작성자의 긍정적인 제안과 기대감이 담겨 있어 긍정으로 분류함."
+UgyxkInPxsAsWcgAXLt4AaABAg,f9oLAKLAp2Y,긍정,True,False,제주도 한라산 여행을 추천하며 긍정적인 기대감을 표현하고 있어 긍정으로 분류하였습니다.
+Ugz4VPmh7eGMu8XE3Wx4AaABAg,f9oLAKLAp2Y,긍정,True,False,"직접 방문한 장소에 대한 만족감과 아름다웠다는 긍정적인 감정을 표현하고 있으며, 추가적인 풍경을 보고 싶다는 기대감을 나타내고 있습니다."
+UgzmejDRSr4ThY6hVh94AaABAg,f9oLAKLAp2Y,긍정,True,False,"영상 제작자에게 특정 장소 방문을 요청하고 있으며, 해당 장소의 분위기를 느끼고 싶다는 기대와 긍정적인 바람이 담겨 있습니다."
+Ugx9YXxKaOPvnJ4JbtN4AaABAg,5zevs9PFhA0,긍정,True,False,"반값 할인이라는 긍정적인 소식에 대해 구매 의욕을 나타내는 표현으로, 만족과 기대감이 담겨 있어 긍정으로 분류함."
+UgxK18ARa1y7PU8VCTJ4AaABAg,f9oLAKLAp2Y,긍정,True,False,여수 밤바다의 풍경을 낭만적이라고 표현하며 긍정적인 감정을 드러내고 있습니다.
+UgxUWGX-D5r2mABMVmZ4AaABAg,f9oLAKLAp2Y,중립,True,False,"영상 제작자에게 특정 장소에 방문해달라는 단순한 요청 사항으로, 감정이 드러나지 않는 중립적인 댓글입니다."
+UgwG-d6IgFXpUMTix_d4AaABAg,f9oLAKLAp2Y,중립,True,False,"영상 제작자에게 특정 장소 방문을 요청하는 내용으로, 감정이 드러나지 않는 단순 요청 사항이므로 중립으로 분류함."
+UgyPtuf0tOuZyGHPhPR4AaABAg,f9oLAKLAp2Y,중립,True,False,"특정 장소에 방문해달라는 단순한 요청 사항으로, 감정이 드러나지 않는 중립적인 댓글입니다."
+Ugwa-ryBS6otf3W2slB4AaABAg,f9oLAKLAp2Y,중립,True,False,"영상 제작자에게 특정 장소에 가달라고 요청하는 내용으로, 감정이 드러나지 않는 단순 요청사항이므로 중립으로 분류했습니다."
+Ugx0Jl0WYMkVOtIQKQt4AaABAg,bTiYfuIoAdQ,긍정,True,False,속초 여행지의 매력을 상세히 설명하며 긍정적인 경험을 추천하고 있어 긍정으로 분류함.
+Ugxt4W-3P3JdDQGxqFx4AaABAg,f9oLAKLAp2Y,긍정,True,False,강원도 여행을 추천하며 겨울 여행지에 대한 긍정적인 기대감을 표현하고 있습니다.
+UgwGuelqyaW8uQkgTld4AaABAg,f9oLAKLAp2Y,중립,True,False,"영상 제작자에게 특정 장소 방문을 요청하는 단순 제안성 댓글로, 감정이 드러나지 않아 중립으로 분류했습니다."
+UgzRnrC-FTneV8XoKvF4AaABAg,f9oLAKLAp2Y,중립,True,False,"영상 제작자에게 특정 지역 방문을 요청하는 내용으로, 감정이 드러나지 않는 단순 요청 사항이므로 중립으로 분류함."
+Ugwxlzafm88lt-4B4Lx4AaABAg,f9oLAKLAp2Y,중립,True,False,"영상 제작자에게 특정 장소 방문을 요청하는 단순한 제안성 댓글로, 감정이 드러나지 않아 중립으로 분류했습니다."
+UgxvL5H1kqd7rhk26ER4AaABAg,f9oLAKLAp2Y,중립,True,False,"영상 제작자에게 특정 장소 방문을 요청하는 단순한 제안성 댓글로, 특별한 감정이 담겨 있지 않아 중립으로 분류했습니다."
+Ugx8gLm-SIaRp0-epxp4AaABAg,f9oLAKLAp2Y,긍정,True,False,영상 제작자에게 특정 장소를 추천하며 긍정적인 감정을 표현하고 있으므로 긍정으로 분류하였습니다.
+Ugy1QDSsZ2lsrYtYakt4AaABAg,f9oLAKLAp2Y,긍정,True,False,태종대의 경치가 좋았던 기억을 떠올리며 긍정적인 감정을 표현하고 있으므로 긍정으로 분류하였습니다.
+Ugwxpn6BS8xgq0wfBPJ4AaABAg,f9oLAKLAp2Y,긍정,True,False,여수 밤바다의 야경이 매우 아름답다는 감탄과 함께 긍정적인 경험을 공유하고 있습니다.
+Ugz2tYUlu_FEIsKxntx4AaABAg,f9oLAKLAp2Y,중립,True,False,"영상 제작자에게 특정 지역 방문을 요청하는 내용으로, 감정이 드러나지 않는 단순 요청 사항이므로 중립으로 분류함."
+Ugxiv8mnqgxiz2oInFJ4AaABAg,f9oLAKLAp2Y,긍정,True,False,여수밤바다에 대한 긍정적인 기대와 낭만적이라는 감상을 표현하고 있어 긍정으로 분류했습니다.
+UgwehMxBS9RKIj3oIr54AaABAg,f9oLAKLAp2Y,긍정,True,False,"영상 제작자에게 특정 장소 방문을 제안하는 내용으로, 부정적인 감정 없이 호기심과 기대감을 표현하고 있습니다."
+UgzYnKE9JgwZJu2lOvl4AaABAg,f9oLAKLAp2Y,긍정,True,False,나레이션 목소리가 좋아서 계속 듣고 싶다는 긍정적인 감정을 표현하고 있습니다.
+UgxoutaFWrKKsxfUVGB4AaABAg,f9oLAKLAp2Y,중립,True,True,영상에서 제시한 퀴즈에 대한 정답을 작성한 댓글이므로 이벤트 참여 목적으로 분류하였습니다.
+UgxfHV184VkF-lZ5vJJ4AaABAg,f9oLAKLAp2Y,긍정,True,False,"영상 콘텐츠에 대한 기대와 제안을 담고 있으며, 작성자의 긍정적인 바람이 잘 드러나 있습니다."
+Ugwi8BvysBhp5WW-Iop4AaABAg,f9oLAKLAp2Y,긍정,True,False,제주도 여행 중 서귀포 바다를 방문하고 매우 만족스러웠다는 긍정적인 경험을 공유하고 있습니다.
+UgwiKuo1WQ-0ClkyCD14AaABAg,f9oLAKLAp2Y,중립,True,True,"영상 내용과 관련된 장소를 단순히 언급한 것으로 보이며, 특별한 감정 표현이 없어 이벤트 참여 목적의 중립 댓글로 분류함."
+UgwfXTNHVAIQRBZBv5V4AaABAg,f9oLAKLAp2Y,중립,True,False,"울산의 공원에 대해 언급하고 있으나, 구체적인 감정이나 의견이 드러나지 않은 중립적인 문장입니다."
+Ugzt-5rWVR8N1Y1IfQh4AaABAg,f9oLAKLAp2Y,긍정,True,False,평창 송어 축제에 대한 기대감과 함께 특정 콘텐츠를 제안하는 긍정적인 맥락의 댓글입니다.
+UgyYO4lLYThkFJv6U9F4AaABAg,f9oLAKLAp2Y,중립,True,False,남해 여행지에 대한 정보를 묻는 단순 질문성 댓글이므로 중립으로 분류하였습니다.
+UgxRQWjl4LUNv2tFMnl4AaABAg,f9oLAKLAp2Y,중립,True,False,"영상 제작자에게 특정 장소 방문을 제안하는 요청성 댓글로, 감정이 드러나지 않는 중립적인 내용입니다."
+UgyAIqKrHLsi9L2U7ZV4AaABAg,f9oLAKLAp2Y,중립,True,False,"CU 본사에 가보라는 내용은 단순한 제안이나 농담조의 표현으로 보이며, 특별히 부정적인 비판이나 긍정적인 칭찬의 의도가 담겨있지 않아 중립으로 분류했습니다."
+Ugx1ZiUgvhFZ2ckAz4J4AaABAg,f9oLAKLAp2Y,긍정,True,False,영상 제작자에 대한 긍정적인 평가와 함께 CU 몽골점에 방문해달라는 구체적인 콘텐츠 제안을 담고 있어 긍정으로 분류함.
+UgypH0jaRy0p6tYNu1R4AaABAg,f9oLAKLAp2Y,긍정,True,False,영상 내용에 대해 로망이라고 표현하며 구독 의사를 밝히는 등 긍정적인 감정을 나타내고 있습니다.
+UgwBffPcd6xXOtc0-nB4AaABAg,f9oLAKLAp2Y,부정,True,False,캠핑 가능한 CU를 방문해달라는 구체적인 개선 및 요청 사항이 포함되어 있어 부정으로 분류했습니다.
+UgyF_uwRXnJHW1wDbpd4AaABAg,f9oLAKLAp2Y,긍정,True,False,영상 콘텐츠에 대한 기대와 함께 긍정적인 제안을 담고 있어 긍정으로 분류하였습니다.
+UgzBqC3qznlztTIak3V4AaABAg,f9oLAKLAp2Y,중립,True,True,"영상에서 질문한 내용에 대한 답변으로 보이며, 이벤트 참여 목적의 단순 답변이므로 중립으로 분류함."
+UgysFaoqLrEJyGnWmel4AaABAg,f9oLAKLAp2Y,긍정,True,False,"영상에 대한 칭찬과 함께 촬영 장비에 대한 궁금증을 표현하고 있으며, 전반적으로 밝고 긍정적인 분위기의 댓글입니다."
+UgwOKmNWjiXu8nbnvW54AaABAg,yEqLEACnffA,긍정,True,False,콜라보레이션 사실을 알게 되어 놀라움과 반가움을 표현한 긍정적인 댓글입니다.
+UgzcGJ-GrgPAtvLY5YR4AaABAg,yEqLEACnffA,긍정,True,False,제품에 대한 만족감과 브랜드에 대한 칭찬이 명확하게 드러나 있어 긍정적인 댓글로 판단됨.
+UgwGK7lzO4XMp_uFLDd4AaABAg,N4cr5_d9JQI,긍정,True,False,평소 좋아하는 과일이 칵테일로 출시된다는 소식에 반가움과 기대감을 표현하고 있어 긍정으로 분류했습니다.
+Ugy3lydwfmWNpskZnEV4AaABAg,rpWlMrZsgOo,중립,True,False,영상 속 인물이 누구인지 단순히 궁금해하며 정보를 요청하는 질문성 댓글입니다.
+UgyIk2ZFBfLWIw0BAnF4AaABAg,rpWlMrZsgOo,긍정,True,False,영상에 대해 아주 좋다는 직접적인 만족과 긍정적인 평가를 표현하고 있습니다.
+UgyIe2Q1VrC3aL_Ei2t4AaABAg,f9oLAKLAp2Y,중립,True,True,영상에서 질문한 장소에 대한 정답을 말하는 이벤트 참여 목적의 댓글이므로 중립으로 분류하였습니다.
+UgwIZ1DU285B0c70d6B4AaABAg,1vMWHNfuh3Y,부정,True,False,영상에 출연한 특정 인물을 요구하며 불만을 표출하고 있으므로 부정적인 감정으로 분류하였습니다.
+UgykyEMfdtjbwrjgyyd4AaABAg,1vMWHNfuh3Y,긍정,True,False,영상이나 콘텐츠에 대해 아주 좋다는 직접적인 만족감과 긍정적인 표현을 사용하고 있습니다.
+UgzbQZCUCK1B-CbSvk54AaABAg,1vMWHNfuh3Y,긍정,True,False,'역씨'라는 표현을 통해 영상의 내용에 대해 긍정적으로 공감하고 감탄하는 맥락으로 해석됩니다.
+UgwfxC6Ca5WAGcFuB_t4AaABAg,5zevs9PFhA0,긍정,True,False,야채호빵이 가장 맛있다는 개인적인 선호와 만족감을 표현하고 있으므로 긍정으로 분류하였습니다.
+Ugw92MyrdX0dBhDugrJ4AaABAg,ozXRWchnV2k,긍정,True,False,영상 내용에 대해 즐겁고 유쾌하게 반응하며 웃음을 표현하고 있으므로 긍정적인 댓글로 분류함.
+UgzVJ7OH45xpv38_Gcd4AaABAg,DW68B2lNNvE,중립,True,False,제품의 성분이나 제조 방식에 대한 단순한 사실 확인을 위한 질문으로 감정이 드러나지 않음.
+Ugx29k4RGGViYZlWqE94AaABAg,DW68B2lNNvE,중립,True,False,단순한 감탄사로 감정이 크게 드러나지 않는 인지 및 수용의 반응이므로 중립으로 분류하였습니다.
+UgwXFFRXVb8_HTfy5mB4AaABAg,ldKaz98x3MM,긍정,True,False,"크림이 가득 차 있다는 구체적인 만족감을 표현하고 있으며, 하트 이모티콘을 통해 긍정적인 감정을 드러내고 있습니다."
+UgzocDmpvALC9KSRPG54AaABAg,ldKaz98x3MM,긍정,True,False,부모님을 만나는 상황에 대한 기대감과 행복한 감정을 긍정적인 언어로 표현하고 있습니다.
+UgyT3Ilhi5XjfjkeWEl4AaABAg,ldKaz98x3MM,긍정,True,False,제품의 크림이 꽉 차 있어서 좋다는 만족감을 표현하고 있으므로 긍정적인 댓글로 분류함.
+UgxTX8jTy0oRJbTw92t4AaABAg,ldKaz98x3MM,긍정,True,False,영상 속 상황에 몰입하여 흥미진진하게 감상하고 있음을 긍정적인 어조로 표현하고 있습니다.
+UgzjC5Rurtw9igHlqIh4AaABAg,gGc8UqzTZi8,긍정,True,False,"영상 내용에 대해 긍정적인 기대감과 만족감을 표현하고 있으며, 하트 이모지를 통해 호감을 나타내고 있습니다."
+Ugwi1u-nUv2v7lQaaT54AaABAg,ldKaz98x3MM,중립,True,False,"영상 내용에 대한 단순한 반응이나 사실적 서술로 보이며, 특별히 긍정적이거나 부정적인 감정이 드러나지 않아 중립으로 분류했습니다."
+UgzYrvkVNlVHwzd8aXR4AaABAg,lvEM_7NphyY,긍정,True,True,"댓글의 앞부분은 이벤트 정답으로 보이며, 뒷부분에 영상에 대한 진심 어린 응원과 칭찬이 포함되어 있어 긍정으로 분류하였습니다."
+Ugyj6m0Hp3El1HSVAjN4AaABAg,3McIlg6W4Ug,긍정,True,False,제품의 맛에 대해 매우 만족하며 최고라고 칭찬하고 있으므로 긍정적인 댓글입니다.
+UgyP7b6Lcsq1cQ7CLxN4AaABAg,FZX8VcAB3y0,긍정,True,False,솔로인 사람들을 향해 진심 어린 응원과 격려의 메시지를 보내고 있어 긍정적인 감정으로 판단됨.
+Ugz55S5fN17UvjlwjeN4AaABAg,FZX8VcAB3y0,긍정,True,False,영상 내용에 대해 즐거워하며 출연자들의 미래를 응원하는 긍정적인 감정이 담겨 있습니다.
+Ugxua1W5brNJf-pJHFd4AaABAg,FZX8VcAB3y0,중립,True,True,해당 댓글은 이벤트 당첨자 발표 및 안내를 목적으로 작성된 공지사항이므로 중립으로 분류하였습니다.
+UgyotI7Sc8qT_CJW0Md4AaABAg,FZX8VcAB3y0,긍정,True,False,솔로인 사람들에게 희망과 응원의 메시지를 전달하며 긍정적인 에너지를 주고 있습니다.
+UgxI3y157pBNVYViEjV4AaABAg,FZX8VcAB3y0,긍정,True,False,솔로인 상황에 대해 스스로를 위로하고 응원하는 긍정적인 태도를 보이고 있어 긍정으로 분류함.
+UgxJSCOiOeYnqAnRR7V4AaABAg,FZX8VcAB3y0,긍정,True,False,솔로인 사람들을 향한 따뜻한 응원과 격려의 메시지가 담겨 있어 긍정적인 감정으로 분류하였습니다.
+Ugw2UOoZy46eDo0mj_F4AaABAg,FZX8VcAB3y0,긍정,True,False,솔로인 친구들을 향해 응원과 격려의 메시지를 보내고 있으므로 긍정적인 감정으로 분류하였습니다.
+UgwoQxtak_lUzNTGGr94AaABAg,FZX8VcAB3y0,긍정,True,False,솔로 친구들에게 좋은 인연을 만나자는 따뜻한 응원과 희망의 메시지를 담고 있어 긍정적인 감정으로 분류하였습니다.
+Ugzq4Bl5HIM4LLS1NzF4AaABAg,FZX8VcAB3y0,긍정,True,False,솔로들을 응원하는 따뜻한 마음이 담긴 긍정적인 내용의 댓글입니다.
+UgwzmoWWFjD3QwwFtXt4AaABAg,FZX8VcAB3y0,부정,True,False,영상의 내용이 재미없다는 부정적인 평가를 직접적으로 표현하고 있습니다.
+Ugwmsylr47vagngg2IB4AaABAg,FZX8VcAB3y0,긍정,True,False,상대방의 솔로 탈출을 진심으로 바라는 따뜻한 응원의 메시지가 담겨 있어 긍정으로 분류했습니다.
+UgzebZpzQzwMqaUeCPl4AaABAg,FZX8VcAB3y0,긍정,True,False,솔로 친구들의 솔로 탈출을 응원하는 따뜻하고 긍정적인 마음이 담긴 댓글입니다.
+UgzEjZEJPhX2NaxFQ-Z4AaABAg,FZX8VcAB3y0,긍정,True,False,상대방의 미래를 진심으로 응원하고 격려하는 따뜻한 마음이 담긴 긍정적인 댓글입니다.
+Ugx090lXaSqldLGj_tl4AaABAg,m_6dLnu8MDg,긍정,True,False,"GS25 모델로 에스파를 추천하는 의견을 제시하고 있으며, 이는 브랜드에 대한 긍정적인 관심과 기대가 담긴 제안으로 판단됩니다."
+Ugym_Hmmu-edj_1wKe54AaABAg,m_6dLnu8MDg,긍정,True,False,컨텐츠가 귀엽다는 긍정적인 평가와 함께 다음 컨텐츠에 대한 기대감을 표현하고 있습니다.
+UgwmXiRvZ8ijDVN91fV4AaABAg,Kuf3iQF5YP8,중립,True,False,"영상에서 소개된 메뉴의 가격을 계산해보고 스타벅스에 가겠다는 의사를 밝힌 것으로, 특별한 감정적 표현 없이 사실을 나열하고 있어 중립으로 분류했습니다."
+UgyBpaFagLxHFxgR2QJ4AaABAg,gAOJxZohiTk,중립,True,False,"영상의 내용에 대해 놀라움이나 의구심을 표현하는 단순 반응으로, 특별한 긍정이나 부정의 감정이 드러나지 않아 중립으로 분류함."
+UgwgZeg_Um_Zv-HgseZ4AaABAg,gAOJxZohiTk,긍정,True,False,갤럭시Z5의 새로운 디자인을 '신박하다'라고 표현하며 긍정적으로 평가하고 있습니다.
+UgwWxHhvP8SMcwjInZx4AaABAg,gAOJxZohiTk,중립,True,True,영상 내용에 대한 퀴즈 정답이나 빈칸을 추측하는 이벤트 참여 목적의 댓글로 판단됩니다.
+Ugz9YVeHilQ0UQ8vpnF4AaABAg,gAOJxZohiTk,중립,True,False,상대방의 정체나 국적에 대해 단순히 사실 확인을 요구하는 질문성 댓글이므로 중립으로 분류함.
+Ugzr20RYbeP5g6cBcpp4AaABAg,c5zCITx__gU,부정,True,False,천원이라는 금액에 대한 불편함을 직접적으로 언급하고 있어 부정적인 감정으로 분류하였습니다.
+UgxBrEwfW31y_QvgKW54AaABAg,c5zCITx__gU,긍정,True,False,GS25 하이볼의 인기를 긍정적으로 언급하며 만족감을 표현하고 있습니다.
+UgzCeyN9QiGRIXdt9QR4AaABAg,D9U09Cc1ISI,긍정,True,False,"영상 내용이 혜자롭다며 긍정적으로 평가하고 있으며, 배고프다는 표현은 영상의 음식 등이 맛있어 보인다는 의미로 해석되어 긍정으로 분류함."
+Ugw3kzlUyHAyTewR6Rp4AaABAg,D9U09Cc1ISI,긍정,True,False,삼천원이라는 가격이 아깝지 않다고 언급하며 제품에 대한 높은 만족도와 꾸준한 사용 의지를 표현하고 있습니다.
+Ugw6Ssuyq812aZkCRKN4AaABAg,D9U09Cc1ISI,긍정,True,False,"영상의 퀄리티가 높고 내용이 알차다는 점을 '맛있게', '혜자롭게'라는 표현을 사용하여 긍정적으로 평가하고 있습니다."
+Ugxad_kpBvb9FjXqabN4AaABAg,D9U09Cc1ISI,부정,True,False,"계란김밥에 대한 긍정적인 평가가 있으나, 물량 부족에 대한 개선 요청과 아쉬움이 주된 내용이므로 부정으로 분류함."
+UgwbLkwYH4nUEwyVwuR4AaABAg,D9U09Cc1ISI,긍정,True,False,영상 주제인 김밥에 대해 흥미를 느끼고 놀라움을 표현하는 긍정적인 감정의 댓글입니다.
+UgyB0CcCh9wYTZjGinl4AaABAg,FivOnKveYdM,중립,True,False,"요리 레시피에 대한 단순한 정보 공유나 일상적인 대화로, 특별히 긍정적이거나 부정적인 감정이 담겨 있지 않음."
+Ugxbl8xu4yb3Na8SlJx4AaABAg,FivOnKveYdM,긍정,True,False,제품에 대해 '좋네요'라고 직접적으로 만족감을 표현하고 있으므로 긍정으로 분류하였습니다.
+UgxmsEnv-f6BuzlspyZ4AaABAg,FivOnKveYdM,긍정,True,False,특정 인물들의 외모나 분위기를 닮았다는 긍정적인 비교와 감탄의 의미를 담고 있는 댓글입니다.
+Ugz1VH4ls8vhNGOIRXh4AaABAg,pViYUbi5NLg,긍정,True,False,올해 GS25의 상품 구성이 훌륭하다는 긍정적인 평가를 담고 있는 댓글입니다.
+UgxZYwXFto6_HdPc4CB4AaABAg,pViYUbi5NLg,중립,True,False,단순한 감탄사로 감정이 크게 드러나지 않는 인지 및 수용 반응이므로 중립으로 분류함.
+Ugzp69Zg4Do-23axSft4AaABAg,pViYUbi5NLg,중립,True,False,영상 내용에 대한 기대감이나 궁금증을 나타내는 중립적인 표현으로 판단됩니다.
+UgzLpAHGbx_cP14tyJd4AaABAg,pViYUbi5NLg,긍정,True,False,기본김밥이 가장 맛있다는 개인적인 만족감과 긍정적인 평가를 표현하고 있습니다.
+UgyPPnrNXkadbxY95tt4AaABAg,KAhBA1WjAwk,긍정,True,False,욕설을 사용하였으나 문맥상 제품을 독점하고 싶어 하는 유머러스한 표현으로 긍정적인 감정으로 해석됨.
+UgzUO9myLJW-_qYAzqN4AaABAg,KAhBA1WjAwk,긍정,True,False,영상 콘텐츠인 DP2의 아이디어가 좋다고 칭찬하며 긍정적인 감정을 표현하고 있습니다.
+UgznSMVAqo02HwSUMYZ4AaABAg,KAhBA1WjAwk,부정,True,False,제품이 너무 많이 출시되어 보관 공간이 부족하다는 불만과 지겹다는 부정적인 감정을 명확하게 표현하고 있습니다.
+UgxdoAFrRqgFwy9G4Wx4AaABAg,KAhBA1WjAwk,중립,True,False,영상의 광고 주체가 GS 공식 계정임을 확인하고 웃음으로 반응하는 중립적인 감상평입니다.
+Ugxa2y3q1jW3UVqQF0V4AaABAg,KAhBA1WjAwk,부정,True,False,"건강에 해로운 음식을 비꼬는 표현으로, 해당 음식에 대한 부정적인 인식을 나타내고 있습니다."
+UgwqKex2HqYFOW72Q4Z4AaABAg,KAhBA1WjAwk,부정,True,False,오징어튀김의 양이 적다는 불만 사항을 구체적으로 언급하고 있어 부정적인 감정으로 분류하였습니다.
+UgzJ4qdX96AZFI6DQtV4AaABAg,Kuf3iQF5YP8,중립,True,False,"영상 속 상황에 대해 놀라움이나 당혹감을 표현하는 질문으로, 특별히 긍정적이거나 부정적인 감정이 담겨 있지 않은 중립적인 반응입니다."
+UgwPEDpKSLiA4_VQtZx4AaABAg,KOvwOaPZs-g,중립,True,False,댓글 내용이 단순한 인지 및 수용의 의미를 담고 있어 감정이 드러나지 않는 중립적인 댓글입니다.
+UgyBh4fKbjjjpF69Ydh4AaABAg,wq5qx_Ep_as,긍정,True,False,'ㅋㅋ'는 영상의 내용에 대해 즐겁거나 공감한다는 긍정적인 감정을 나타내는 표현입니다.
+UgznSWUqLVbRSmJpcCd4AaABAg,9WXkY3YeXnc,긍정,True,False,"영상 내용에 대해 웃음으로 공감을 표현하고 있으며, 긍정적인 감정이 담겨 있어 긍정으로 분류하였습니다."
+UgwJ8BWKQeuy14rWjYd4AaABAg,9WXkY3YeXnc,긍정,True,False,영상에 대한 만족감을 짧고 명확하게 표현한 긍정적인 댓글입니다.
+Ugz-bmdox5U5ULFOQxR4AaABAg,Bk-OfbptGCE,긍정,True,False,"영상 내용에 대한 공감이나 웃음을 표현하는 댓글로, 긍정적인 맥락으로 해석됩니다."
+Ugxz3vqQj9hI4QqypUt4AaABAg,pViYUbi5NLg,긍정,True,False,GS 편의점 김밥 중 백김치 김밥이 가장 맛있다는 개인적인 만족감과 긍정적인 평가를 표현하고 있습니다.
+UgwYczLCxrGWBdAVKJF4AaABAg,gbQ2FR-x6Ec,부정,True,False,출연자의 나이를 언급하며 조롱하는 듯한 뉘앙스로 비꼬는 표현을 사용했으므로 부정적인 댓글로 판단됩니다.
+UgwNELDw-H8UMayZ6114AaABAg,aW8ZdZCur-I,중립,True,False,"영상에 대한 정보와 이벤트 안내, 향후 콘텐츠에 대한 안내 사항을 담고 있는 중립적인 게시글입니다."
+UgyowfVhqtL5n4yk-C14AaABAg,aW8ZdZCur-I,부정,True,False,"영상 구성 방식에 대한 구체적인 불만과 개선 요청을 담고 있으며, 오글거린다는 표현을 통해 부정적인 감정을 명확히 드러내고 있습니다."
+UgwpmqVfLypRGy9QoRx4AaABAg,aW8ZdZCur-I,중립,True,False,"영상에 나오는 광고가 무엇인지 묻는 단순한 정보 요청성 질문으로, 감정이 드러나지 않아 중립으로 분류했습니다."
+UgxORTVC2-rm-OBAYv14AaABAg,9czaGI_s51Y,긍정,True,False,웃음을 나타내는 의성어를 반복하여 영상의 내용에 대해 즐거움과 공감을 표현하고 있으므로 긍정으로 분류함.
+UgxQPxZB_f4623ME49d4AaABAg,v2hkf8Z-2VY,긍정,True,False,"영상 속 인물에 대한 애정과 대견함, 응원의 마음이 진심으로 담겨 있어 긍정적인 댓글로 판단됨."
+Ugzp94Iwfmws_LZSc_N4AaABAg,9czaGI_s51Y,부정,True,False,영상의 내용이 자연스럽지 않고 인위적이라는 부정적인 의견을 나타내고 있습니다.
+UgxMz4zd0KrvhTJM_-R4AaABAg,v2hkf8Z-2VY,긍정,True,False,영상 내용에 대해 유머러스하게 반응하며 웃음을 표현하고 있어 긍정적인 감정으로 분류함.
+UgyiaJMo6mt-qiZvF2d4AaABAg,Y17_KvCtvQE,긍정,True,False,'폼 미쳤네'라는 표현은 한국어에서 대상의 수준이 매우 높거나 훌륭함을 나타내는 극찬의 의미로 사용되었으므로 긍정으로 분류함.
+UgxY5CkYUVu8nBT6w3l4AaABAg,Y17_KvCtvQE,긍정,True,False,'미쳤다'라는 표현을 사용하여 해당 어플의 기능이나 성능에 대해 매우 놀랍고 긍정적인 감탄을 나타내고 있습니다.
+UgyVNWD1IDmcfAWcX9l4AaABAg,Y17_KvCtvQE,중립,True,False,가격과 재료의 원산지 또는 제조 방식에 대해 사실 확인을 요청하는 중립적인 질문입니다.
+UgyNo7xCDAE98pGipt14AaABAg,R798Lg8xs1w,긍정,True,False,공짜로 얻는 혜택에 대해 만족감을 표현하며 긍정적인 태도를 보이고 있습니다.
+UgzQSWMgisoAQq1vqGR4AaABAg,m_6dLnu8MDg,긍정,True,False,영상의 내용을 보고 놀라움과 감탄을 표현하고 있으므로 긍정적인 감정으로 분류하였습니다.
+UgzAeOeJFqI_McaP9ax4AaABAg,m_6dLnu8MDg,긍정,True,False,영상 제작자에게 특정 장소에 자주 방문해달라는 긍정적인 기대와 요청을 담고 있습니다.
+UgxvsyombTIJQnUu5Xt4AaABAg,KofddxZ6q8Q,긍정,True,False,영상 속 인물들에 대해 멋지다는 칭찬과 함께 긍정적인 감정을 표현하고 있습니다.
+Ugzg_aa0mWaA-KLpSbd4AaABAg,KofddxZ6q8Q,중립,True,False,"댓글 내용이 단어 하나로만 구성되어 있어 구체적인 감정을 파악하기 어렵고, 단순 사실 언급으로 보여 중립으로 분류함."
+UgyU1wH3o1a9xOQDroF4AaABAg,Q8ot7stZJYg,중립,True,True,이벤트 참여를 유도하는 홍보성 문구로 구성되어 있어 이벤트 참여 목적으로 분류하였습니다.
+UgyVgOmMOEwCByPYZzR4AaABAg,SFWO2qN7oDQ,긍정,True,False,음식의 비주얼에 대해 긍정적인 반응을 보이고 있으므로 긍정으로 분류하였습니다.
+Ugzh2HaDJFuAQngXwmF4AaABAg,RRtamBaPHzE,긍정,True,False,영상 속 출연자에 대해 호감을 표현하며 만족감을 나타내고 있으므로 긍정으로 분류함.
+UgwjdQdWVZZQ1CxBkHB4AaABAg,tR4e7Z_8saI,부정,True,False,머리스타일과 옷에 대한 개선을 요구하며 아쉽다는 감정을 직접적으로 표현하고 있어 부정으로 분류하였습니다.
+UgwiXxxpXRIFxjhYQjZ4AaABAg,ybuJlRe9bK8,긍정,True,False,음식에 대해 맛있어 보인다는 긍정적인 감상을 표현하고 있으므로 긍정으로 분류하였습니다.
+Ugxy2NTnjE76zP_9H7l4AaABAg,ybuJlRe9bK8,부정,True,False,핫도그의 가격이 비싸 보인다는 부정적인 의견을 담고 있어 불만족스러운 감정으로 판단했습니다.
+Ugy2WkUF7Z3n3dzhkiV4AaABAg,_R-kUQewCO8,부정,True,False,상품 가격이 비싸다는 것에 대한 놀라움과 부정적인 인식이 담겨 있어 부정으로 분류함.
+Ugz8367hWlsXWxFnS454AaABAg,_R-kUQewCO8,부정,True,False,영상이나 내용에 대해 만족하지 못하고 부정적인 평가를 내리고 있으므로 부정으로 분류하였습니다.
+UgzgbhRR1NtSeASzSfh4AaABAg,_R-kUQewCO8,긍정,True,False,부산의 맛을 원한다는 표현은 해당 영상의 주제나 음식에 대한 긍정적인 기대와 선호를 나타내고 있습니다.
+UgyTcYbzfXFklW8gtop4AaABAg,_R-kUQewCO8,부정,True,False,영상이나 콘텐츠에 대해 '별로임'이라는 단어를 사용하여 직접적으로 부정적인 평가를 내리고 있습니다.
+Ugx4PVTlk7oxE8K4R-14AaABAg,aW8ZdZCur-I,부정,True,False,영상 속 인터뷰 내용이 거짓이라고 주장하며 비판적인 시각으로 의심을 제기하고 있으므로 부정으로 분류했습니다.
+UgwmqmSFnRtNFE7Ht4h4AaABAg,_R-kUQewCO8,부정,True,False,제품이나 서비스의 구성품이 부족하다는 불만 사항을 직접적으로 표현하고 있으므로 부정으로 분류하였습니다.
+UgwmR_AwzLui79Be3q14AaABAg,LPl8gyOTKiw,중립,True,False,"씨엔블루라는 가수의 세대에 대해 단순히 질문하는 내용으로, 어떠한 감정도 담겨 있지 않은 중립적인 댓글입니다."
+Ugy2tX5xUa_U229k6jF4AaABAg,LPl8gyOTKiw,긍정,True,False,키위잼 아이돌 샌드위치가 정말 맛있다는 긍정적인 평가와 함께 이모지를 사용하여 만족감을 표현하고 있습니다.
+UgyJKUVKnH3jyGr8_xp4AaABAg,LPl8gyOTKiw,중립,True,False,"댓글 1빠는 단순히 영상에 가장 먼저 댓글을 달았음을 알리는 표현으로, 특별한 감정이 담겨있지 않은 단순 사실 전달이므로 중립으로 분류했습니다."
+UgxLRoaZlbL7A-_P6oN4AaABAg,HcBvgAZOm5U,중립,True,False,영상 속 노래 제목을 묻는 단순 정보 요청 댓글이므로 중립으로 분류하였습니다.
+UgwDJs46yTUY_YVaFi94AaABAg,HcBvgAZOm5U,긍정,True,False,'기절이야'라는 표현은 한국어에서 매우 좋거나 놀랍다는 감탄의 의미로 사용되었으므로 긍정으로 분류함.
+UgyOvinWTpmTFgPya3t4AaABAg,HcBvgAZOm5U,긍정,True,False,영상 내용에 대해 크게 웃으며 재미있다는 반응을 보이고 있으므로 긍정적인 감정으로 분류하였습니다.
+UgxePZ6GglnNed0qNrZ4AaABAg,HcBvgAZOm5U,긍정,True,False,"영상의 재미와 출연자의 연기, 제품의 디자인에 대해 매우 만족하며 마케팅 담당자를 칭찬하는 긍정적인 내용입니다."
+Ugx0aUefJ1BQ29CpI0B4AaABAg,HcBvgAZOm5U,긍정,True,False,'신나'라는 단어와 'ㅋㅋㅋ'를 사용하여 영상에 대한 즐거움과 긍정적인 감정을 직접적으로 표현하고 있습니다.
+UgxaOnOWt4RfhTcLu1Z4AaABAg,HcBvgAZOm5U,긍정,True,False,영상의 홍보 방식에 대해 긍정적인 반응을 보이며 웃음 표현인 'ㅋㅋㅋ'를 사용하여 만족감을 나타내고 있습니다.
+UgxTkR7dkhfkC71ufjx4AaABAg,HcBvgAZOm5U,긍정,True,False,"과일은 별로라는 부정적 의견과 티셔츠는 예쁘다는 긍정적 의견이 섞여 있으나, 전체적으로 제품에 대한 만족감을 표현하고 있어 긍정으로 분류함."
+UgyA75FcuCIMktsTlA14AaABAg,CovztUlp2AY,긍정,True,False,영상의 상황에 대해 웃음으로 공감하며 긍정적인 반응을 보이고 있습니다.
+Ugxr2qZYyV1DhtoIgaR4AaABAg,CovztUlp2AY,긍정,True,False,영상 속 서준맘의 애드립이 재미있다는 긍정적인 감정을 웃음 표현과 함께 나타내고 있습니다.
+Ugwky6fK57gDmsJ4SEF4AaABAg,CovztUlp2AY,긍정,True,False,수면서베이 어플의 발상에 대해 긍정적인 감탄과 함께 웃음으로 공감을 표현하고 있습니다.
+Ugw8EE8qjBiuzXDZfwJ4AaABAg,CovztUlp2AY,긍정,True,False,영상의 내용을 재미있게 보았다는 의미로 'ㅋㅋㅋ'를 사용하여 긍정적인 반응을 보이고 있습니다.
+UgwrOkjrjL0pLgudzYx4AaABAg,CovztUlp2AY,긍정,True,False,서준맘이라는 캐릭터에 대한 애정과 즐거움을 웃음과 함께 표현하고 있어 긍정적인 댓글로 판단했습니다.
+UgwVgj06BZD2B192qDB4AaABAg,CovztUlp2AY,긍정,True,False,'미쳤네'라는 표현을 사용하여 GS25의 섭외 능력을 매우 높게 평가하고 감탄하는 긍정적인 맥락의 댓글입니다.
+UgwjHX0sHuBe-4cXnn94AaABAg,CovztUlp2AY,긍정,True,False,"웃음소리를 나타내는 의성어로, 영상의 내용에 대해 즐거워하는 긍정적인 감정이 담겨 있습니다."
+UgyGxBflkJFXYDEQKOt4AaABAg,CovztUlp2AY,긍정,True,False,영상 속 인물에 대한 반가움과 긍정적인 감탄이 담겨 있어 긍정으로 분류하였습니다.
+UgyGp3-PDqONk4maZpx4AaABAg,CovztUlp2AY,긍정,True,False,'폼미쳤누'라는 표현은 대상의 매력이나 실력이 매우 뛰어남을 강조하는 긍정적인 감탄사로 사용되었습니다.
+UgyXUnBw2dbdhNhUe4B4AaABAg,CovztUlp2AY,긍정,True,False,영상의 내용이 매우 재미있다는 감정을 웃음소리를 통해 긍정적으로 표현하고 있습니다.
+UgzGrZVdpnzqv3ue8W54AaABAg,HcBvgAZOm5U,긍정,True,False,영상 내용에 대해 매우 즐거워하며 열광적으로 호응하고 있으므로 긍정적인 감정으로 판단했습니다.
+Ugx-xmb3j8R986nxY1R4AaABAg,HcBvgAZOm5U,긍정,True,False,'ㅋㅋㅋㅋ'라는 웃음 표현과 함께 영상을 재미있게 즐기고 있는 긍정적인 맥락으로 판단됩니다.
+UgyAMm3n059e4P6YkmV4AaABAg,HcBvgAZOm5U,긍정,True,False,영상 내용에 대한 기대감과 함께 출연자에 대한 긍정적인 반응이 담겨 있어 긍정으로 분류하였습니다.
+UgwRoBZVSM_2wSllTyJ4AaABAg,HcBvgAZOm5U,긍정,True,False,"영상 내용에 대해 놀라움과 즐거움을 표현하고 있으며, 긍정적인 맥락의 웃음 표현이 포함되어 있습니다."
+UgwKEI1HfLWCTkmVO8J4AaABAg,HcBvgAZOm5U,부정,True,False,"'공갈이야아악!!!'이라는 표현은 영상 내용에 대한 강한 부정이나 불신을 나타내는 감탄사로, 비판적인 맥락으로 해석되어 부정으로 분류했습니다."
+UgxtW6hw23kVBmIPslx4AaABAg,HcBvgAZOm5U,긍정,True,False,'존잼'이라는 단어와 웃는 이모지를 사용하여 영상이 매우 재미있다는 긍정적인 감정을 표현하고 있습니다.
+UgybNbcW5CqWTbXTGe54AaABAg,HcBvgAZOm5U,긍정,True,False,"영상의 내용이 재미있다는 의미로 사용된 감탄사이며, 긍정적인 반응을 나타내고 있습니다."
+UgwrLg83PfJI6yrsbSV4AaABAg,HcBvgAZOm5U,긍정,True,False,웃음을 나타내는 의성어를 사용하여 영상의 내용에 대해 즐거움과 공감을 표현하고 있습니다.
+UgzSxXSFnYxgqOzk-L54AaABAg,SYvRl9zVCK4,중립,True,True,"영상 내용과 무관한 개인적인 답변으로 보이며, 이벤트 참여 목적의 댓글로 판단되어 중립으로 분류함."
+UgxB4bzJFyBJyByDrkB4AaABAg,CovztUlp2AY,긍정,True,False,영상 내용에 대한 개인적인 바람이나 응원을 담고 있는 긍정적인 맥락의 댓글입니다.
+UgyqOH8bGta2bE2QcPF4AaABAg,CP7J0oaSEok,긍정,True,False,배틀그라운드 게임 내 승리 상황을 음식에 비유하여 긍정적이고 즐거운 감정을 표현하고 있습니다.
+UgxMVASgiJgNEQ_AhJ14AaABAg,t-fAQcCSkjo,부정,True,False,"알바생으로서 판촉물 부착에 대한 구체적인 불편함을 토로하고 있으며, 디자인 요소들에 대한 개선 및 삭제를 강력하게 요구하고 있어 부정으로 분류함."
+UgzSVltdsfh6bZZese94AaABAg,t-fAQcCSkjo,긍정,True,False,채널이 잘되기를 바라는 응원과 웃음 표현이 포함되어 있어 긍정적인 댓글로 판단했습니다.
+Ugwcmqk5wLcXXR7CC994AaABAg,t-fAQcCSkjo,긍정,True,False,'미쳤다'라는 표현을 통해 영상의 아이디어에 대한 강한 감탄과 긍정적인 반응을 나타내고 있습니다.
+UgyiQvPpGgyVE0jf3dV4AaABAg,t-fAQcCSkjo,중립,True,False,"영상 링크를 공유하는 단순 정보 전달성 댓글로, 감정이 드러나지 않아 중립으로 분류하였습니다."
+UgxGAUfe7lzGS5nR7oF4AaABAg,t-fAQcCSkjo,긍정,True,False,웃음을 나타내는 표현으로 영상의 내용에 대해 긍정적으로 공감하고 있습니다.
+Ugz5uq-eptMFb8fzd7F4AaABAg,t-fAQcCSkjo,긍정,True,False,'ㄹㅈㄷ(레전드)'와 'ㅋㅋㅋㅋ'를 사용하여 영상에 대한 매우 긍정적인 감탄과 즐거움을 표현하고 있습니다.
+Ugz6-3K_wBWE49L7qCF4AaABAg,t-fAQcCSkjo,긍정,True,False,영상의 상황이 매우 복잡하거나 놀랍다는 감탄을 '혼란의 카오스'라는 표현으로 나타낸 긍정적 감탄의 맥락임.
+UgwonipPvL2-Vnydiqt4AaABAg,t-fAQcCSkjo,긍정,True,False,웃음을 나타내는 짧은 표현으로 영상의 내용에 대해 긍정적으로 공감하고 있음을 알 수 있습니다.
+Ugymg_iO15XUFr9s8bV4AaABAg,_pH6ry6alVQ,중립,True,False,영상 내용 중 특정 용어인 '올공'의 의미를 이해하지 못해 고민했다는 단순한 사실을 전달하고 있어 중립으로 분류함.
+UgxDw3zYV2L21tlMJvJ4AaABAg,BaPGwezsPg4,중립,True,False,"다른 영상으로 유도하는 링크만 포함된 댓글로, 감정이 드러나지 않는 정보 전달성 댓글입니다."
+Ugz5AIpf6LzgcT2JN2N4AaABAg,BaPGwezsPg4,긍정,True,False,"맥주 거품을 보고 웃음을 표현하는 긍정적인 반응으로, 영상의 내용에 대해 즐거워하고 있습니다."
+UgyaiHTWTOT3Z7clmNd4AaABAg,BaPGwezsPg4,긍정,True,False,영상이 매우 재미있다는 긍정적인 감정을 웃음 표현과 함께 명확하게 전달하고 있습니다.
+UgyCEkRr4rFKpCcvwCh4AaABAg,BaPGwezsPg4,긍정,True,False,영상 내용이 다른 채널과 유사하다는 점을 웃음 이모지와 함께 가볍게 언급하고 있어 긍정적인 감정으로 판단함.
+UgyIwI-r9m020Ws5M6t4AaABAg,BaPGwezsPg4,긍정,True,False,심플리쿡 안주가 먹고 싶다는 긍정적인 기대와 흥미를 표현하고 있어 긍정으로 분류함.
+UgygZ3G4McqZhe6d_MF4AaABAg,BaPGwezsPg4,긍정,True,False,'폼 미쳐따'라는 표현은 한국어에서 대상의 행동이나 실력이 매우 뛰어나다는 것을 강조하는 극찬의 의미로 사용되었습니다.
+UgxS_9tJBJbLBaWPpwR4AaABAg,BaPGwezsPg4,긍정,True,False,"웃음과 슬픔을 동시에 표현하는 이모티콘을 사용했으나, 문맥상 영상의 내용에 깊이 공감하며 감정을 공유하고 있어 긍정적인 반응으로 판단했습니다."
+UgwspXPFZIcL-aEMs2F4AaABAg,SYvRl9zVCK4,중립,True,True,"이벤트 참여를 위한 문구로 보이며, 특정 감정이 드러나지 않는 홍보성 문구이므로 중립으로 분류함."
+UgzT5hWt29v6dF_1vnt4AaABAg,t-fAQcCSkjo,긍정,True,False,"이모지만으로 구성되어 있으나, 일반적으로 긍정적인 의미로 사용되는 엄지척 이모지를 반복하여 영상에 대한 만족과 응원을 표현하고 있습니다."
+Ugx4hDzVbFEWbNHQSjR4AaABAg,UYcxTSNAYD4,긍정,True,False,영상 속 장소를 알아보고 하트 이모티콘을 사용하여 반가움과 애정을 표현하고 있으므로 긍정적인 댓글입니다.
+Ugx6o-ZknjalIUov3pd4AaABAg,UYcxTSNAYD4,긍정,True,False,웃음을 나타내는 의성어를 반복하여 영상에 대한 긍정적인 반응을 보여주고 있습니다.
+UgyuYmxr_348bNKM30N4AaABAg,UYcxTSNAYD4,긍정,True,False,"영상의 내용에 대해 귀엽다는 긍정적인 감정을 표현하고 있으며, 웃음을 나타내는 표현이 포함되어 있어 긍정으로 분류하였습니다."
+UgyUnS95ru-0Ym5TD8J4AaABAg,gHRH4EZAiLs,부정,True,False,출연자의 표정을 비하하는 비속어를 사용하여 부정적인 감정을 직접적으로 드러내고 있습니다.
+UgzvBJB06tvOkyXO-dx4AaABAg,gHRH4EZAiLs,중립,True,False,영상에 출연한 인물에 대한 단순한 사실 정보를 전달하고 있어 감정이 드러나지 않는 중립적인 댓글입니다.
+UgyiaJtgK6uD9WWIt3V4AaABAg,gHRH4EZAiLs,부정,True,False,영상 내용이나 상황에 대해 의문을 제기하며 부정적인 뉘앙스로 비판하고 있습니다.
+UgwZG7wwpHrwmpX56Yp4AaABAg,gHRH4EZAiLs,부정,True,False,영상 속 내용에 대해 명확하게 문제점을 지적하고 있어 부정적인 감정으로 분류하였습니다.
+UgxTLFfZRSaA_NYor-h4AaABAg,gHRH4EZAiLs,부정,True,False,병원에 침대가 없다는 상황에 대해 놀라움과 의구심을 표현하고 있어 부정적인 맥락으로 판단됨.
+UgzVtKrKQPM5zQR-wQB4AaABAg,gHRH4EZAiLs,부정,True,False,'기빨린다'는 표현은 해당 콘텐츠나 대상에 대해 부정적인 감정과 피로감을 느끼고 있음을 나타내므로 부정으로 분류했습니다.
+Ugw_nC3sxQINfwd0Fjt4AaABAg,hahzLy_fUmQ,긍정,True,False,드라마의 전개 상황을 언급하며 인물의 감정 상태에 대해 시청자로서 흥미를 느끼고 분석하는 내용이므로 긍정적인 감상으로 분류함.
+UgzBBdaIUZgxYGtwq5l4AaABAg,hahzLy_fUmQ,중립,True,False,"댓글 내용이 단순한 호칭이나 감탄사로 보이며, 특별히 긍정이나 부정의 감정이 드러나지 않아 중립으로 분류함."
+UgzG_sWr0p3donqTG5d4AaABAg,r1jIgw8Xudw,부정,True,False,음식의 맛에 대해 불만족스러운 감정을 직접적으로 표현하고 있으므로 부정으로 분류하였습니다.
+UgwvCE9ZPiw-IAyYuNt4AaABAg,r1jIgw8Xudw,부정,True,False,내용이 시시하다며 콘텐츠에 대한 부정적인 평가와 실망감을 표현하고 있습니다.
+UgzVVqjUMqT-ET2PZCR4AaABAg,r1jIgw8Xudw,부정,True,False,제육과 빵의 조합에 대해 강한 불만과 실망감을 드러내며 음식을 버렸다고 표현했으므로 부정적인 댓글입니다.
+UgwiSgoEUVWgwk8ctm94AaABAg,vXV62W7OwkM,중립,True,False,요구르트 제품에 대한 개인적인 선호와 정보를 담담하게 서술하고 있어 감정이 드러나지 않는 중립적인 댓글입니다.
+UgzX9cq3RTtrCd1HAsF4AaABAg,ulZxsRScaA4,중립,True,False,"이벤트 홍보 및 할인 정보를 안내하는 광고성 댓글로, 감정이 드러나지 않는 정보 전달 목적이므로 중립으로 분류함."
+UgydiCJ8Yk1UukGd_AF4AaABAg,ulZxsRScaA4,긍정,True,False,가수의 실력에 대해 '리스펙'이라는 표현을 사용하여 존경과 감탄의 긍정적인 감정을 나타내고 있습니다.
+Ugypy2W8r9eZbe6cvvd4AaABAg,ulZxsRScaA4,중립,True,False,영상에 가장 먼저 댓글을 달았다는 사실을 알리며 고정 댓글을 요청하는 단순한 의사 표현입니다.
+UgzoVmbw0WW8AxAEbqJ4AaABAg,1IfX87Iijs8,부정,True,False,영상 내용에 대해 의문을 제기하며 비꼬는 듯한 뉘앙스가 포함되어 있어 부정적인 감정으로 분류하였습니다.
+UgyOFaCv9t0mOEd5c_R4AaABAg,1IfX87Iijs8,부정,True,False,상대방에 대한 불쾌감이나 거부감을 직접적으로 드러내는 부정적인 표현이 포함되어 있습니다.
+UgybkYXp46OfmPWzT9B4AaABAg,1IfX87Iijs8,부정,True,False,상대방을 비하하는 표현을 사용하며 공격적이고 무례한 태도를 보이고 있으므로 부정적인 댓글로 분류함.
+UgwkafAr7mKHUThXObB4AaABAg,1IfX87Iijs8,부정,True,False,'짭개장'이라는 표현은 원조가 아닌 가짜 혹은 질 낮은 제품이라는 부정적인 의미를 담고 있어 비판적인 시각으로 판단됨.
+Ugzj8OSaBu8CUtBx6Wh4AaABAg,k3CJfwuJWQI,긍정,True,False,영상 내용이 매우 재미있다는 긍정적인 감정을 웃음 이모티콘과 함께 표현하고 있습니다.
+UgytHH-9Ew6rOgsUnKx4AaABAg,k3CJfwuJWQI,긍정,True,False,웃음을 나타내는 의성어와 긍정적인 이모지를 사용하여 영상에 대한 즐거움과 만족감을 표현하고 있습니다.
+UgwQSRa4zge3M0vVSvp4AaABAg,k3CJfwuJWQI,긍정,True,False,광고가 재미있고 잘 만들어졌다는 칭찬과 함께 웃음 표현이 포함되어 있어 긍정으로 분류하였습니다.
+UgwUIZ5I_mD_1uUlo9x4AaABAg,k3CJfwuJWQI,긍정,True,False,챗GPT의 활용 능력에 대해 놀라움과 감탄을 표현하고 있으므로 긍정적인 감정으로 분류하였습니다.
+UgzcrcZzpnWFqqkIwpl4AaABAg,k3CJfwuJWQI,중립,True,False,"영상 업로드 여부를 묻는 단순한 질문으로, 감정이 드러나지 않는 중립적인 댓글입니다."
+UgwE_YVhkAVkF_l-xzN4AaABAg,WQi7ft3fMd4,긍정,True,False,영상 콘텐츠에 대한 만족감과 함께 추가 업로드를 요청하는 긍정적인 의사가 명확하게 드러나 있습니다.
+UgySBoFsUhGDHsxI0b14AaABAg,8qlOhShp7DE,긍정,True,False,영상 속 대상에 대해 귀엽다는 긍정적인 감정을 표현하고 있어 긍정으로 분류하였습니다.
+UgzhslKP3grt4JuHBft4AaABAg,WQi7ft3fMd4,부정,True,False,물가 상승으로 인한 현재 상황에 대한 아쉬움과 과거에 대한 그리움을 표현하고 있어 부정적인 감정으로 분류함.
+UgxXV-3WCZvxPfEns5R4AaABAg,WQi7ft3fMd4,중립,True,False,"영상 속 인물의 나이를 추측하며 질문하는 내용으로, 특별한 감정이 드러나지 않는 중립적인 댓글입니다."
+UgxR-0bnD89ixYEakQ14AaABAg,rArOyUXZJ5o,긍정,True,False,"말티즈의 성격을 재치 있게 표현한 유머러스한 댓글로, 영상 내용에 대한 긍정적인 공감과 즐거움이 담겨 있습니다."
+Ugzequssn0YhksKJP-J4AaABAg,rArOyUXZJ5o,긍정,True,False,"말티즈 주인분의 개인기 실력을 칭찬하는 내용으로, 상대방의 행동에 대한 긍정적인 평가가 담겨 있습니다."
+UgwigejVHWM5LP4B4Uh4AaABAg,rArOyUXZJ5o,부정,True,False,영상 속 상황에 대해 의구심을 제기하며 부정적인 뉘앙스로 비판하고 있기 때문에 부정으로 분류했습니다.
+UgzG5yYanJiy0iEmvC94AaABAg,rArOyUXZJ5o,긍정,True,False,강아지의 행동을 보고 재미있어하며 웃음을 표현하고 있으므로 긍정적인 감정으로 분류하였습니다.
+UgxslI3XNYstPPGWvaB4AaABAg,NaGu4MX0R7k,부정,True,False,특정 브랜드에 대해 '망했다'는 부정적인 단어를 사용하여 비판적인 의견을 제시하고 있습니다.
+Ugw5GjLrx4JZ0xKE9qZ4AaABAg,NaGu4MX0R7k,긍정,True,False,도시락 제품에 대한 만족감과 GS25 브랜드에 대한 긍정적인 감탄이 담겨 있어 긍정으로 분류함.
+UgyaumsLCpn4ThwAfL54AaABAg,Gir7l1UMNY0,중립,True,False,"제품의 출시 일정을 묻는 단순한 정보 요청성 질문으로, 감정이 드러나지 않아 중립으로 분류하였습니다."
+UgzjirFYbGdBX_qDRV14AaABAg,HN2yJulS53Q,긍정,True,False,'ㅇㅈ(인정)'이라는 표현을 사용하여 영상 내용에 대해 강한 공감과 긍정적인 반응을 보이고 있습니다.
+UgztvcPBu0BflYsSOyR4AaABAg,HN2yJulS53Q,부정,True,False,제품의 품질에 대해 자신의 기준을 제시하며 아쉬움을 표현하고 있으므로 부정으로 분류함.
+UgyvTrSWQA9Q2TnK2jl4AaABAg,Gir7l1UMNY0,긍정,True,False,GS25의 샌드위치 작명 센스를 긍정적으로 평가하며 만족감을 표현하고 있습니다.
+UgwrjLA1nrGElEqM0zd4AaABAg,Gir7l1UMNY0,긍정,True,False,영상 내용에 대해 기대감을 표현하고 있으므로 긍정적인 감정으로 분류하였습니다.
+UgxHFyF8D1ZfCt7V4tF4AaABAg,Gir7l1UMNY0,긍정,True,False,음식 영상에 대해 맛있어 보인다는 긍정적인 기대와 만족의 감정을 표현하고 있습니다.
+Ugx_5P76IoO3-6KZPDR4AaABAg,m2MSC9pTgTE,부정,True,False,'열받네'라는 표현을 통해 영상 내용이나 상황에 대한 명확한 불만과 부정적인 감정을 드러내고 있습니다.
+UgxOiHwPmEpz8UrFsNh4AaABAg,m2MSC9pTgTE,긍정,True,False,삼양라면을 저렴한 가격에 구매하여 만족스러운 상황을 웃음 표현인 'ㅋㅋㅋㅋ'를 통해 긍정적으로 나타내고 있습니다.
+UgyGLwY4C8cxJz_j9_R4AaABAg,m2MSC9pTgTE,긍정,True,False,GS25 갓세일에 대한 기대감과 함께 쇼핑하러 가자는 긍정적인 권유가 담겨 있습니다.
+UgzO3gBh5cpiK5qEc2d4AaABAg,NaGu4MX0R7k,긍정,True,False,기다리던 것이 출시되거나 공개된 상황에 대한 기대감과 만족스러운 감정을 표현하고 있습니다.
+Ugyvx5v_Q1N6BwSueAF4AaABAg,oeSpu70q2yI,긍정,True,False,음식을 맛있게 먹겠다는 기대와 즐거운 마음이 담겨 있어 긍정적인 댓글로 분류하였습니다.
+UgxpUwmjM0rnFR0Flrd4AaABAg,oeSpu70q2yI,긍정,True,False,새해를 맞아 따뜻한 덕담과 함께 하트 이모티콘을 사용하여 작성한 긍정적인 댓글입니다.
+UgwEUuEiR7NvDj0LT5J4AaABAg,oeSpu70q2yI,긍정,True,False,새해를 맞아 덕담을 건네는 따뜻하고 긍정적인 인사말이 담긴 댓글입니다.
+UgxcnBcZaTY0d9Tthj14AaABAg,oeSpu70q2yI,긍정,True,False,새해를 맞아 다솜님에게 복을 기원하는 따뜻하고 긍정적인 인사말이 담겨 있습니다.
+UgxskZqRv0xs4dXgELd4AaABAg,oT_Si_bUsZc,중립,True,False,버즈볼즈가 술인지에 대해 단순한 사실 확인을 요청하는 질문이므로 중립으로 분류하였습니다.
+UgyPNFo3iTv7cKblXf94AaABAg,oT_Si_bUsZc,중립,True,False,영상 속 인물의 주량에 대해 단순한 호기심으로 질문하고 있는 중립적인 댓글입니다.
+UgygMn_HBbkoxggr1xp4AaABAg,oT_Si_bUsZc,긍정,True,False,"칵테일에 알코올 함유 여부를 질문하면서, 마시고 취했다는 경험을 웃음과 함께 긍정적으로 표현하고 있습니다."
+UgywD1uqWdY_hB0CX9l4AaABAg,3FgzS6xmSC0,부정,False,False,SPC 브랜드에 대한 부정적인 여론을 바탕으로 'But...'이라는 표현을 사용하여 실망감이나 거부감을 간접적으로 드러내고 있습니다.
+Ugy2sdT7Pc68UxsoqGR4AaABAg,rId_yagxWMU,부정,True,False,먹는 모습이 부자연스럽다는 아쉬움과 개선을 요청하는 내용이 포함되어 있어 부정으로 분류하였습니다.
+UgwKPeF722F2lpzgUyJ4AaABAg,rId_yagxWMU,부정,True,False,영상 속 인물의 행동에 대해 부정적인 시각으로 비판하고 있어 부정으로 분류했습니다.
+UgxfdEB8YfdDL36jjFV4AaABAg,rId_yagxWMU,중립,True,False,영상 내용과 관련하여 인스타그램 계정이나 정보를 묻는 단순 질문으로 감정이 드러나지 않습니다.
+UgzAHmlMbsfjgFVbzzh4AaABAg,rId_yagxWMU,긍정,True,False,영상 속 인물의 모습이 귀엽다는 긍정적인 감정을 하트 이모티콘과 함께 표현하고 있습니다.
+Ugz32h2enCYZvEhkh-B4AaABAg,rId_yagxWMU,긍정,True,False,음식 영상에 대해 맛있어 보인다는 긍정적인 반응을 보이고 있으므로 긍정으로 분류함.
+Ugx_hTZcdKG0CEB1eWV4AaABAg,xqDh0PxLDUI,중립,True,False,"영상 내용에 대한 사실 관계를 설명하는 정보성 댓글로, 특별한 감정이 드러나지 않아 중립으로 분류함."
+UgwHivrQGckBFrfykCF4AaABAg,xqDh0PxLDUI,긍정,True,False,출연자를 햄토리에 비유하며 귀엽다고 칭찬하는 긍정적인 내용의 댓글입니다.
+Ugy8amgzJPeX2o1ISWZ4AaABAg,xqDh0PxLDUI,긍정,True,False,영상 속 대상에 대해 '너무 예쁘다'는 표현을 사용하여 만족감과 긍정적인 감정을 직접적으로 드러내고 있습니다.
+UgwpUF80sSm254aoofd4AaABAg,xqDh0PxLDUI,긍정,True,False,기쁨을 나타내는 감탄사와 이모지를 사용하여 영상에 대한 긍정적인 반응을 보이고 있습니다.
+UgzGOjl5_gpOKtNeLBx4AaABAg,xqDh0PxLDUI,중립,True,False,영상에 등장하는 인물이 누구인지 단순히 정보를 요청하는 질문형 댓글이므로 중립으로 분류함.
+UgxSsByY6cqmuVlMF6x4AaABAg,xqDh0PxLDUI,긍정,True,False,"'커여워요'는 귀엽다는 뜻의 신조어로, 영상 속 대상에 대한 애정과 만족감을 표현하고 있으므로 긍정으로 분류함."
+Ugz6uFj_JLa09IGA68p4AaABAg,BERTtfm1jLE,부정,True,False,영상의 내용이 기대와 다르거나 설정이 이상하다는 점을 웃음과 함께 지적하고 있어 부정적인 감정으로 분류함.
+Ugx1eLalbvP74Wq4_TF4AaABAg,BERTtfm1jLE,부정,True,False,상대방의 스타일을 칭찬하는 표현을 비꼬는 투로 언급하며 부정적인 시각을 드러내고 있습니다.
+Ugxya_qzsQHOT0RbzV14AaABAg,BERTtfm1jLE,긍정,True,False,영상 속 인물의 모습에 대해 '광기가 돈다'는 표현을 사용하며 웃음을 나타내는 'ㅌㅋㅋㅋㅋㅋㅋㅋ'를 덧붙여 재미있다는 긍정적인 반응을 보이고 있습니다.
+UgxZvGmVAGiEZSg-BZx4AaABAg,BERTtfm1jLE,긍정,True,False,영상 콘텐츠에 대한 구체적인 아이디어를 제안하고 있어 긍정적인 기대와 관심을 표현한 것으로 판단됩니다.
+Ugz1ikiE_aSuGViSo2x4AaABAg,BERTtfm1jLE,긍정,True,False,원소주의 스타일이 좋다고 긍정적으로 평가하며 만족감을 표현하고 있습니다.
+UgxPnrx2bfnlIZYshzF4AaABAg,BERTtfm1jLE,중립,True,False,"영상 제작 의도에 대해 단순하게 질문하는 내용으로, 특별한 감정이 담겨 있지 않은 중립적인 댓글입니다."
+UgyrsM-748DKC44YE5Z4AaABAg,EpLf0afoeeo,긍정,True,False,영상 속 인물의 외모에 대해 귀엽다는 긍정적인 감정을 표현하고 있습니다.
+UgzWYoZr8L9uzya9_1l4AaABAg,JeyuZJGTYDI,중립,True,False,"제품의 효과에 대해 긍정적으로 언급하면서도, 신장 질환자에게는 위험할 수 있다는 주의사항을 함께 전달하고 있어 중립적인 정보 공유로 판단함."
+Ugz5d1mRUuIOEtDmXAJ4AaABAg,JeyuZJGTYDI,중립,True,False,다른 사람들에게 후기를 공유해달라고 요청하는 단순 정보 요청성 댓글이므로 중립으로 분류함.
+UgyI6jzfFPUggg8XbmN4AaABAg,JeyuZJGTYDI,긍정,True,False,광고가 포함된 영상에 대해 웃음 표현인 'ㅋㅋㅋ'를 사용하여 가볍게 반응하고 있으므로 긍정적인 감정으로 분류함.
+UgyURHT1ni4kIwWeugB4AaABAg,JeyuZJGTYDI,긍정,True,False,제품을 냉장고에 보관하며 시원하게 잘 사용하고 있다는 만족감이 드러나는 긍정적인 댓글입니다.
+UgxvNlXAW9TOalJZqiN4AaABAg,JeyuZJGTYDI,긍정,True,False,영상 속 인물의 외모에 대해 칭찬하는 긍정적인 내용의 댓글입니다.
+UgzUEF6x1LryaszYwSZ4AaABAg,JeyuZJGTYDI,중립,True,False,"댓글 내용이 감정을 나타내기보다는 단순히 소리를 묘사하는 의성어이며, 특별한 긍정이나 부정의 의미를 담고 있지 않기 때문에 중립으로 분류하였습니다."
+UgzhR1CWXHGJipp-grB4AaABAg,JeyuZJGTYDI,긍정,False,False,V8 엔진에 대한 열광적인 감탄과 기대를 표현하고 있어 긍정적인 감정으로 분류하였습니다.
+Ugxt19wNgNfDj7KcWTt4AaABAg,LcbVg-Y7fOw,중립,True,False,"영상 내용에 대해 자신의 경험을 바탕으로 의견을 묻고 소통하려는 의도가 담긴 댓글로, 부정적인 감정이나 이벤트 참여 목적이 아니므로 중립으로 분류함."
+UgyiLV8nasTLla7J6rd4AaABAg,VLjSngoWaW4,긍정,True,False,하트 이모티콘을 반복하여 사용하여 영상에 대한 애정과 긍정적인 감정을 표현하고 있습니다.
+Ugzo2oZBrHjRow4cxml4AaABAg,VLjSngoWaW4,긍정,True,False,엄지척 이모티콘을 반복하여 영상에 대한 만족감과 긍정적인 반응을 표현하고 있습니다.
+UgysaduJJIzX3ocrsPN4AaABAg,VLjSngoWaW4,부정,True,False,영상 내용에 대한 이해가 어렵고 채널의 분위기가 산만하다는 불만을 직접적으로 표현하고 있습니다.
+UgxiYji3yLeBArc6taV4AaABAg,AdAVt1-VKGM,긍정,True,False,영상 속 인물의 행동을 생활의 달인에 비유하며 재미있다는 반응을 보이고 있어 긍정으로 분류함.
+UgzpbwN2FznGpYmj2JF4AaABAg,AdAVt1-VKGM,긍정,True,False,영상 내용에 대해 웃음으로 공감을 표현하고 있으므로 긍정적인 댓글로 분류하였습니다.
+Ugyedpug6B57yroPbaB4AaABAg,AdAVt1-VKGM,긍정,True,False,"영상의 특정 부분이 웃기다는 감상을 표현하고 있으며, 'ㅠㅠㅠ'는 슬픔이 아닌 웃음의 강조나 감탄의 의미로 사용되어 긍정적인 반응으로 판단됨."
+Ugwcpc8h8z1sXCwNX7R4AaABAg,fbv-2hw98Yc,긍정,True,False,유리공예 실력을 인정하며 긍정적인 감탄의 의미를 담고 있어 긍정으로 분류했습니다.
+Ugx4EI5cXqeNmXwyKqV4AaABAg,AdAVt1-VKGM,긍정,True,False,영상 속 인물을 보고 웃음과 함께 친근하게 표현한 댓글로 긍정적인 감정이 담겨 있습니다.
+UgzUU1OIbZM4oeGB0np4AaABAg,fbv-2hw98Yc,부정,True,False,선글라스에 대해 '열받네'라는 표현을 사용하여 제품에 대한 불만이나 부정적인 감정을 직접적으로 드러내고 있습니다.
+UgyMTvDTwiL44K_7Ejl4AaABAg,fbv-2hw98Yc,중립,True,False,단순한 감탄사로 감정이 크게 드러나지 않는 인지 및 수용 반응이므로 중립으로 분류함.
+UgxEky8JR8PKOfFaYa14AaABAg,BERTtfm1jLE,긍정,True,False,영상 속 상황을 재미있게 표현하며 웃음을 나타내는 긍정적인 맥락의 댓글입니다.
+Ugwkc19-y0DqnK09JYd4AaABAg,BERTtfm1jLE,긍정,True,False,"GS 브랜드에 대한 긍정적인 반응이나 흥미를 나타내는 표현으로, 문맥상 긍정적인 감정이 담겨 있습니다."
+UgzGLVCp79fPKZXneiZ4AaABAg,BERTtfm1jLE,긍정,True,False,영상 속 인물의 스타일이 좋다는 칭찬을 유머러스하게 표현한 댓글로 긍정적인 감정이 담겨 있습니다.
+UgwErxYFl_TG4dvxDvp4AaABAg,em0YVijMDmM,부정,True,False,특정 제품에 대해 돈을 주고 먹을 가치가 없다는 식으로 비하하며 부정적인 의견을 표출하고 있습니다.
+UgydzBzN1wgXBaSQIyR4AaABAg,em0YVijMDmM,부정,True,False,음식이나 제품에 대해 맛이 없다는 부정적인 평가를 직접적으로 표현하고 있습니다.
+UgwdAYpCsvXUU_Hzidl4AaABAg,em0YVijMDmM,긍정,True,False,음식에 대해 맛있겠다는 긍정적인 기대와 만족감을 표현하고 있어 긍정으로 분류함.
+Ugw5oxvHN9LKhG3N4VB4AaABAg,em0YVijMDmM,부정,True,False,제품의 구성 요소인 크림의 양이 줄어든 것에 대해 사실을 지적하며 불만을 표현하고 있으므로 부정으로 분류함.
+Ugx4otZ3FWjdTJ75OfJ4AaABAg,em0YVijMDmM,긍정,True,False,"이모티콘만 사용되었으나, 일반적으로 긍정적인 감정을 표현할 때 사용되므로 긍정으로 분류하였습니다."
+UgydM3S1Na77BjxFIQB4AaABAg,RmGT3Skusn8,긍정,True,False,상대방의 행동을 귀엽고 사랑스럽게 느끼며 칭찬하는 긍정적인 감정이 담겨 있습니다.
+UgzhHrs0euIeTdSZvXp4AaABAg,iZI8h5yqD78,긍정,True,False,영상 속 대상이 귀엽다는 긍정적인 감정을 표현하고 있으므로 긍정으로 분류하였습니다.
+UgzbJoBrhht1NuZNwtF4AaABAg,RmGT3Skusn8,긍정,True,False,"심장에 해롭다는 표현은 너무 귀여워서 심장이 아프다는 의미의 극찬이며, 하트 이모티콘을 통해 긍정적인 감정을 명확히 표현하고 있음."
+UgzAU_4C8hqFCpYlGbx4AaABAg,iZI8h5yqD78,긍정,True,False,자신의 모습을 귀엽다고 표현하며 스스로를 긍정적으로 바라보는 유머러스한 댓글입니다.
+UgzC8_0w8qL9hxy5O7p4AaABAg,jcFr4gKr7X8,부정,True,False,"제품의 품질에 대해 매우 강한 불만과 실망감을 드러내고 있으며, 소비자 기만이라는 표현을 사용하여 부정적인 감정을 명확히 표현하고 있습니다."
+UgwAqn5cCEnDfNRk5aZ4AaABAg,jcFr4gKr7X8,중립,True,False,"구매 과정에서 원하는 상품을 구하지 못한 아쉬움과 상황을 설명하는 내용으로, 특별한 감정적 비난이나 칭찬이 없는 중립적인 정보 전달입니다."
+UgwjFCR-ExU8B19pDNB4AaABAg,jcFr4gKr7X8,긍정,True,False,음식에 대한 기대감과 먹고 싶다는 긍정적인 감정을 표현하고 있어 긍정으로 분류했습니다.
+Ugz7t-XWVBeEbrB-eBx4AaABAg,jcFr4gKr7X8,중립,True,False,"해당 댓글은 특정 서비스의 홍보 및 이벤트 정보를 전달하는 광고성 댓글로, 감정이 드러나지 않아 중립으로 분류하였습니다."
+Ugw9fSU0Nq6gUmuA_Kt4AaABAg,EpLf0afoeeo,중립,True,True,영상 내용과 관련하여 시청자들의 참여를 유도하는 이벤트성 질문 댓글로 판단됩니다.
+UgypZf6rJCMqDrCmUrd4AaABAg,EpLf0afoeeo,긍정,True,False,상대방의 노력을 인정하고 긍정적인 태도로 웃으며 격려하는 의미가 담겨 있어 긍정으로 분류했습니다.
+UgzxRd4gXFH00JDeO-V4AaABAg,EpLf0afoeeo,긍정,True,False,하트 이모티콘을 사용하여 영상에 대한 애정과 긍정적인 반응을 표현하고 있습니다.
+Ugyd6qfkWnouZZ9OUpt4AaABAg,LcbVg-Y7fOw,부정,True,False,영상 내용에 대해 강한 불만과 비난을 표출하며 부정적인 감정을 직접적으로 드러내고 있습니다.
+UgwA3wp8o5ji3gk3-914AaABAg,EpLf0afoeeo,긍정,True,False,영상 속 인물에 대한 애정 어린 칭찬과 귀엽다는 긍정적인 감정을 표현하고 있습니다.
+UgwznTptV10T7Bmp5yF4AaABAg,LcbVg-Y7fOw,긍정,True,False,배우의 연기력을 칭찬하고 상황을 재미있게 받아들이며 웃음으로 표현하고 있어 긍정적인 감정으로 판단함.
+UgwYVemWZApf_C7QBER4AaABAg,LcbVg-Y7fOw,부정,True,False,웃음 표현을 사용했으나 영상 내용에 대해 '열받음'이라는 부정적인 감정을 명확하게 표현하고 있습니다.
+Ugzh_XCZvgFg3dsWukt4AaABAg,LcbVg-Y7fOw,긍정,True,False,영상의 내용이 매우 재미있다는 감정을 웃음소리와 함께 솔직하게 표현하고 있어 긍정적인 댓글로 분류하였습니다.
+UgwZXQvMWiuujIyOJIR4AaABAg,LcbVg-Y7fOw,부정,True,False,상대방의 행동을 부정적인 시선으로 바라보며 비꼬는 맥락이 포함되어 있어 부정으로 분류하였습니다.
+UgzFvKStTxziTxVK4sV4AaABAg,uqyEJSEzGf8,중립,True,False,"특정 광고에 대한 공감대를 형성하려는 질문성 댓글로, 감정이 드러나지 않는 사실적 질문이므로 중립으로 분류함."
+UgxpT9VMZ6AYwcUMqP94AaABAg,uqyEJSEzGf8,긍정,True,False,영상 콘텐츠의 놀라운 퀄리티와 구독자 수에 대해 감탄하며 긍정적으로 반응하고 있습니다.
+UgyUaaRsJ1Z8JfpqlEV4AaABAg,uqyEJSEzGf8,긍정,True,False,과거의 광고 문구를 떠올리며 반가움과 즐거움을 표현하고 있어 긍정적인 감정으로 분류했습니다.
+UgyWZB_lQj4GCJ-y6dN4AaABAg,uqyEJSEzGf8,중립,True,False,영상 내용과 관련하여 단순하게 에어컨에 대해 질문하는 내용이므로 중립으로 분류했습니다.
+UgxBUDqj4ApwAfLVLh14AaABAg,EpmDOsKxFSs,중립,True,False,제품의 성분에 대해 궁금한 점을 정중하게 질문하고 있는 중립적인 댓글입니다.
+UgywEX5skX9THIVRzm54AaABAg,uqyEJSEzGf8,부정,True,False,영상 제작자의 센스를 비꼬며 부정적인 태도를 보이고 있으므로 부정으로 분류했습니다.
+UgwOYSiARhoCZSogD014AaABAg,EpmDOsKxFSs,긍정,True,False,던킨도너츠의 맛과 비슷하다는 경험을 공유하며 긍정적인 공감을 나타내고 있습니다.
+UgyEZCP1EI79IQNIB-F4AaABAg,EpmDOsKxFSs,부정,True,False,제품의 가격이 비싸다는 점에 대해 불만을 표출하고 있으므로 부정적인 감정으로 분류하였습니다.
+Ugws5J6ZobgEz6gGnjZ4AaABAg,EpmDOsKxFSs,긍정,True,False,영상의 내용을 보고 먹어보고 싶다는 기대감을 표현하고 있으므로 긍정적인 감정으로 분류하였습니다.
+UgynuatIXnpP3RVAJxB4AaABAg,EpmDOsKxFSs,중립,True,False,"특정 제품을 먹어도 되는지 묻는 단순한 정보 요청성 질문으로, 감정이 드러나지 않아 중립으로 분류했습니다."
+Ugz9FISuz59TQXIqlQV4AaABAg,EpmDOsKxFSs,긍정,True,False,GS빵의 품질이 좋아진 것에 대해 놀라움과 긍정적인 감탄을 표현하고 있습니다.
+UgzBf4SIJ9-dmw25RZB4AaABAg,iZI8h5yqD78,중립,True,False,아이스크림 꿀조합을 공유하자고 제안하는 정보 공유 및 소통 목적의 댓글입니다.
+UgwBpbIvmQXGDbB34IJ4AaABAg,EpmDOsKxFSs,긍정,True,False,음식을 먹어보고 맛있다는 긍정적인 경험을 공유하고 있어 긍정으로 분류하였습니다.
+UgxRqM_mQCJWckyNzpd4AaABAg,iZI8h5yqD78,긍정,True,False,음식에 대한 강한 식욕과 기대감을 표현하고 있어 긍정적인 감정으로 분류하였습니다.
+UgyMqbGLwXPNXSJp0Pl4AaABAg,iZI8h5yqD78,긍정,True,False,요리를 직접 하지는 않지만 요리 관련 쇼츠 영상을 보는 것이 즐겁다는 긍정적인 감정을 표현하고 있습니다.
+UgzZmgLVcaBypi6madZ4AaABAg,7zcxrJTt2qQ,긍정,True,False,'미친'이라는 표현을 사용하여 음식의 맛이 매우 훌륭할 것 같다는 강한 기대감과 감탄을 표현하고 있습니다.
+Ugz0HAfb8vkcGnd77YV4AaABAg,7zcxrJTt2qQ,중립,True,False,제품에 특정 성분이 포함되었는지 여부를 확인하기 위해 작성된 단순 질문성 댓글입니다.
+UgxUKJPfNd7ZMWEIReh4AaABAg,8nZkZ8sUllA,긍정,True,False,버터 풍미가 매우 훌륭하다는 감탄을 '기절'이라는 표현을 사용하여 극찬하고 있으므로 긍정으로 분류함.
+UgxQSxqzwRZHQ6q3L8x4AaABAg,8nZkZ8sUllA,중립,True,False,영상 속 제품이나 콘텐츠의 제작 배경에 대해 단순한 사실 확인을 요청하는 질문형 댓글입니다.
+UgzEEjcIeFrk0p6Z33d4AaABAg,8nZkZ8sUllA,부정,True,False,음식의 맛이 없고 식감이 퍽퍽하며 느끼하다는 구체적인 불만과 부정적인 평가를 담고 있습니다.
+UgzgTNH8vNzuBZxZlLh4AaABAg,8nZkZ8sUllA,중립,True,False,광고의 내용을 보고 느낀 점을 단순히 사실적으로 서술하고 있어 감정이 드러나지 않는 중립적인 댓글입니다.
+UgzowrSoHFuNPwH6yvJ4AaABAg,EpmDOsKxFSs,긍정,True,False,GS25 제품인 솔티밀크와 슈크림이 모두 맛있다는 긍정적인 평가를 담고 있습니다.
+UgznhxfOCY7ghEGuKqx4AaABAg,EpmDOsKxFSs,긍정,True,False,음식을 먹고 너무 맛있어서 놀란 감정을 솔직하게 표현하고 있어 긍정적인 댓글로 판단함.
+UgxnD3z8t7QjoB6CVGx4AaABAg,EpmDOsKxFSs,긍정,True,False,음식의 맛에 대해 만족감을 나타내는 긍정적인 표현이 담겨 있습니다.
+UgzBMA_YANXGHe4vghF4AaABAg,EpmDOsKxFSs,긍정,False,False,한국 방문 중 먹어본 음식이 매우 맛있었다며 만족감과 긍정적인 감정을 강하게 표현하고 있습니다.
+UgwtulRYoM0fLJBw3aJ4AaABAg,RmGT3Skusn8,긍정,True,False,영상 속 대상이 귀엽다는 긍정적인 감정을 웃음소리와 함께 표현하고 있습니다.
+UgwwHre3wRdA6Gbozzd4AaABAg,sTqmmFiqZRg,부정,True,False,음식의 맛이 너무 짜다는 불만을 직접적으로 표현하고 있으므로 부정적인 감정으로 분류하였습니다.
+UgwpKUNhzI30MPZi33d4AaABAg,sTqmmFiqZRg,긍정,True,False,엄지척 이모티콘을 반복하여 영상에 대한 긍정적인 반응과 만족감을 표현하고 있습니다.
+UgzSJEnNn2VpDWfaTVR4AaABAg,sTqmmFiqZRg,긍정,True,False,음식을 먹어본 후 대박이라는 감탄사를 사용하여 만족감과 긍정적인 경험을 표현하고 있습니다.
+UgyOyg0KwdSK4sUzalB4AaABAg,sTqmmFiqZRg,긍정,True,False,음식이나 제품에 대해 '맛있다'는 긍정적인 평가를 직접적으로 표현하고 있으므로 긍정으로 분류하였습니다.
+UgzMECtfO-fkF_90__d4AaABAg,p_j72KGlELM,중립,True,False,영상에서 제공하지 않은 영양 성분 정보를 구체적으로 질문하고 있어 중립으로 분류함.
+UgzpVD-tengcWpHc1-d4AaABAg,Vmf2QG1Kev4,중립,True,True,영상에서 제시한 질문에 대해 답변을 유도하는 이벤트성 댓글로 판단되어 중립으로 분류하였습니다.
+Ugws9STLG6bzXAzg_9t4AaABAg,Vmf2QG1Kev4,중립,True,False,영상에 특정 인물이 등장하는 이유를 묻는 단순한 정보 요청성 질문이므로 중립으로 분류함.
+UgzD5Swu9PxufP-6b8x4AaABAg,Vmf2QG1Kev4,중립,True,False,"영상 속 상황을 관찰하여 사실을 그대로 서술하고 있으며, 특별히 긍정적이거나 부정적인 감정이 드러나지 않음."
+Ugy55qKMQQeeRQiKDBZ4AaABAg,Vmf2QG1Kev4,부정,True,False,음식 섭취 후 건강상의 부정적인 결과(설사)를 언급하며 해당 식단에 대해 부정적인 반응을 보이고 있습니다.
+UgyQpaZij_0Qsq_jbPZ4AaABAg,-1pt6NpGOp4,중립,False,False,"댓글 내용인 'first'는 영어이며, 영상에 가장 먼저 댓글을 달았음을 알리는 단순 사실 전달이므로 중립으로 분류함."
+UgzeEI06E6B3w98sGlh4AaABAg,zbp7nN4t4Co,긍정,True,False,영상 속 음식에 대한 부러움과 먹고 싶다는 긍정적인 기대감이 담겨 있어 긍정으로 분류함.
+UgxP1FGiPfZvVozQb1R4AaABAg,Z1PVCKogsAU,긍정,True,False,더블피치 스무디에 대해 맛있겠다는 기대와 긍정적인 관심을 표현하고 있습니다.
+Ugww3NNZ50WzCr4Jyqd4AaABAg,ODnrUimHoa0,부정,True,False,"'ㅠㅠ'는 슬픔이나 아쉬움, 안타까움 등의 부정적인 감정을 나타내는 표현으로 분류하였습니다."
+UgxwuJ_s_l3WW26J7Sp4AaABAg,ODnrUimHoa0,중립,True,False,"두 대상의 우열을 비교하는 개인적인 의견을 표현한 것으로, 긍정이나 부정의 감정이 섞이지 않은 중립적인 평가입니다."
+UgzfFEMBeuT0Q1bo3M14AaABAg,pLba1-9abQk,부정,True,False,스타일링이 불가능하다는 아쉬움과 안타까운 상황을 표현하고 있어 부정적인 감정으로 분류했습니다.
+UgzCfObAdooJj88yFwp4AaABAg,pLba1-9abQk,긍정,True,False,영상 속 출연자의 행동이 재미있다는 긍정적인 감정을 웃음소리로 표현하고 있습니다.
+UgxuHVvkwFdZtyY3aIV4AaABAg,WS5QOhximfc,긍정,True,False,영상에 등장하는 인물들의 이름을 부르며 즐거워하는 감탄의 표현이 담긴 긍정적인 댓글입니다.
+Ugwvw7vPDEsqzQOcHGN4AaABAg,WS5QOhximfc,긍정,True,False,영상 속 인물이나 상황을 즐겁게 언급하며 감탄하는 내용으로 긍정적인 반응으로 판단됨.
+UgwuBQWVTWpmnRUDtAp4AaABAg,9KDb9_E1syw,중립,True,False,영상 내용에 대해 궁금한 점을 질문하는 단순 문의성 댓글로 감정이 드러나지 않음.
+UgwQ_JegdJcT1et2jtd4AaABAg,5gT-5BGYWWA,중립,True,False,영상 속 인물이 누구인지 확인하기 위한 단순 질문성 댓글로 감정이 드러나지 않습니다.
+Ugyj98NC3Kq-hJkMvQ54AaABAg,5gT-5BGYWWA,중립,True,True,"댓글 내용이 의미를 알 수 없는 단어의 나열이며, 문맥상 이벤트 참여를 위한 무의미한 댓글로 판단되어 중립으로 분류함."
+Ugw0-URwQa4V-mIpC-14AaABAg,eDC-1Cb5JD8,긍정,True,False,"웃음을 나타내는 자음이 반복되어 작성된 댓글로, 영상의 내용에 대해 즐거움을 느끼고 있음을 표현하고 있습니다."
+UgwOeYCnSrsqaE7PMp54AaABAg,eDC-1Cb5JD8,긍정,True,False,웃음을 나타내는 의성어와 이모지를 사용하여 영상의 내용에 대해 즐거워하고 공감하는 긍정적인 반응을 보이고 있습니다.
+UgzqM2Clyl_P-Jhx7yV4AaABAg,eDC-1Cb5JD8,부정,True,False,'실패'라는 단어를 반복하여 사용함으로써 결과에 대한 실망감이나 부정적인 감정을 나타내고 있습니다.
+Ugw3p4TFy9HWkq2zujF4AaABAg,eDC-1Cb5JD8,중립,True,True,댓글 내용이 숫자 '1'로만 구성되어 있어 이벤트 참여를 위한 정답 입력으로 판단됩니다.
+UgypadD5gCDQS7tV4LR4AaABAg,oVk9VXobXfk,중립,True,False,댓글 내용인 '흠'은 특별한 감정이 드러나지 않는 단순한 반응으로 해석되어 중립으로 분류하였습니다.
+UgwJZWiq6bxxnSFhpU54AaABAg,eDC-1Cb5JD8,중립,True,False,"'억'이라는 감탄사는 놀람이나 단순한 반응을 나타내며, 특별히 긍정적이거나 부정적인 감정이 담겨 있지 않은 중립적인 표현입니다."
+UgxddLQfTXAQGVl-l1t4AaABAg,UGX71riXRlI,긍정,True,False,고등어 조림과 소주라는 조합에 대해 즐거움과 공감을 표현하고 있어 긍정적인 감정으로 분류함.
+UgyAsWASR1Nz17B4a_x4AaABAg,UGX71riXRlI,부정,True,False,영상 내용에 대한 기대와 달리 특정 캐릭터가 등장하지 않은 것에 대해 불만과 아쉬움을 표현하고 있습니다.
+UgyE49u_V22CD1qFdi94AaABAg,UGX71riXRlI,긍정,True,False,이전 영상들에 비해 제품과의 연관성이 생겼다는 점을 긍정적으로 평가하고 있으므로 긍정으로 분류함.
+Ugx4ps9vZ1eADo5Q7KJ4AaABAg,1aDlwszFb6g,긍정,True,False,영상의 내용에 대해 크게 웃으며 공감하고 즐거워하는 긍정적인 감정이 담겨 있습니다.
+UgxFCpsgEwQezca4jlZ4AaABAg,1aDlwszFb6g,긍정,True,False,상대방의 웃음소리와 사회성을 긍정적인 의미로 재미있게 표현하며 칭찬하고 있어 긍정으로 분류함.
+Ugz3w-4blAcW9Jhwwid4AaABAg,KsqsbT9zjYc,긍정,True,False,음식의 맛이 매우 훌륭하다는 긍정적인 평가를 담고 있는 댓글입니다.
+UgzWIWNpOhjnAoj7sB54AaABAg,UOsx_eeOEGs,긍정,True,False,긍정적인 의미를 담은 이모티콘을 사용하여 영상에 대한 만족감과 응원을 표현하고 있습니다.
+UgyzZYtMv5C4ESPJDQN4AaABAg,BKk5288u6as,긍정,True,False,제품을 받고 만족스럽다는 긍정적인 감정을 '짱조아요'라는 표현을 통해 명확히 드러내고 있습니다.
+Ugwo2ruA_uKQItbt9D94AaABAg,BKk5288u6as,중립,True,True,영상 내 이벤트 참여를 위한 정답 혹은 키워드를 입력한 것으로 판단되어 중립으로 분류하였습니다.
+UgxKIE0Y8NVRTTJezGF4AaABAg,MiyRAB-SE7Q,긍정,True,False,"해장으로 자몽을 먹겠다는 개인적인 의지를 밝힌 것으로, 긍정적인 기대감이 담겨 있어 긍정으로 분류함."
+UgxbT5fJkIwunNwGWNN4AaABAg,MiyRAB-SE7Q,긍정,True,False,음료에 대한 새로운 정보를 알게 되어 만족스럽고 작성자에게 감사함을 표현하고 있으므로 긍정으로 분류함.
+UgyM8xz2Z9cJNNxbhMt4AaABAg,p-GkwN11Kag,부정,True,False,가격 대비 구성이 부족하다는 불만과 맛에 대한 직접적인 비판이 담겨 있어 부정적인 댓글로 판단됨.
+Ugx_NEAPGHuuIKSR0ll4AaABAg,UzDzmaSZTCQ,중립,True,False,"이모지만으로 구성되어 있어 감정을 특정하기 어렵고, 단순한 반응으로 보여 중립으로 분류하였습니다."
+UgxzO4pHH8uyCREbWup4AaABAg,wS_DLwjXYhE,중립,True,False,영상 속 내용에 대해 사실을 확인하거나 감상을 담담하게 서술하고 있어 중립으로 분류했습니다.
+UgzBIlsdCEJTitErh054AaABAg,7bRLB16ffZI,긍정,True,False,"기업에 대한 긍정적인 평가와 함께 응원의 메시지를 담고 있으며, 웃음 표현을 통해 만족감을 드러내고 있습니다."
+UgyusOPaP69MdsX-FKF4AaABAg,3WHrZkwIvng,긍정,True,False,"본죽이라는 단어를 활용한 언어유희를 통해 유머러스하게 표현한 댓글로, 작성자의 즐거움이 느껴지는 긍정적인 반응입니다."
+Ugwf8m8ioAsWUTCexUx4AaABAg,wS_DLwjXYhE,중립,True,False,이나리우스 캐릭터의 디자인이나 특징이 수제 느낌이 난다는 단순한 감상을 표현하고 있어 중립으로 분류함.
+UgyEF8tjhgejhYFFkud4AaABAg,wS_DLwjXYhE,긍정,True,False,영상 내용에 대한 공감과 함께 음식에 대한 긍정적인 경험을 공유하고 있어 긍정으로 분류했습니다.
+Ugy9SzIg-fKw0HtKNq94AaABAg,ue_OOM2gqR8,긍정,True,False,영상 속 목소리가 리치왕과 비슷하다는 점을 재미있게 표현하며 긍정적으로 반응하고 있습니다.
+UgwN8LC_w9mNJcZvfDB4AaABAg,ue_OOM2gqR8,중립,True,True,이벤트 참여를 유도하는 링크와 안내 문구로 구성된 광고성 댓글이므로 중립으로 분류하였습니다.
+UgyqTi5NxM3A3JA7kDJ4AaABAg,ue_OOM2gqR8,긍정,True,False,신제품 출시에 대한 기대감과 즐거움이 '얏호'라는 표현을 통해 잘 드러나고 있습니다.
+UgyWl9E4Mtf_DYd0O0F4AaABAg,ab_o3tg9H8o,중립,True,False,영상에 등장하는 인물이나 캐릭터에 대해 궁금해하며 질문을 던지는 중립적인 내용입니다.
+UgyYMtDOAUdP2hi7HiZ4AaABAg,ab_o3tg9H8o,긍정,True,False,댓글 내용이 짧지만 영상에 대한 만족감과 긍정적인 감정을 하트 이모티콘과 함께 명확하게 표현하고 있습니다.
+UgwQ4SQzqT0UgMs8LhB4AaABAg,ab_o3tg9H8o,긍정,True,False,버거킹을 먹겠다는 기대감과 즐거운 마음이 표현되어 있어 긍정적인 댓글로 분류했습니다.
+UgzeS9ySJzxtjlzQxcJ4AaABAg,ab_o3tg9H8o,중립,True,False,"영상에 가장 먼저 댓글을 달았다는 사실을 알리는 단순한 표현으로, 특별한 긍정이나 부정의 감정이 담겨 있지 않습니다."
+UgxtgD_PyiwyV77FLz14AaABAg,MQ84DQbGY1w,중립,True,True,이벤트 참여를 유도하는 문구와 링크가 포함되어 있어 이벤트성 댓글로 분류하였습니다.
+Ugw9tAjaOr3qOrnwZtx4AaABAg,s700-q2dhHs,부정,True,False,남자친구의 태도에 대해 이해할 수 있는지 질문하며 답답함과 부정적인 감정을 표현하고 있습니다.
+UgyBQ4mZkGCiZC5lwqF4AaABAg,s700-q2dhHs,부정,True,False,영상 내용에 대해 이해가 가지 않는다는 부정적인 반응을 보이고 있어 부정으로 분류했습니다.
+Ugx4r93vI-SYGHFfsKl4AaABAg,s700-q2dhHs,긍정,True,False,영상 내용에 대해 깊이 공감하며 감탄하는 긍정적인 반응을 보이고 있습니다.
+UgwbmwAFfEg_7rz4g9p4AaABAg,zD8s_ZqfvI4,중립,True,True,영상에서 제시한 질문에 대해 시청자의 의견을 묻는 이벤트성 댓글이므로 중립으로 분류하였습니다.
+UgzdWzYUeEFREFDt7A14AaABAg,zD8s_ZqfvI4,긍정,True,False,영상 알림을 친구의 카톡으로 착각했다는 유머러스한 경험을 공유하며 즐거움을 표현하고 있으므로 긍정으로 분류함.
+Ugw0hKl9FjzZ2PPilzN4AaABAg,zD8s_ZqfvI4,긍정,True,False,짧은 웃음 표현인 'ㅋㅋ'는 영상의 내용에 대한 긍정적인 공감이나 즐거움을 나타내므로 긍정으로 분류했습니다.
+UgxxJ-zFByb6UN1TP1Z4AaABAg,J183--xB9cY,중립,True,False,브랜드가 쇼츠 영상을 올린 것에 대해 단순한 사실을 인지하고 언급한 중립적인 댓글입니다.
+UgyO9oovqaKvP4NilDZ4AaABAg,wS_DLwjXYhE,중립,True,False,"영상 주제에 대해 시청자들의 의견을 묻는 질문형 댓글로, 특별히 긍정이나 부정의 감정이 담겨 있지 않은 중립적인 댓글입니다."
+UgwEX80w0owdacNDn954AaABAg,slL5j5hsIZI,긍정,True,False,축구 결승전에 대한 기대감과 함께 응원하는 마음이 담겨 있어 긍정적인 댓글로 판단했습니다.
+Ugx4GYTAbHhJhvd0Ovd4AaABAg,wS_DLwjXYhE,부정,True,False,"제품의 재출시를 강력하게 요구하는 내용으로, 단순한 정보 요청이 아닌 불만 및 개선 요청의 성격이 강해 부정으로 분류함."
+UgyP043nDqjh8tXm9b94AaABAg,VbWATcKlZ2Y,긍정,False,False,음식이 맛있다는 긍정적인 평가를 담고 있는 영어 댓글입니다.
+UgzRbE4E-HW0lX7My1p4AaABAg,bFzYqEOO8AA,긍정,True,False,음식 영상에 대해 맛있어 보인다는 긍정적인 감정을 표현하고 있습니다.
+UgwHvtA_S-HckmH3uJt4AaABAg,ir30J8po8Gw,긍정,True,False,그릭 요거트 활용법에 대한 만족감과 영상 제작자에 대한 감사의 마음이 명확하게 표현되어 있습니다.
+UgxI7Qk-7xh35SLv3TB4AaABAg,SidpRaF9W1c,긍정,True,False,영상을 보고 음식에 대한 호기심과 구매 의사를 밝히며 긍정적인 기대감을 표현하고 있습니다.
+UgyfAk7Xmyy0YyFyOQd4AaABAg,SidpRaF9W1c,긍정,True,False,영상 내용에 대한 만족감과 함께 직접 만들어보고 싶다는 긍정적인 기대감이 잘 드러나 있습니다.
+UgwaKqUJQnkIzl6I9ax4AaABAg,ZOEGnLHmGGc,긍정,True,False,음식에 대해 맛있어 보인다는 긍정적인 감탄을 표현하고 있으므로 긍정으로 분류하였습니다.
+UgwoUsswCcRGm_V0jDV4AaABAg,0CUEMMiJVX8,긍정,True,False,영상 내용과 관련하여 유튜버의 제안을 수용하고 긍정적으로 호응하는 내용이 담겨 있습니다.
+Ugx6wgc29205TCTjwHt4AaABAg,ddRC6B2nPpo,긍정,True,False,영상 속 상황을 재미있게 해석하며 유머러스하게 반응하고 있어 긍정적인 감정으로 분류함.

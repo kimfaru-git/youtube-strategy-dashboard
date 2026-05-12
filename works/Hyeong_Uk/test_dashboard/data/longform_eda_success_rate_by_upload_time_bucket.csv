@@ -1,0 +1,9 @@
+﻿domain,upload_time_bucket,count,success_rate
+FnB,night,103,0.49514563106796117
+FnB,morning,182,0.4945054945054945
+FnB,lunch,11,0.45454545454545453
+FnB,evening,3,0.0
+IT,evening,10,0.7
+IT,night,213,0.6431924882629108
+IT,lunch,34,0.4411764705882353
+IT,morning,537,0.3985102420856611

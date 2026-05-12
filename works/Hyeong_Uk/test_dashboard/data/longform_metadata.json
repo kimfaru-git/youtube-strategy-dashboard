@@ -1,0 +1,65 @@
+{
+  "version": "1.0",
+  "created_date": "2026-05-08T16:18:41.368346",
+  "target": "grade",
+  "datasets": {
+    "ALL": 1093,
+    "IT": 794,
+    "FnB": 299
+  },
+  "main_metric_for_prediction_model": "test_pr_auc",
+  "sub_metric": "test_roc_auc",
+  "best_models_by_roc_auc": {
+    "IT": "RandomForest",
+    "FnB": "CatBoost",
+    "ALL": "XGBoost"
+  },
+  "best_models_by_pr_auc": {
+    "FnB": "CatBoost",
+    "IT": "RandomForest",
+    "ALL": "CatBoost"
+  },
+  "models_for_shap_interpretation": {
+    "FnB": "CatBoost",
+    "IT": "CatBoost",
+    "ALL": "CatBoost"
+  },
+  "model_registry": {
+    "FnB_best_perf": {
+      "dataset": "FnB",
+      "model": "CatBoost",
+      "path": "longform_FnB_best_perf_CatBoost.joblib",
+      "purpose": "prediction_best_pr_auc"
+    },
+    "IT_best_perf": {
+      "dataset": "IT",
+      "model": "RandomForest",
+      "path": "longform_IT_best_perf_RandomForest.joblib",
+      "purpose": "prediction_best_pr_auc"
+    },
+    "ALL_best_perf": {
+      "dataset": "ALL",
+      "model": "CatBoost",
+      "path": "longform_ALL_best_perf_CatBoost.joblib",
+      "purpose": "prediction_best_pr_auc"
+    },
+    "FnB_shap": {
+      "dataset": "FnB",
+      "model": "CatBoost",
+      "path": "longform_FnB_shap_catboost.joblib",
+      "purpose": "shap_interpretation_catboost"
+    },
+    "IT_shap": {
+      "dataset": "IT",
+      "model": "CatBoost",
+      "path": "longform_IT_shap_catboost.joblib",
+      "purpose": "shap_interpretation_catboost"
+    },
+    "ALL_shap": {
+      "dataset": "ALL",
+      "model": "CatBoost",
+      "path": "longform_ALL_shap_catboost.joblib",
+      "purpose": "shap_interpretation_catboost"
+    }
+  }
+}
