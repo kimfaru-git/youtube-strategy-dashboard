@@ -134,33 +134,33 @@ st.set_page_config(
 # -----------------------------
 # 1-1. 간단한 비밀번호 보호
 # -----------------------------
-def check_password():
-    """Streamlit 앱 접근 비밀번호 확인"""
+# def check_password():
+#     """Streamlit 앱 접근 비밀번호 확인"""
 
-    # 이미 인증된 경우 통과
-    if st.session_state.get("password_correct", False):
-        return True
+#     # 이미 인증된 경우 통과
+#     if st.session_state.get("password_correct", False):
+#         return True
 
-    st.markdown("### 🔐 대시보드 접근 비밀번호")
+#     st.markdown("### 🔐 대시보드 접근 비밀번호")
 
-    password = st.text_input(
-        "비밀번호를 입력하세요.",
-        type="password",
-        key="dashboard_password_input",
-    )
+#     password = st.text_input(
+#         "비밀번호를 입력하세요.",
+#         type="password",
+#         key="dashboard_password_input",
+#     )
 
-    if st.button("접속하기"):
-        if password == st.secrets.get("APP_PASSWORD", ""):
-            st.session_state["password_correct"] = True
-            st.rerun()
-        else:
-            st.error("비밀번호가 올바르지 않습니다.")
+#     if st.button("접속하기"):
+#         if password == st.secrets.get("APP_PASSWORD", ""):
+#             st.session_state["password_correct"] = True
+#             st.rerun()
+#         else:
+#             st.error("비밀번호가 올바르지 않습니다.")
 
-    return False
+#     return False
 
 
-if not check_password():
-    st.stop()
+# if not check_password():
+#     st.stop()
 
 # -----------------------------
 # 2. 공통 CSS
