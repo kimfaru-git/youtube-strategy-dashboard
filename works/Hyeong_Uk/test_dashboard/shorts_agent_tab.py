@@ -803,32 +803,10 @@ def _refresh_shorts_agent_secrets():
     YOUTUBE_API_KEY = st.secrets.get("YOUTUBE_API_KEY", os.getenv("YOUTUBE_API_KEY", ""))
 
 
-def _render_shorts_agent_source_status():
-    missing = []
-    if not YOUTUBE_API_KEY:
-        missing.append("YOUTUBE_API_KEY")
-    if not GOOGLE_CLOUD_PROJECT:
-        missing.append("GOOGLE_CLOUD_PROJECT")
-    if not GOOGLE_CLOUD_REGION:
-        missing.append("GOOGLE_CLOUD_REGION")
-
-    if missing:
-        st.warning("설정이 부족합니다: " + ", ".join(missing) + " 값이 `.streamlit/secrets.toml`에 필요합니다.")
-
-    with st.expander("데이터/API 설정 확인", expanded=False):
-        st.write("기준 CSV:", str(BASELINE_PATH), "✅" if BASELINE_PATH.exists() else "❌")
-        st.write("영상 분석 agent:", str(AGENT_PATH), "✅" if AGENT_PATH.exists() else "❌")
-        st.write("YouTube API Key:", "설정됨" if YOUTUBE_API_KEY else "없음")
-        st.write("Google Cloud Project:", GOOGLE_CLOUD_PROJECT if GOOGLE_CLOUD_PROJECT else "없음")
-        st.write("Google Cloud Region:", GOOGLE_CLOUD_REGION if GOOGLE_CLOUD_REGION else "없음")
-        st.write("Gemini Prompt Model:", GEMINI_MODEL if GEMINI_MODEL else "없음")
-
-
 def render_shorts_agent_tab():
     _refresh_shorts_agent_secrets()
     _inject_shorts_agent_css()
     _render_shorts_agent_header()
-    _render_shorts_agent_source_status()
 
     baseline_df = load_baseline()
     if baseline_df.empty:
