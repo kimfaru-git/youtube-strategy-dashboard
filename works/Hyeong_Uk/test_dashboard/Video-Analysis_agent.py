@@ -304,11 +304,11 @@ def download_video(url: str, video_id: str, video_dir: str) -> str | None:
 
     ydl_opts = {
         "outtmpl": output_path,
-        "format": "bestvideo+bestaudio/best",
+        "format": "best[ext=mp4]/best",
         "merge_output_format": "mp4",
         "noplaylist": True,
         "quiet": True,
-        "no_warnings": True,
+        "no_warnings": False,
         "retries": 3,
         "fragment_retries": 3,
 
