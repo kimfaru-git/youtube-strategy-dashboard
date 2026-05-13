@@ -145,12 +145,6 @@ try:
 except Exception:
     render_shorts_comment_dashboard = _missing_tab("숏츠 댓글 분석", "shorts_comment_dashboard_tab", "render_shorts_comment_dashboard")
 
-try:
-    from guideline_tab import render_guideline_page
-except Exception:
-    render_guideline_page = _missing_tab("가이드라인", "guideline_tab", "render_guideline_page")
-
-
 # -----------------------------
 # 1. Streamlit 기본 설정
 # -----------------------------
@@ -434,7 +428,6 @@ PAGE_SLUG_MAP = {
     "longform": "롱폼 분석",
     "thumbnail": "썸네일 분석",
     "shorts": "숏츠 분석",
-    "guideline": "가이드라인",
 }
 
 PAGE_TO_SLUG = {value: key for key, value in PAGE_SLUG_MAP.items()}
@@ -471,7 +464,7 @@ def render_sidebar_info(page: str):
         "Home": {
             "title": "데이터 기반 인사이트",
             "desc": "프로젝트 목적과 분석 흐름을 먼저 확인하고, 각 분석 페이지로 이동해 세부 결과를 살펴보세요.",
-            "items": ["📌 프로젝트 개요", "🧩 분석 모듈 소개", "📘 최종 가이드라인 흐름"],
+            "items": ["📌 프로젝트 개요", "🧩 분석 모듈 소개", "📊 분석 기반 운영 인사이트"],
         },
         "롱폼 분석": {
             "title": "롱폼 분석 활용 방법",
@@ -488,15 +481,10 @@ def render_sidebar_info(page: str):
             "desc": "숏츠 영상 구성 요소와 댓글 반응, 최근 채널 진단 결과를 바탕으로 짧은 영상 운영 전략을 정리하세요.",
             "items": ["🎬 숏츠 분석 결과", " 숏츠 agent", "💬 숏츠 댓글 분석"],
         },
-        "가이드라인": {
-            "title": "가이드라인 활용 방법",
-            "desc": "롱폼, 숏츠, 썸네일, 댓글 분석 결과에서 도출한 공통 패턴을 도메인별 운영 가이드라인으로 정리합니다.",
-            "items": ["📘 도메인 선택", "📊 분석 기반 요약"],
-        },
     }.get(page, {
         "title": "대시보드 활용 방법",
         "desc": "좌측 메뉴에서 분석 페이지를 선택해 세부 결과를 확인하세요.",
-        "items": ["📌 분석 결과", " Agent", "📘 가이드라인"],
+        "items": ["📌 분석 결과", " Agent", "📊 운영 인사이트"],
     })
 
     items_html = "".join([f'<div class="sidebar-mini-item">{item}</div>' for item in info["items"]])
@@ -525,7 +513,6 @@ with st.sidebar:
     sidebar_button("롱폼 분석", "📺", "롱폼 분석")
     sidebar_button("썸네일 분석", "🖼️", "썸네일 분석")
     sidebar_button("숏츠 분석", "🎬", "숏츠 분석")
-    sidebar_button("가이드라인", "📘", "가이드라인")
 
     st.markdown("---")
     render_sidebar_info(st.session_state["current_page"])
@@ -609,7 +596,3 @@ elif page == "숏츠 분석":
 
     with tab2:
         render_shorts_agent_tab()
-
-
-elif page == "가이드라인":
-    render_guideline_page()

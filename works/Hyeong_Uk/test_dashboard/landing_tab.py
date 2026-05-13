@@ -455,8 +455,8 @@ def render_landing_page():
                     실무자가 바로 활용할 수 있는 콘텐츠 운영 전략을 도출합니다.
                 </div>
                 <div class="hero-actions">
-                    <a href="?page=longform" target="_self"><div class="hero-primary">▶ 분석 페이지에서 결과 확인</div></a>
-                    <a href="?page=guideline" target="_self"><div class="hero-secondary">▦ 최종 가이드라인으로 연결</div></a>
+                    <a href="?page=longform" target="_self"><div class="hero-primary">▶ 롱폼 분석 보러가기</div></a>
+                    <a href="?page=shorts" target="_self"><div class="hero-secondary">🎬 숏츠 분석 보러가기</div></a>
                 </div>
             </div>
             <div class="hero-visual"></div>
@@ -467,7 +467,7 @@ def render_landing_page():
 
     st.markdown('<div class="section-title">핵심 분석 모듈</div>', unsafe_allow_html=True)
     st.markdown(
-        '<div class="section-subtitle">각 페이지는 하나의 분석 축을 담당하며, 마지막 가이드라인 페이지에서 통합됩니다.</div>',
+        '<div class="section-subtitle">각 페이지는 하나의 분석 축을 담당하며, 분석 결과와 agent 진단을 통해 운영 인사이트를 확인할 수 있습니다.</div>',
         unsafe_allow_html=True,
     )
 
@@ -481,7 +481,7 @@ def render_landing_page():
     with c4:
         _module_card("💬", "댓글 분석", "댓글 감성, 키워드, 반응을 바탕으로 시청자 인사이트를 확인합니다.")
     with c5:
-        _module_card("📘", "가이드라인", "분석 결과와 agent 결과를 통합해 실행 가능한 운영 전략을 제시합니다.")
+        _module_card("📊", "운영 인사이트", "분석 결과와 agent 결과를 바탕으로 실행 가능한 운영 전략을 제시합니다.")
 
     st.markdown('<div class="section-title">핵심 분석 흐름</div>', unsafe_allow_html=True)
     st.markdown(
@@ -514,7 +514,7 @@ def render_landing_page():
                 </div>
                 <div class="flow-item">
                     <div class="flow-badge">5</div>
-                    <div class="flow-icon">✅</div>
+                    <div class="flow-icon">📘</div>
                     <div class="flow-title">가이드라인 제시</div>
                     <div class="flow-desc">실행 가능한 콘텐츠 운영 전략으로 정리합니다.</div>
                 </div>
@@ -592,7 +592,7 @@ def render_landing_page():
             <div class="goal-icon">📌</div>
             <div class="goal-text">
                 본 대시보드는 분석 결과를 나열하는 도구가 아니라,
-                <b>성공 패턴 → Agent 진단 → 실행 가이드라인</b>으로 이어지는 기업 유튜브 전략 설계 도구입니다.
+                <b>성공 패턴 → Agent 진단 → 실행 전략</b>으로 이어지는 기업 유튜브 전략 설계 도구입니다.
             </div>
         </div>
         """,
