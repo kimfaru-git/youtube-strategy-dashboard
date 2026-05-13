@@ -1,4 +1,8 @@
 import streamlit as st
+import os
+import json
+import tempfile
+from pathlib import Path
 
 # ============================================================
 # 기업 유튜브 성공 전략 대시보드 - Main App
@@ -27,6 +31,31 @@ def _missing_tab(tab_name: str, module_name: str, function_name: str):
             unsafe_allow_html=True,
         )
     return _render
+
+def setup_google_credentials_from_streamlit_secrets():
+    """
+    Streamlit Cloud Secrets의 [gcp_service_account] 정보를
+    임시 JSON 파일로 저장하고 GOOGLE_APPLICATION_CREDENTIALS에 등록합니다.
+
+    로컬에서는 [gcp_service_account]가 없으면 기존 gcloud ADC를 그대로 사용합니다.
+    """
+
+    if "gcp_service_account" not in st.secrets:
+        return
+
+    info = dict(st.secrets["gcp_service_account"])
+
+    # private_key가 "\\n" 형태로 들어온 경우 실제 줄바꿈으로 변환
+    if "private_key" in info:
+        info["private_key"] = info["private_key"].replace("\\n", "\n")
+
+    cred_path = Path(tempfile.gettempdir()) / "gcp_service_account.json"
+    cred_path.write_text(json.dumps(info), encoding="utf-8")
+
+    os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = str(cred_path)
+
+
+setup_google_credentials_from_streamlit_secrets()
 
 try:
     from landing_tab import render_landing_page
