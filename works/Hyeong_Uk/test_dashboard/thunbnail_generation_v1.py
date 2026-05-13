@@ -1,8 +1,8 @@
 """
-thumbnail_maker.py — 썸네일 제작 컴포넌트
+thunbnail_generation_v1.py — 썸네일 제작 컴포넌트
 메인 페이지에서 render()를 호출해 원하는 위치에 임베드합니다.
 
-    from thumbnail_maker import render as render_maker
+    from thunbnail_generation_v1 import render as render_maker
     render_maker(FNB, IT, yt_key)
 """
 import streamlit as st
@@ -13,18 +13,20 @@ import base64
 from io import BytesIO
 from datetime import datetime
 from PIL import Image
-from utills_thumbnail import (
+from utills_thumbnail_v2 import (
     inject_css, init_session_state, _load_bench_cache,
     gemini_gen_prompt, gemini_gen_improvement_prompt, gemini_gen_thumbnail_analysis,
     gemini_gen_image, gemini_edit_image, _pts_to_prompt_hint,
-    init_vertex, GenerativeModel, GenerationConfig, fmt_num,
+    init_vertex, _get_genai_client, fmt_num,
     IMAGE_GEN_CONFIG
 )
+from google.genai import types as _genai_types
 
 # ── 모델 상수 ──────────────────────────────────
-GEMINI_PROMPT_MODEL = st.secrets.get("GEMINI_PROMPT_MODEL", "gemini-2.5-flash-lite")
-GEMINI_VISION_MODEL = st.secrets.get("GEMINI_VISION_MODEL", "gemini-2.5-flash")
-IMAGEN_MODEL        = st.secrets.get("IMAGEN_MODEL",        "imagen-4.0-generate-001")
+GEMINI_PROMPT_MODEL     = st.secrets.get("GEMINI_PROMPT_MODEL",  "gemini-2.5-flash-lite")
+GEMINI_VISION_MODEL     = st.secrets.get("GEMINI_VISION_MODEL",  "gemini-2.5-flash")
+GEMINI_IMAGE_MODEL      = st.secrets.get("GEMINI_IMAGE_MODEL",   "gemini-3-pro-image-preview")
+GEMINI_MULTIMODAL_MODEL = GEMINI_IMAGE_MODEL   # 표시용 alias (하위 호환)
 
 # ── 벤치마크 하드코딩 기본값 ──────────────────
 _FNB_HARD = {
@@ -139,7 +141,7 @@ def render(FNB: dict, IT: dict, yt_key: str = ""):
                 f'<span style="font-size:10px;color:#6b7280">개선 지시 프롬프트가 분석 결과를 기반으로 작성됐습니다.</span></div>',
                 unsafe_allow_html=True)
 
-        # ── 기존 썸네일 소스 선택 ──
+        # ── 기존 썸네일 소스 선택 ──   # gemini-3-pro-image-preview 모델은 utills_thumbnail_v2.py 함수에 있음!
         src_mode = st.radio("기존 썸네일 가져오기",
             ["분석한 영상에서 선택", "YouTube URL 입력"],
             horizontal=True, key="imp_src_mode")
@@ -157,6 +159,7 @@ def render(FNB: dict, IT: dict, yt_key: str = ""):
                 for v in st.session_state.fnb_videos:
                     if v.get("verdict") in ("longform","unknown"):
                         all_lf.append({"label": f"[FnB] {v['title'][:40]}", "v": v, "domain": "FnB"})
+                        
             if st.session_state.it_videos:
                 for v in st.session_state.it_videos:
                     if v.get("verdict") in ("longform","unknown"):
@@ -252,253 +255,189 @@ def render(FNB: dict, IT: dict, yt_key: str = ""):
                 else:
                     st.markdown('<div class="api-notice">⚠️ 올바른 YouTube URL을 입력해주세요.<br>예: https://www.youtube.com/watch?v=xxxx 또는 https://youtu.be/xxxx</div>', unsafe_allow_html=True)
 
-        # ── 기존 썸네일 미리보기 + AI 분석/프롬프트 생성 ──
-        imp_keywords = ""
-
+        # ── 기존 썸네일 미리보기 + 자동 분석 + 수정 지시 ──
         if _ref_thumb_url or _ref_thumb_img:
-            st.markdown(
-                """
-                <div style="margin:18px 0 10px 0;">
-                    <div style="font-size:16px;font-weight:900;color:#111827;margin-bottom:4px;">
-                        1. 원본 썸네일 확인 및 AI 분석
-                    </div>
-                    <div style="font-size:12.5px;color:#6b7280;line-height:1.6;">
-                        선택한 썸네일을 먼저 분석한 뒤, 아래의 개선 프롬프트와 생성 버튼으로 이어집니다.
-                    </div>
-                </div>
-                """,
-                unsafe_allow_html=True,
-            )
-
-            col_ref, col_result = st.columns([0.95, 1.35], gap="large")
-
+            col_ref, col_edit = st.columns([1, 2])
             with col_ref:
-                st.markdown(
-                    '<div style="font-size:12px;color:#6b7280;font-weight:700;margin-bottom:6px;">📌 원본 썸네일</div>',
-                    unsafe_allow_html=True,
-                )
-
+                st.markdown('<div style="font-size:11px;color:#9ca3af;margin-bottom:4px">📌 기존 썸네일</div>', unsafe_allow_html=True)
                 if _ref_thumb_url:
                     st.image(_ref_thumb_url, use_container_width=True)
                 elif _ref_thumb_img:
                     st.image(_ref_thumb_img, use_container_width=True)
-
                 if _ref_title:
-                    _title_suffix = "..." if len(_ref_title) > 70 else ""
-                    st.markdown(
-                        f"""
-                        <div style="font-size:12px;color:#6b7280;line-height:1.5;margin-top:6px;word-break:keep-all;">
-                            {_ref_title[:70]}{_title_suffix}
-                        </div>
-                        """,
-                        unsafe_allow_html=True,
-                    )
+                    st.markdown(f'<div style="font-size:9px;color:#9ca3af;margin-top:3px">{_ref_title[:45]}...</div>', unsafe_allow_html=True)
 
-                has_proj = bool(st.session_state.get("vertex_project", ""))
-                if st.button(
-                    "🔍 썸네일 자동 분석 + 프롬프트 생성",
-                    key="imp_auto_analyze",
-                    disabled=not has_proj,
-                    use_container_width=True,
-                    help="Gemini Vision이 기존 썸네일을 분석하고 개선 프롬프트를 자동 작성합니다",
-                ):
-                    with st.spinner("① Gemini Vision 분석 중... ② 개선 프롬프트 생성 중..."):
+                # ── 썸네일 자동 분석 버튼 ──
+                has_proj = bool(st.session_state.get("vertex_project",""))
+                if st.button("🔍 썸네일 자동 분석 + 프롬프트 생성", key="imp_auto_analyze",
+                             disabled=not has_proj, use_container_width=True,
+                             help="Gemini Vision이 기존 썸네일을 분석하고 개선 프롬프트를 자동 작성합니다"):
+                    with st.spinner(f"① {GEMINI_VISION_MODEL} Vision 분석 중... ② {GEMINI_PROMPT_MODEL} 프롬프트 생성 중..."):
                         try:
-                            _p = st.session_state.get("vertex_project", "")
-                            _l = st.session_state.get("vertex_location", "us-central1")
-                            _bench = FNB if _ref_analysis_domain == "FnB" else IT
+                            _p = st.session_state.get("vertex_project","")
+                            _l = st.session_state.get("vertex_location","us-central1")
+                            _bench = FNB if _ref_analysis_domain=="FnB" else IT
+
+                            # 분석 영상 선택 / YouTube URL 모드 모두 URL 사용
                             _url_for_ana = _ref_thumb_url
 
+                            # ── 분석 실행 ──
                             ana_result = gemini_gen_thumbnail_analysis(
-                                _url_for_ana,
-                                _ref_title,
-                                0,
-                                _ref_analysis_domain,
-                                _bench,
-                                _p,
-                                _l,
+                                _url_for_ana, _ref_title, 0,
+                                _ref_analysis_domain, _bench, _p, _l
                             )
                             st.session_state["imp_auto_analysis"] = ana_result
 
-                            _elems = ana_result.get("elements", {})
-                            _strgs = ana_result.get("strengths", [])
-                            _imprv = ana_result.get("improvements", [])
+                            # ── 분석 결과에서 정보 추출 ──
+                            _elems  = ana_result.get("elements", {})
+                            _bench_ = ana_result.get("benchmark", {})
+                            _strgs  = ana_result.get("strengths", [])
+                            _imprv  = ana_result.get("improvements", [])
 
-                            _current_parts = []
+                            # ── 분석 결과 기반 한국어 구조화 가이드 생성 ──
+                            # 사용자가 보고 자유롭게 편집 가능, 백엔드에서 자동 영어 번역됨
+                            _dom_label = "FnB 음식 브랜드" if _ref_analysis_domain == "FnB" else "IT 기술 브랜드"
+
+                            _lines = [
+                                f"[목표] 한국 {_dom_label} 유튜브 썸네일 개선",
+                                "기존 첨부 썸네일 이미지를 참고하여 아래 분석 결과를 반영한 새 썸네일을 생성합니다.",
+                                "",
+                                "[기존 썸네일 현황 (Vision 분석)]",
+                            ]
                             if _elems.get("main_objects"):
-                                _current_parts.append(f"main subject: {_elems['main_objects']}")
+                                _lines.append(f"• 주요 피사체: {_elems['main_objects']}")
                             if _elems.get("color_palette"):
-                                _current_parts.append(f"colors: {_elems['color_palette']}")
+                                _lines.append(f"• 색감/톤: {_elems['color_palette']}")
                             if _elems.get("person_details"):
-                                _current_parts.append(f"person: {_elems['person_details']}")
-                            if _elems.get("brand_elements") and _elems["brand_elements"] != "없음":
-                                _current_parts.append(f"brand: {_elems['brand_elements']}")
-                            _current_desc = ", ".join(_current_parts[:4]) if _current_parts else ""
+                                _lines.append(f"• 인물: {_elems['person_details']}")
+                            if _elems.get("text_overlay") and _elems["text_overlay"] != "텍스트 없음":
+                                _lines.append(f"• 텍스트: {_elems['text_overlay']}")
+                            if _elems.get("brand_elements") and _elems["brand_elements"] not in ("없음", ""):
+                                _lines.append(f"• 브랜드: {_elems['brand_elements']}")
 
-                            _keep = _strgs[0] if _strgs else ""
+                            if _strgs:
+                                _lines.append("")
+                                _lines.append("[유지할 강점]")
+                                for _s in _strgs[:2]:
+                                    _lines.append(f"• {_s}")
 
-                            _improve_parts = []
-                            for tip in _imprv[:3]:
-                                if isinstance(tip, dict) and tip.get("prompt_hint"):
-                                    _improve_parts.append(tip["prompt_hint"])
-                                elif isinstance(tip, str):
-                                    _improve_parts.append(tip)
-                            _improve_desc = "; ".join(_improve_parts) if _improve_parts else "improve overall visual quality"
+                            if _imprv:
+                                _lines.append("")
+                                _lines.append("[개선 방향]")
+                                for _i, _tip in enumerate(_imprv[:3], 1):
+                                    if isinstance(_tip, dict):
+                                        _issue = _tip.get("issue", "").strip()
+                                        _action = _tip.get("action", "").strip()
+                                        if _issue and _action:
+                                            _lines.append(f"{_i}. {_issue}")
+                                            _lines.append(f"   → 개선: {_action}")
+                                        elif _action:
+                                            _lines.append(f"{_i}. {_action}")
+                                    elif isinstance(_tip, str):
+                                        _lines.append(f"{_i}. {_tip}")
 
-                            _domain_ctx = (
-                                "Korean FnB food & beverage brand, warm appetizing style"
-                                if _ref_analysis_domain == "FnB"
-                                else "Korean IT tech company, professional clean style"
-                            )
+                            _lines.append("")
+                            _lines.append("[텍스트·로고 규칙 — 중요]")
+                            _lines.append("• 기존 썸네일의 텍스트(글자)와 로고는 반드시 보존 — 완전 제거 금지")
+                            _lines.append("• 단, 스타일 개선은 OK: 폰트 두께/크기/위치/색상/그림자/배경과의 어우러짐")
+                            _lines.append("• 기존 텍스트 문구는 가독성 유지, 브랜드 로고는 식별 가능하게 유지")
+                            _lines.append("• ⚠ 얼굴 보호: 텍스트/로고가 인물의 눈·코·입·턱을 절대 가리지 않도록 — 빈 공간 쪽 또는 턱 아래로 배치, 필요시 텍스트 크기를 줄여서라도 얼굴 위로 겹치지 말 것")
+                            _lines.append("")
+                            _lines.append("[제약 조건]")
+                            _lines.append("• 16:9 가로 비율")
+                            _lines.append("• 한국 브랜드 미감, 강력한 시각적 후킹")
+                            _lines.append("• 고품질 전문 사진 스타일")
+                            _lines.append("")
+                            _lines.append("※ 위 내용을 자유롭게 수정/추가하세요. 한국어로 작성하면 자동으로 영어 번역되어 이미지 생성됩니다.")
 
-                            _auto_prompt = (
-                                f"Improved YouTube thumbnail for {_domain_ctx}. "
-                                + (f"Original thumbnail features: {_current_desc}. " if _current_desc else "")
-                                + (f"Preserve strengths: {_keep}. " if _keep else "")
-                                + f"Apply these improvements: {_improve_desc}. "
-                                + "High quality professional photography, 16:9 aspect ratio, "
-                                + "Korean brand thumbnail aesthetic, strong visual hook"
-                            )
+                            _auto_prompt = "\n".join(_lines)
 
                             st.session_state["imp_prompt"] = _auto_prompt
                             st.rerun()
                         except Exception as e:
                             st.error(f"분석 실패: {e}")
 
-            with col_result:
+                # 분석 결과 표시
                 _auto_analysis = st.session_state.get("imp_auto_analysis") or _ref_analysis
-
-                st.markdown(
-                    """
-                    <div style="background:#ffffff;border:1px solid #e5e7eb;border-radius:18px;
-                                padding:18px 20px;box-shadow:0 5px 18px rgba(15,23,42,0.055);">
-                        <div style="display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:6px;">
-                            <div style="font-size:17px;font-weight:950;color:#111827;">AI 분석 결과</div>
-                            <span style="background:#eff6ff;color:#2563eb;border:1px solid #bfdbfe;
-                                         padding:4px 9px;border-radius:999px;font-size:11px;font-weight:900;">Gemini Vision</span>
-                        </div>
-                        <div style="font-size:12.5px;color:#6b7280;line-height:1.6;margin-bottom:14px;">
-                            썸네일의 <b>강점</b>과 <b>개선점</b>을 분리해서 보여주고, 아래 개선 프롬프트에 자동 반영합니다.
-                        </div>
-                    </div>
-                    """,
-                    unsafe_allow_html=True,
-                )
-
-                if not (_auto_analysis and isinstance(_auto_analysis, dict)):
-                    st.markdown(
-                        """
-                        <div style="background:#f8fafc;border:1px dashed #cbd5e1;border-radius:18px;
-                                    padding:34px 18px;text-align:center;margin-top:12px;">
-                            <div style="font-size:32px;margin-bottom:8px;">🔍</div>
-                            <div style="font-size:15px;font-weight:950;color:#111827;margin-bottom:6px;">아직 분석 전입니다</div>
-                            <div style="font-size:13px;color:#64748b;line-height:1.7;word-break:keep-all;">
-                                왼쪽의 <b>썸네일 자동 분석 + 프롬프트 생성</b> 버튼을 누르면<br>
-                                강점, 개선점, 생성 프롬프트가 자동으로 채워집니다.
-                            </div>
-                        </div>
-                        """,
-                        unsafe_allow_html=True,
-                    )
-                else:
-                    strengths = _auto_analysis.get("strengths", []) or []
-                    imprv_list = _auto_analysis.get("improvements", []) or []
-
-                    summary_cols = st.columns(3)
-                    with summary_cols[0]:
-                        st.markdown(
-                            f"""
-                            <div style="background:#f0fdf4;border:1px solid #bbf7d0;border-radius:15px;padding:13px 14px;text-align:center;">
-                                <div style="font-size:20px;font-weight:950;color:#16a34a;">{len(strengths)}</div>
-                                <div style="font-size:11.5px;color:#166534;font-weight:850;">유지 강점</div>
-                            </div>
-                            """,
-                            unsafe_allow_html=True,
-                        )
-                    with summary_cols[1]:
-                        st.markdown(
-                            f"""
-                            <div style="background:#fff7ed;border:1px solid #fed7aa;border-radius:15px;padding:13px 14px;text-align:center;">
-                                <div style="font-size:20px;font-weight:950;color:#f97316;">{len(imprv_list)}</div>
-                                <div style="font-size:11.5px;color:#9a3412;font-weight:850;">개선 포인트</div>
-                            </div>
-                            """,
-                            unsafe_allow_html=True,
-                        )
-                    with summary_cols[2]:
-                        st.markdown(
-                            f"""
-                            <div style="background:#eff6ff;border:1px solid #bfdbfe;border-radius:15px;padding:13px 14px;text-align:center;">
-                                <div style="font-size:20px;font-weight:950;color:#2563eb;">{_ref_analysis_domain}</div>
-                                <div style="font-size:11.5px;color:#1e40af;font-weight:850;">적용 도메인</div>
-                            </div>
-                            """,
-                            unsafe_allow_html=True,
-                        )
-
-                    if strengths:
-                        st.markdown(
-                            '<div style="font-size:14px;font-weight:950;color:#111827;margin:16px 0 8px;">유지하면 좋은 점</div>',
-                            unsafe_allow_html=True,
-                        )
-                        for point in strengths[:2]:
-                            st.markdown(
-                                f"""
-                                <div style="background:#f0fdf4;border:1px solid #bbf7d0;border-left:5px solid #16a34a;
-                                            border-radius:13px;padding:11px 13px;margin-bottom:9px;color:#14532d;
-                                            font-size:13px;line-height:1.65;word-break:keep-all;">
-                                    {point}
-                                </div>
-                                """,
-                                unsafe_allow_html=True,
-                            )
-
+                if _auto_analysis and isinstance(_auto_analysis, dict):
+                    imprv_list = _auto_analysis.get("improvements",[])
                     if imprv_list:
-                        st.markdown(
-                            '<div style="font-size:14px;font-weight:950;color:#111827;margin:16px 0 8px;">분석된 개선점</div>',
-                            unsafe_allow_html=True,
+                        st.markdown('<div style="font-size:10px;color:#ea580c;font-weight:600;margin:8px 0 4px">💡 분석된 개선점</div>', unsafe_allow_html=True)
+                        for tip in imprv_list[:3]:
+                            issue  = tip.get("issue","") if isinstance(tip,dict) else str(tip)
+                            action = tip.get("action","") if isinstance(tip,dict) else ""
+                            st.markdown(
+                                f'<div style="background:#f0f2f5;border-left:3px solid #ff9944;border-radius:0 5px 5px 0;padding:5px 8px;margin-bottom:4px">' 
+                                f'<div style="color:#ff7020;font-size:9px;font-weight:600">{issue}</div>' 
+                                f'<div style="color:#374151;font-size:9px;margin-top:2px">→ {action}</div></div>',
+                                unsafe_allow_html=True)
+
+            with col_edit:
+                st.markdown('<div style="font-size:11px;color:#9ca3af;margin-bottom:4px">✏️ 수정하고 싶은 내용을 직접 입력하세요</div>', unsafe_allow_html=True)
+                imp_keywords = st.text_area(
+                    "수정 지시",
+                    placeholder="예: 인물 얼굴을 더 크게 클로즈업\n배경을 단순하게 정리\n브랜드 로고 오른쪽 하단에 배치\n전체적으로 더 밝고 따뜻한 색감으로",
+                    key="imp_kw", height=120, label_visibility="collapsed")
+
+                imp_kw_c1, imp_kw_c2 = st.columns([1,1])
+                with imp_kw_c1:
+                    imp_auto = st.button("✨ 프롬프트 자동생성", key="imp_auto",
+                                        disabled=not st.session_state.get("vertex_project",""),
+                                        use_container_width=True)
+                with imp_kw_c2:
+                    if st.button("🗑 초기화", key="imp_clear", use_container_width=True):
+                        st.session_state["thumb_analysis_queue"] = None
+                        st.session_state["imp_auto_analysis"] = None
+                        st.session_state["imp_prompt"] = ""
+                        st.rerun()
+
+            # 프롬프트 자동생성 버튼 (Gemini + 분석 결과 + 사용자 수정 지시 통합)
+            if imp_auto:
+                _proj = st.session_state.get("vertex_project","")
+                _loc  = st.session_state.get("vertex_location","us-central1")
+                _cur_ana = st.session_state.get("imp_auto_analysis") or _ref_analysis
+
+                try:
+                    _elems = (_cur_ana or {}).get("elements", {})
+                    _imprv = (_cur_ana or {}).get("improvements", [])
+                    _strgs = (_cur_ana or {}).get("strengths", [])
+
+                    current_summary = ", ".join(filter(None, [
+                        _elems.get("main_objects", ""),
+                        _elems.get("color_palette", ""),
+                        _elems.get("person_details", ""),
+                        _elems.get("brand_elements", ""),
+                    ]))[:400]
+
+                    improvement_hints = []
+                    for tip in _imprv[:5]:
+                        if isinstance(tip, dict):
+                            if tip.get("prompt_hint"):
+                                improvement_hints.append(tip["prompt_hint"])
+                            elif tip.get("action"):
+                                improvement_hints.append(tip["action"])
+                        elif isinstance(tip, str):
+                            improvement_hints.append(tip)
+
+                    with st.spinner(f"{GEMINI_PROMPT_MODEL}로 개선 프롬프트 생성 중..."):
+                        _new_prompt = gemini_gen_improvement_prompt(
+                            user_instruction=imp_keywords.strip(),
+                            domain=_ref_analysis_domain,
+                            current_summary=current_summary,
+                            strengths=_strgs,
+                            improvement_hints=improvement_hints,
+                            project_id=_proj,
+                            location=_loc,
                         )
 
-                        for idx, tip in enumerate(imprv_list[:4]):
-                            issue = tip.get("issue", "") if isinstance(tip, dict) else str(tip)
-                            action = tip.get("action", "") if isinstance(tip, dict) else ""
+                    st.session_state["imp_prompt"] = _new_prompt
+                    st.rerun()
 
-                            st.markdown(
-                                f"""
-                                <div style="background:#fff7ed;border:1px solid #fed7aa;border-radius:15px;
-                                            padding:13px 14px;margin-bottom:10px;">
-                                    <div style="display:flex;align-items:flex-start;gap:9px;margin-bottom:6px;">
-                                        <span style="background:#f97316;color:white;border-radius:999px;width:23px;height:23px;
-                                                     display:inline-flex;align-items:center;justify-content:center;
-                                                     font-size:11px;font-weight:950;flex-shrink:0;">{idx+1}</span>
-                                        <div style="color:#9a3412;font-size:13.5px;font-weight:950;line-height:1.45;word-break:keep-all;">
-                                            {issue}
-                                        </div>
-                                    </div>
-                                    <div style="color:#4b5563;font-size:12.8px;line-height:1.65;word-break:keep-all;margin-left:32px;">
-                                        {action}
-                                    </div>
-                                </div>
-                                """,
-                                unsafe_allow_html=True,
-                            )
+                except Exception as e:
+                    st.error(f"프롬프트 자동생성 실패: {e}")
 
-            st.markdown(
-                """
-                <div style="margin:18px 0 10px 0;">
-                    <div style="font-size:16px;font-weight:900;color:#111827;margin-bottom:4px;">
-                        2. 썸네일 개선 프롬프트 확인 및 생성
-                    </div>
-                    <div style="font-size:12.5px;color:#6b7280;line-height:1.6;">
-                        자동 생성된 프롬프트를 확인하고 필요한 경우 직접 수정한 뒤 개선 썸네일을 생성합니다.
-                    </div>
-                </div>
-                """,
-                unsafe_allow_html=True,
-            )
             # 프롬프트 초기값 — 분석 결과 있으면 그걸 기반으로, 없으면 기본값
             imp_is_fnb = (_ref_analysis_domain == "FnB")
-            imp_dk = _ref_analysis_domain
             _cur_ana_for_default = st.session_state.get("imp_auto_analysis") or _ref_analysis
 
             if _cur_ana_for_default and isinstance(_cur_ana_for_default, dict):
@@ -529,9 +468,9 @@ def render(FNB: dict, IT: dict, yt_key: str = ""):
                 st.session_state["imp_prompt"] = _imp_default
 
             imp_final_prompt = st.text_area(
-                "AI 썸네일 개선 프롬프트",
-                key="imp_prompt", height=115,
-                help="자동 생성된 개선 프롬프트입니다. 필요한 경우 직접 수정한 뒤 생성하세요. 생성 시 영어로 변환되어 Imagen에 전달됩니다.")
+                "개선 지시 (한국어로 작성 → 자동 번역 후 생성)",
+                key="imp_prompt", height=420,
+                help=f"한국어로 자유롭게 작성하세요. 생성 시 {GEMINI_PROMPT_MODEL}가 영어로 번역해 {GEMINI_IMAGE_MODEL}에 전달합니다. 분석 결과 기반 가이드가 자동으로 채워지며 자유롭게 수정 가능합니다.")
 
             imp_gen_btn = st.button("🔧 개선 썸네일 생성", key="imp_gen",
                                    disabled=not st.session_state.get("vertex_project",""),
@@ -555,17 +494,24 @@ def render(FNB: dict, IT: dict, yt_key: str = ""):
                                     _hints_list.append(tip["prompt_hint"])
                     analysis_hints = "; ".join(_hints_list[:3]) if _hints_list else ""
 
-                    edit_instruction = imp_final_prompt.strip()
+                    edit_instruction = imp_keywords.strip() or imp_final_prompt.strip()
 
-                    with st.spinner("① 기존 썸네일 스타일 분석 중... ② 개선 이미지 생성 중... (최대 60초)"):
+                    with st.spinner(f"① 기존 썸네일 다운로드 중... ② {GEMINI_VISION_MODEL} 스타일 분석 중... ③ {GEMINI_IMAGE_MODEL} 개선 이미지 생성 중..."):
                         try:
+                            # URL → bytes 먼저 다운로드
+                            _r = requests.get(_ref_thumb_url, timeout=15)
+                            _r.raise_for_status()
+                            _thumb_bytes = _r.content
+
                             img_bytes, used_prompt = gemini_edit_image(
-                                _ref_thumb_url,
-                                edit_instruction,
-                                analysis_hints,
-                                _ref_analysis_domain,
-                                _proj, _loc,
+                                img_bytes_or_url=_thumb_bytes,   # bytes 전달
+                                edit_prompt=edit_instruction,     # 키워드 인자
+                                analysis_hints=analysis_hints,
+                                domain=_ref_analysis_domain,
+                                project_id=_proj,
+                                location=_loc,
                             )
+                            
                             img = Image.open(BytesIO(img_bytes))
                             st.session_state.generated_thumb = {
                                 "bytes": img_bytes, "image": img,
@@ -616,7 +562,7 @@ def render(FNB: dict, IT: dict, yt_key: str = ""):
             if not keywords.strip():
                 st.error("키워드를 먼저 입력해주세요")
             else:
-                with st.spinner("Gemini 프롬프트 생성 중..."):
+                with st.spinner(f"{GEMINI_PROMPT_MODEL} 프롬프트 생성 중..."):
                     try:
                         ch_info = st.session_state.fnb_channel if is_fnb else st.session_state.it_channel
                         _proj = st.session_state.get("vertex_project","")
@@ -681,8 +627,8 @@ def render(FNB: dict, IT: dict, yt_key: str = ""):
 
         final_prompt_ko = st.text_area(
             "썸네일 개념 설명 (한국어 → 자동 번역 후 생성)",
-            key="final_prompt_ko", height=100,
-            help="한국어로 자유롭게 작성하세요. 분석된 영상의 특징이 자동으로 반영됩니다.")
+            key="final_prompt_ko", height=420,
+            help=f"한국어로 자유롭게 작성하세요. ✨ 프롬프트 자동생성 버튼을 누르면 {GEMINI_PROMPT_MODEL}이 분석 결과·도메인·카테고리를 반영한 구조화 가이드를 채워줍니다. 자유롭게 수정한 뒤 🎨 생성 버튼을 누르면 {GEMINI_IMAGE_MODEL}로 전송됩니다.")
         final_prompt = final_prompt_ko
 
         gen_btn = st.button("🎨 새 썸네일 생성하기", key="gen_btn", disabled=not st.session_state.get("vertex_project",""), use_container_width=True)
@@ -692,7 +638,7 @@ def render(FNB: dict, IT: dict, yt_key: str = ""):
             else:
                 _proj = st.session_state.get("vertex_project","")
                 _loc  = st.session_state.get("vertex_location","us-central1")
-                with st.spinner("Vertex AI Imagen으로 이미지 생성 중... (최대 60초)"):
+                with st.spinner(f"{GEMINI_MULTIMODAL_MODEL}로 새 썸네일 생성 중... (최대 60초)"):
                     try:
                         # 자동생성 버튼으로 만든 영어 프롬프트 있으면 재사용
                         _stored_en = st.session_state.get("generated_prompt","")
@@ -710,22 +656,33 @@ def render(FNB: dict, IT: dict, yt_key: str = ""):
                                 "- Output 80-120 words. Return ONLY the English prompt, no explanation.\n\n"
                                 f"Korean: {final_prompt_ko.strip()}"
                             )
-                            _tr_resp = GenerativeModel(GEMINI_PROMPT_MODEL).generate_content(
-                                _tr_prompt,
-                                generation_config=GenerationConfig(
+                            _tr_client = _get_genai_client(_proj, _loc)
+                            _tr_resp = _tr_client.models.generate_content(
+                                model=GEMINI_PROMPT_MODEL,
+                                contents=[_tr_prompt],
+                                config=_genai_types.GenerateContentConfig(
                                     temperature=IMAGE_GEN_CONFIG["translate_temperature"],
                                     max_output_tokens=IMAGE_GEN_CONFIG["translate_max_tokens"],
                                 ),
                             )
-                            _translated = _tr_resp.text.strip()
+                            _translated = (_tr_resp.text or "").strip()
                         ctx = "Korean food beverage brand, warm appetizing" if is_fnb else "Korean IT company, professional corporate"
                         full_p = (
                             f"{_translated}. "
-                            f"YouTube thumbnail, {t_category} style, {t_color} color tone, {ctx}. "
+                            f"Korean YouTube thumbnail, {t_category} style, {t_color} color tone, {ctx}. "
                             f"VIVID saturated colors, BRIGHT well-lit, HIGH CONTRAST, "
-                            f"subject fills majority of frame, dynamic eye-catching composition, "
-                            f"clean background, wide horizontal format. "
-                            f"Do not render any text or letters inside the image."
+                            f"subject fills 60-80% of frame, dynamic eye-catching composition, "
+                            f"clean background, wide horizontal 16:9 format. "
+                            f"Text & logo policy: if the keywords suggest a hook word, "
+                            f"include a short Korean text overlay (2-5 characters, bold sans-serif, "
+                            f"heavy weight, white text with thick black outline or strong drop shadow, "
+                            f"placed on the clean side of the frame). "
+                            f"If a brand or product is named, include a small brand logo "
+                            f"in the lower-left or lower-right corner. "
+                            f"Otherwise leave ~30% of one side as clean space and do NOT invent random text. "
+                            f"FACE PROTECTION (NON-NEGOTIABLE): text and logos must NEVER overlap any person's face — "
+                            f"eyes, nose, mouth, and chin stay fully visible. Place text on the clean side opposite the face, "
+                            f"or in the bottom strip below the chin. Shrink text before ever crossing the face."
                         )
                         if applied_guide and isinstance(applied_guide, dict):
                             full_p += f" Brand: {applied_guide['text'][:80]}"
@@ -745,126 +702,79 @@ def render(FNB: dict, IT: dict, yt_key: str = ""):
     # ─── 공통 결과 미리보기 ───
     if st.session_state.generated_thumb:
         t = st.session_state.generated_thumb
-        st.markdown("<hr style='border-color:#e5e7eb;margin:24px 0 18px;'>", unsafe_allow_html=True)
+        st.markdown("<hr style='border-color:#e5e7eb'>", unsafe_allow_html=True)
+        mode_badge = (f'<span class="badge badge-green">{t.get("mode","신규")}</span>'
+                      if t.get("mode")=="신규"
+                      else f'<span class="badge badge-orange">{t.get("mode","개선")}</span>')
+        st.markdown(f'<div style="font-size:12px;font-weight:600;color:#1f2937;margin-bottom:8px">🖼 생성 결과 {mode_badge}</div>', unsafe_allow_html=True)
 
-        mode_badge = (
-            f'<span class="badge badge-green">{t.get("mode","신규")}</span>'
-            if t.get("mode") == "신규"
-            else f'<span class="badge badge-orange">{t.get("mode","개선")}</span>'
-        )
-
-        st.markdown(
-            f"""
-            <div style="background:#ffffff;border:1px solid #e5e7eb;border-radius:20px;
-                        padding:20px 22px;box-shadow:0 5px 18px rgba(15,23,42,0.055);margin-bottom:14px;">
-                <div style="display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:14px;">
-                    <div>
-                        <div style="font-size:19px;font-weight:950;color:#111827;letter-spacing:-0.4px;">생성 결과</div>
-                        <div style="font-size:12.5px;color:#6b7280;line-height:1.6;margin-top:3px;">
-                            원본과 개선 결과를 비교하고, PNG 다운로드 또는 저장 리스트 추가를 선택할 수 있습니다.
-                        </div>
-                    </div>
-                    <div>{mode_badge}</div>
-                </div>
-            """,
-            unsafe_allow_html=True,
-        )
-
+        # 개선 모드면 before/after 비교
         if t.get("mode") == "개선" and t.get("source_thumb"):
-            import base64 as _b64
-            _after_b64 = _b64.b64encode(t["bytes"]).decode()
-            _src_title = (t.get("source_title") or "")[:48]
-
+            _after_b64 = base64.b64encode(t["bytes"]).decode()
+            _src_title = (t.get("source_title") or "")[:35]
             st.markdown(
-                f"""
-                <div style="display:grid;grid-template-columns:1fr 56px 1fr;align-items:center;gap:18px;margin-bottom:16px;">
-                    <div>
-                        <div style="font-size:12px;color:#6b7280;font-weight:800;margin-bottom:6px;text-align:center;">BEFORE · 원본</div>
-                        <img src="{t["source_thumb"]}" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;border:1px solid #e5e7eb;">
-                        <div style="font-size:11px;color:#9ca3af;margin-top:5px;text-align:center;word-break:keep-all;">{_src_title}</div>
-                    </div>
-                    <div style="display:flex;align-items:center;justify-content:center;">
-                        <div style="width:44px;height:44px;background:#fff7ed;border:1px solid #fed7aa;
-                                    border-radius:999px;display:flex;align-items:center;justify-content:center;
-                                    color:#f97316;font-size:22px;font-weight:950;">→</div>
-                    </div>
-                    <div>
-                        <div style="font-size:12px;color:#16a34a;font-weight:800;margin-bottom:6px;text-align:center;">AFTER · AI 개선</div>
-                        <img src="data:image/png;base64,{_after_b64}" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;border:2px solid #22c55e;">
-                        <div style="font-size:11px;color:#9ca3af;margin-top:5px;text-align:center;">{t["generated_at"]}</div>
-                    </div>
-                </div>
-                """,
-                unsafe_allow_html=True,
+                f'<div style="display:flex;align-items:center;gap:12px;margin-bottom:8px">'
+                f'<div style="flex:1;min-width:0">'
+                f'<div style="font-size:10px;color:#9ca3af;margin-bottom:4px;text-align:center">BEFORE (원본)</div>'
+                f'<img src="{t["source_thumb"]}" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:6px;border:1px solid #e5e7eb">'
+                f'<div style="font-size:9px;color:#9ca3af;margin-top:3px;text-align:center">{_src_title}...</div>'
+                f'</div>'
+                f'<div style="flex-shrink:0;display:flex;align-items:center;justify-content:center;'
+                f'width:36px;height:36px;background:#f3f4f6;border-radius:50%;border:1px solid #d1d5db">'
+                f'<span style="font-size:18px;color:#d97706;line-height:1">&#8594;</span>'
+                f'</div>'
+                f'<div style="flex:1;min-width:0">'
+                f'<div style="font-size:10px;color:#16a34a;margin-bottom:4px;text-align:center">AFTER (AI 개선)</div>'
+                f'<img src="data:image/png;base64,{_after_b64}" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:6px;border:1px solid #2ba640">'
+                f'<div style="font-size:9px;color:#9ca3af;margin-top:3px;text-align:center">{t["generated_at"]}</div>'
+                f'</div>'
+                f'</div>',
+                unsafe_allow_html=True
             )
+
+            p2_col = st.columns([1])[0]
+            with p2_col:
+                bc = "badge-red" if t["domain"]=="FnB" else "badge-blue"
+                st.markdown(
+                    f'<div class="yt-card" style="margin-top:8px"><div style="font-size:10px;color:#9ca3af;margin-bottom:6px">생성 정보</div>'
+                    f'<span class="badge {bc}">{t["domain"]}</span>'
+                    f'  <span style="font-size:11px;color:#4b5563">{t["category"]}</span>'
+                    f'<div style="font-size:10px;color:#9ca3af;margin-top:6px">{t["generated_at"]} | {GEMINI_MULTIMODAL_MODEL}</div></div>',
+                    unsafe_allow_html=True)
         else:
-            st.image(t["image"], use_container_width=True)
+            p1, p2 = st.columns([3,1])
+            with p1:
+                st.image(t["image"], use_container_width=True)
+                st.markdown(f'<div style="font-size:10px;color:#9ca3af;margin-top:4px">{t["generated_at"]} | {GEMINI_MULTIMODAL_MODEL}</div>', unsafe_allow_html=True)
+            with p2:
+                bc = "badge-red" if t["domain"]=="FnB" else "badge-blue"
+                st.markdown(
+                    f'<div class="yt-card"><div style="font-size:10px;color:#9ca3af;margin-bottom:8px">생성 정보</div>'
+                    f'<span class="badge {bc}">{t["domain"]}</span>'
+                    f'<div style="font-size:11px;color:#4b5563;margin-top:6px">{t["category"]}</div></div>',
+                    unsafe_allow_html=True)
 
-        bc = "badge-red" if t["domain"] == "FnB" else "badge-blue"
-        st.markdown(
-            f"""
-            <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:10px 0 14px;">
-                <div style="background:#f9fafb;border:1px solid #e5e7eb;border-radius:14px;padding:12px 14px;">
-                    <div style="font-size:11px;color:#9ca3af;font-weight:800;margin-bottom:5px;">도메인</div>
-                    <span class="badge {bc}">{t["domain"]}</span>
-                </div>
-                <div style="background:#f9fafb;border:1px solid #e5e7eb;border-radius:14px;padding:12px 14px;">
-                    <div style="font-size:11px;color:#9ca3af;font-weight:800;margin-bottom:5px;">생성 방식</div>
-                    <div style="font-size:13px;color:#111827;font-weight:900;">{t.get("mode","신규")} · {t["category"]}</div>
-                </div>
-                <div style="background:#f9fafb;border:1px solid #e5e7eb;border-radius:14px;padding:12px 14px;">
-                    <div style="font-size:11px;color:#9ca3af;font-weight:800;margin-bottom:5px;">생성 시각</div>
-                    <div style="font-size:13px;color:#111827;font-weight:900;">{t["generated_at"]}</div>
-                </div>
-            </div>
-            """,
-            unsafe_allow_html=True,
-        )
-
-        st.markdown("</div>", unsafe_allow_html=True)
-
-        buf = BytesIO()
-        t["image"].save(buf, "PNG")
-        act1, act2, act3 = st.columns([1, 1, 2], gap="medium")
-        with act1:
-            st.download_button(
-                "⬇ PNG 다운로드",
-                buf.getvalue(),
-                f"thumb_{int(time.time())}.png",
-                "image/png",
-                key="dl_thumb",
-                use_container_width=True,
-            )
-        with act2:
-            if st.button("💾 저장 리스트에 추가", key="save_thumb", use_container_width=True):
-                buf2 = BytesIO()
-                t["image"].save(buf2, "PNG")
+        # 저장 버튼 (공통)
+        sv1, sv2 = st.columns([1,3])
+        with sv1:
+            buf = BytesIO(); t["image"].save(buf, "PNG")
+            st.download_button("⬇ PNG 다운로드", buf.getvalue(),
+                f"thumb_{int(time.time())}.png", "image/png", key="dl_thumb")
+        with sv2:
+            if st.button("💾 저장함에 저장", key="save_thumb"):
+                buf2 = BytesIO(); t["image"].save(buf2,"PNG")
                 st.session_state.saved_items.append({
-                    "id": int(time.time() * 1000),
-                    "type": "thumbnail",
+                    "id": int(time.time()*1000), "type": "thumbnail",
                     "domain": t["domain"],
                     "title": f"{t.get('mode','신규')} {t['category']} 썸네일",
                     "prompt": t["prompt"],
                     "image_bytes": buf2.getvalue(),
-                    "source_thumb": t.get("source_thumb", ""),
-                    "source_title": t.get("source_title", ""),
-                    "mode": t.get("mode", "신규"),
+                    "source_thumb": t.get("source_thumb",""),
+                    "source_title": t.get("source_title",""),
+                    "mode": t.get("mode","신규"),
                     "saved_at": datetime.now().strftime("%Y-%m-%d %H:%M"),
                 })
-                st.session_state["thumb_save_success_msg"] = "저장 리스트에 추가했습니다. 현재 대시보드 세션에서 확인할 수 있습니다."
-        with act3:
-            st.markdown(
-                """
-                <div style="background:#eff6ff;border:1px solid #bfdbfe;border-radius:14px;
-                            padding:10px 12px;color:#1e40af;font-size:12.5px;line-height:1.6;word-break:keep-all;">
-                    저장 리스트는 현재 Streamlit 세션에 임시 저장됩니다. 파일로 보관하려면 PNG 다운로드를 사용하세요.
-                </div>
-                """,
-                unsafe_allow_html=True,
-            )
-
-        if st.session_state.get("thumb_save_success_msg"):
-            st.success(st.session_state["thumb_save_success_msg"])
+                st.success("저장 완료!")
 
 # ══════════════════════════════════════════════
 # 단독 실행  streamlit run thunbnail_generation_v1.py

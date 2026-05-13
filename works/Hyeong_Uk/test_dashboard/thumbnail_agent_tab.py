@@ -11,7 +11,7 @@ from datetime import datetime
 try:
     from thunbnail_analysis_v1 import render as render_original_thumbnail_agent
     from thunbnail_analysis_v1 import get_bench_data
-    from utills_thumbnail import init_session_state
+    from utills_thumbnail_v2 import init_session_state
 except Exception as e:
     render_original_thumbnail_agent = None
     get_bench_data = None

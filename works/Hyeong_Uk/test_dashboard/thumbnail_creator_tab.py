@@ -12,7 +12,7 @@ from io import BytesIO
 try:
     from thunbnail_generation_v1 import render as render_original_thumbnail_creator
     from thunbnail_generation_v1 import get_bench_data
-    from utills_thumbnail import init_session_state
+    from utills_thumbnail_v2 import init_session_state
 except Exception as e:
     render_original_thumbnail_creator = None
     get_bench_data = None
