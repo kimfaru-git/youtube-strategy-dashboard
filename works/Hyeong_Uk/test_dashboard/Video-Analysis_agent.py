@@ -36,6 +36,7 @@ def _build_youtube_cookiefile():
     임시 cookies.txt 파일로 만들고 경로를 반환합니다.
     """
     cookies = os.getenv("YOUTUBE_COOKIES", "")
+    print(f"DEBUG child YOUTUBE_COOKIES length: {len(cookies)}")
 
     if not str(cookies).strip():
         try:

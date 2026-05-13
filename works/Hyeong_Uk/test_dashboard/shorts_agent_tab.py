@@ -527,6 +527,8 @@ def run_video_agent(
     env["YOUTUBE_API_KEY"]      = st.secrets.get("YOUTUBE_API_KEY", os.getenv("YOUTUBE_API_KEY", ""))
     env["YOUTUBE_COOKIES"] = st.secrets.get("YOUTUBE_COOKIES", "")
 
+    st.caption(f"DEBUG parent YOUTUBE_COOKIES length: {len(env.get('YOUTUBE_COOKIES', ''))}")
+
     proc = subprocess.Popen(
         cmd,
         stdout=subprocess.PIPE,
