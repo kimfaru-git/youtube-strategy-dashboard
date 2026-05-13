@@ -20,7 +20,7 @@ missingno
 pillow
 requests
 beautifulsoup4
-yt-dlp
+yt-dlp[default]
 opencv-python-headless
 ffmpeg-python
 youtube-transcript-api

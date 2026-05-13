@@ -9,3 +9,5 @@ backup_unused/
 *.mp4
 persona_shorts_guideline/videos/
 works/Hyeong_Uk/test_dashboard/persona_shorts_guideline/videos/
+
+*cookies*.txt

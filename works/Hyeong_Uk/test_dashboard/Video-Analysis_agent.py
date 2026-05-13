@@ -7,6 +7,8 @@ import asyncio
 import argparse
 import cv2                   # OpenCV - 정량 분석 (밝기, 색온도, 비율 등)
 from yt_dlp import YoutubeDL # yt-dlp - 유튜브 영상 다운로드용
+import tempfile
+import streamlit as st
 
 import pandas as pd
 
@@ -24,6 +26,31 @@ import sys
 # works/Haeun/video_analysis/ 에서 프로젝트 루트(final_project/)까지 3단계 위
 # → 루트를 import 경로에 추가해서 utils.py 등 공용 파일을 어디서든 불러올 수 있게 함
 sys.path.append(str(Path(__file__).resolve().parents[3]))
+
+# 쿠기 파일 생성 함수 추가
+
+def _build_youtube_cookiefile():
+    """
+    Streamlit Secrets의 YOUTUBE_COOKIES 값을 임시 cookies.txt 파일로 만들고 경로를 반환합니다.
+    로컬에서 YOUTUBE_COOKIES가 없으면 None을 반환합니다.
+    """
+    try:
+        cookies = st.secrets.get("YOUTUBE_COOKIES", "")
+    except Exception:
+        cookies = ""
+
+    if not str(cookies).strip():
+        return None
+
+    f = tempfile.NamedTemporaryFile(
+        mode="w",
+        suffix=".txt",
+        delete=False,
+        encoding="utf-8",
+    )
+    f.write(str(cookies))
+    f.close()
+    return f.name
 
 # ========================================
 # 2. 환경변수 로드 및 API 연결 확인
@@ -255,30 +282,56 @@ def download_video(url: str, video_id: str, video_dir: str) -> str | None:
     Returns:
         저장된 영상 파일 경로 (실패 시 None 반환)
     """
-    output_path = str(Path(video_dir) / f"{video_id}.mp4")  # 파일을 저장할 때는 확장자 필요
+    output_path = str(Path(video_dir) / f"{video_id}.mp4")
 
     # 이미 다운로드된 영상이면 스킵
     if Path(output_path).exists():
         print(f"⏭️ [{video_id}] 이미 다운로드되었으므로, 건너뜀")
         return output_path
 
+    cookie_path = _build_youtube_cookiefile()
+
     ydl_opts = {
-        "outtmpl": output_path,          # 저장 경로 및 파일명
-        "format": "bestvideo+bestaudio/best",  # 최고 화질 비디오 + 오디오 병합
-        "merge_output_format": "mp4",    # 병합 후 mp4로 저장
-        "noplaylist": True,              # 재생목록이 아닌 단일 영상만 다운로드
-        "quiet": True,                   # 터미널에 불필요한 로그 출력 X
-        "no_warnings": True,             # 터미널에 경고 메시지 X
+        "outtmpl": output_path,
+        "format": "bestvideo+bestaudio/best",
+        "merge_output_format": "mp4",
+        "noplaylist": True,
+        "quiet": True,
+        "no_warnings": True,
+        "retries": 3,
+        "fragment_retries": 3,
+
+        # YouTube JS challenge 해결용
+        # 로컬 테스트에서 --js-runtimes node가 정상 작동했으므로 동일 옵션 적용
+        "js_runtimes": {"node": {}},
+
+        # 클라우드 환경에서 봇 탐지 완화용 User-Agent
+        "user_agent": (
+            "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+            "AppleWebKit/537.36 (KHTML, like Gecko) "
+            "Chrome/120.0.0.0 Safari/537.36"
+        ),
     }
+
+    # Streamlit Cloud Secrets에 YOUTUBE_COOKIES가 있으면 yt-dlp에 전달
+    if cookie_path:
+        ydl_opts["cookiefile"] = cookie_path
 
     try:
         with YoutubeDL(ydl_opts) as ydl:
             ydl.download([url])
+
         print(f"✅ [{video_id}] 다운로드 완료")
         return output_path
+
     except Exception as e:
-        print(f"❌ [{video_id}] 다운로드 실패: {str(e)[:100]}")
+        print(f"❌ [{video_id}] 다운로드 실패: {str(e)[:200]}")
         return None
+
+    finally:
+        # Secrets에서 만든 임시 cookie 파일 삭제
+        if cookie_path and os.path.exists(cookie_path):
+            os.unlink(cookie_path)
     
 # ========================================
 # 7. OpenCV 정량 분석 함수 정의 (6번 결과를 받아옴)
