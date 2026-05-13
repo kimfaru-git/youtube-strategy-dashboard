@@ -141,10 +141,10 @@ def load_models():
     perf_model = joblib.load(LONGFORM_MODELS / f"ALL__{perf_best_name}.joblib")
 
     # 댓글 긍정 비율 모델
+    # longform_predict_v3.py와 동일하게 best_model.json의 best_model 값을 읽어 화면/보고서에 표시합니다.
     comment_meta = json.loads((COMMENT_MODELS / "meta.json").read_text(encoding="utf-8"))
-    # 댓글 긍정 반응 모델은 학습/운영 기준상 MLP 모델을 사용합니다.
-    # 기존 best_model.json에 다른 이름이 남아 있어도 화면과 저장 보고서에는 MLP로 표기합니다.
-    comment_best_name = "MLP"
+    comment_best_info = json.loads((COMMENT_MODELS / "best_model.json").read_text(encoding="utf-8"))
+    comment_best_name = comment_best_info["best_model"]
     comment_model = joblib.load(COMMENT_MODELS / "longform_comment_model.joblib")
 
     return perf_model, perf_meta, perf_best_name, comment_model, comment_meta, comment_best_name
