@@ -9,6 +9,7 @@ import cv2                   # OpenCV - 정량 분석 (밝기, 색온도, 비율
 from yt_dlp import YoutubeDL # yt-dlp - 유튜브 영상 다운로드용
 import tempfile
 import streamlit as st
+import shutil
 
 import pandas as pd
 
@@ -31,15 +32,20 @@ sys.path.append(str(Path(__file__).resolve().parents[3]))
 
 def _build_youtube_cookiefile():
     """
-    Streamlit Secrets의 YOUTUBE_COOKIES 값을 임시 cookies.txt 파일로 만들고 경로를 반환합니다.
-    로컬에서 YOUTUBE_COOKIES가 없으면 None을 반환합니다.
+    Streamlit Cloud Secrets 또는 환경변수의 YOUTUBE_COOKIES를
+    임시 cookies.txt 파일로 만들고 경로를 반환합니다.
     """
-    try:
-        cookies = st.secrets.get("YOUTUBE_COOKIES", "")
-    except Exception:
-        cookies = ""
+    cookies = os.getenv("YOUTUBE_COOKIES", "")
 
     if not str(cookies).strip():
+        try:
+            import streamlit as st
+            cookies = st.secrets.get("YOUTUBE_COOKIES", "")
+        except Exception:
+            cookies = ""
+
+    if not str(cookies).strip():
+        print("⚠️ YOUTUBE_COOKIES가 비어 있습니다. 쿠키 없이 다운로드를 시도합니다.")
         return None
 
     f = tempfile.NamedTemporaryFile(
@@ -50,6 +56,8 @@ def _build_youtube_cookiefile():
     )
     f.write(str(cookies))
     f.close()
+
+    print("✅ YOUTUBE_COOKIES 감지됨: 임시 cookiefile 생성 완료")
     return f.name
 
 # ========================================
@@ -290,6 +298,8 @@ def download_video(url: str, video_id: str, video_dir: str) -> str | None:
         return output_path
 
     cookie_path = _build_youtube_cookiefile()
+
+    print(f"Node path: {shutil.which('node')}")
 
     ydl_opts = {
         "outtmpl": output_path,

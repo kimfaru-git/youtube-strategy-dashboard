@@ -133,12 +133,12 @@ except Exception:
         "render_shorts_agent_tab"
     )
 
-try:
-    from comment_dashboard_tab import render_comment_dashboard
-except Exception:
-    def render_comment_dashboard(mode: str = "longform"):
-        name = "롱폼 댓글 분석" if mode == "longform" else "숏츠 댓글 분석"
-        _missing_tab(name, "comment_dashboard_tab", "render_comment_dashboard")()
+# try:
+#     from comment_dashboard_tab import render_comment_dashboard
+# except Exception:
+#     def render_comment_dashboard(mode: str = "longform"):
+#         name = "롱폼 댓글 분석" if mode == "longform" else "숏츠 댓글 분석"
+#         _missing_tab(name, "comment_dashboard_tab", "render_comment_dashboard")()
 
 try:
     from shorts_comment_dashboard_tab import render_shorts_comment_dashboard

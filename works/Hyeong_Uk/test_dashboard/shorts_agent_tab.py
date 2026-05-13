@@ -525,6 +525,7 @@ def run_video_agent(
     env["GEMINI_PROMPT_MODEL"]  = st.secrets.get("GEMINI_PROMPT_MODEL", os.getenv("GEMINI_PROMPT_MODEL", "gemini-2.5-flash-lite"))
     env["GEMINI_VISION_MODEL"]  = st.secrets.get("GEMINI_VISION_MODEL", os.getenv("GEMINI_VISION_MODEL", "gemini-2.5-flash"))
     env["YOUTUBE_API_KEY"]      = st.secrets.get("YOUTUBE_API_KEY", os.getenv("YOUTUBE_API_KEY", ""))
+    env["YOUTUBE_COOKIES"] = st.secrets.get("YOUTUBE_COOKIES", "")
 
     proc = subprocess.Popen(
         cmd,
