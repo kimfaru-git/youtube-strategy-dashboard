@@ -2817,7 +2817,7 @@ def render_channel_result(prefix, accent, bench, domain_label):
                                 unsafe_allow_html=True)
                         ctr = bench_.get("overall_ctr","")
                         if ctr:
-                            ctr_color = "#4dd068" if "높음" in ctr else ("#ffe033" if "보통" in ctr else "#ff5555")
+                            ctr_color = "#4dd068" if "높음" in ctr else ("#b45309" if "보통" in ctr else "#ff5555")
                             st.markdown(
                                 f'<div style="background:#f0f2f5;border-radius:6px;padding:8px;font-size:11px;margin-bottom:10px">' 
                                 f'<span style="color:#aaa;margin-right:8px">🔸예상 클릭율</span>' 
