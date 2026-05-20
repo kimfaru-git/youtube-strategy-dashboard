@@ -24,70 +24,98 @@ import plotly.express as px
 from plotly.subplots import make_subplots
 import warnings
 warnings.filterwarnings('ignore')
+from pathlib import Path
 
 # ─────────────────────────────────────────
 # [1] 페이지 기본 설정
 # ─────────────────────────────────────────
 # layout="wide": 화면 가로 전체 사용
 # initial_sidebar_state="collapsed": 사이드바 사용 안 하므로 기본 접힘
-st.set_page_config(
-    page_title="YouTube Success AI",
-    page_icon="▶️",
-    layout="wide",
-    initial_sidebar_state="collapsed"
-)
+# st.set_page_config(
+#     page_title="YouTube Success AI",
+#     page_icon="▶️",
+#     layout="wide",
+#     initial_sidebar_state="collapsed"
+# )
 
 # [2] CSS 스타일은 apply_longform_minimal_style()에서 최소만 주입합니다.
 
 # ─────────────────────────────────────────
 # [3] 데이터/모델 로드 (Streamlit 캐시 사용)
 # ─────────────────────────────────────────
-DATA_PATH = "works/Hyeong_Uk/test_dashboard/data"  # 데이터 디렉토리 경로 (프로젝트 구조에 맞게 수정)
+BASE_DIR = Path(__file__).resolve().parent
+DATA_PATH = BASE_DIR / "data"
 
 @st.cache_data  # 한번 읽은 csv/json은 메모리에 캐싱 → 재실행 시 빠름
 def load_data():
     """모든 분석 결과 CSV/JSON 파일을 한 번에 로드"""
-    df_all  = pd.read_csv(f"{DATA_PATH}/longform_dashboard_all.csv")
-    df_fnb  = pd.read_csv(f"{DATA_PATH}/longform_dashboard_fnb.csv")
-    df_it   = pd.read_csv(f"{DATA_PATH}/longform_dashboard_it.csv")
-    pred    = pd.read_csv(f"{DATA_PATH}/longform_predictions_by_dataset.csv")
-    cat_shap = pd.read_csv(f"{DATA_PATH}/longform_categorical_mean_shap_catboost.csv")
-    shap_all = pd.read_csv(f"{DATA_PATH}/longform_shap_grouped_ALL_XGBoost.csv")
-    shap_fnb = pd.read_csv(f"{DATA_PATH}/longform_shap_grouped_FnB_CatBoost.csv")
-    shap_it  = pd.read_csv(f"{DATA_PATH}/longform_shap_grouped_IT_RandomForest.csv")
-    eda_day  = pd.read_csv(f"{DATA_PATH}/longform_eda_success_rate_by_upload_dayofweek.csv")
-    eda_hour = pd.read_csv(f"{DATA_PATH}/longform_eda_success_rate_by_upload_hour.csv")
-    eda_ctype = pd.read_csv(f"{DATA_PATH}/longform_eda_success_rate_by_cls_content_type.csv")
-    eda_cta  = pd.read_csv(f"{DATA_PATH}/longform_eda_success_rate_by_cls_cta_type.csv")
-    eda_len  = pd.read_csv(f"{DATA_PATH}/longform_eda_success_rate_by_length_bucket.csv")
-    eda_caption = pd.read_csv(f"{DATA_PATH}/longform_eda_success_rate_by_caption.csv")
-    with open(f"{DATA_PATH}/longform_eda_stats.json", encoding="utf-8") as f:
+    df_all  = pd.read_csv(DATA_PATH / "longform_dashboard_all.csv")
+    df_fnb  = pd.read_csv(DATA_PATH / "longform_dashboard_fnb.csv")
+    df_it   = pd.read_csv(DATA_PATH / "longform_dashboard_it.csv")
+    pred    = pd.read_csv(DATA_PATH / "longform_predictions_by_dataset.csv")
+    cat_shap = pd.read_csv(DATA_PATH / "longform_categorical_mean_shap_catboost.csv")
+    shap_all = pd.read_csv(DATA_PATH / "longform_shap_grouped_ALL_XGBoost.csv")
+    shap_fnb = pd.read_csv(DATA_PATH / "longform_shap_grouped_FnB_CatBoost.csv")
+    shap_it  = pd.read_csv(DATA_PATH / "longform_shap_grouped_IT_RandomForest.csv")
+    eda_day  = pd.read_csv(DATA_PATH / "longform_eda_success_rate_by_upload_dayofweek.csv")
+    eda_hour = pd.read_csv(DATA_PATH / "longform_eda_success_rate_by_upload_hour.csv")
+    eda_ctype = pd.read_csv(DATA_PATH / "longform_eda_success_rate_by_cls_content_type.csv")
+    eda_cta  = pd.read_csv(DATA_PATH / "longform_eda_success_rate_by_cls_cta_type.csv")
+    eda_len  = pd.read_csv(DATA_PATH / "longform_eda_success_rate_by_length_bucket.csv")
+    eda_caption = pd.read_csv(DATA_PATH / "longform_eda_success_rate_by_caption.csv")
+
+    with open(DATA_PATH / "longform_eda_stats.json", encoding="utf-8") as f:
         eda_stats = json.load(f)
-    with open(f"{DATA_PATH}/longform_strategy_insights.json", encoding="utf-8") as f:
+
+    with open(DATA_PATH / "longform_strategy_insights.json", encoding="utf-8") as f:
         strategy = json.load(f)
-    with open(f"{DATA_PATH}/longform_model_performance.json", encoding="utf-8") as f:
+
+    with open(DATA_PATH / "longform_model_performance.json", encoding="utf-8") as f:
         model_perf = json.load(f)
-    with open(f"{DATA_PATH}/longform_metadata.json", encoding="utf-8") as f:
+
+    with open(DATA_PATH / "longform_metadata.json", encoding="utf-8") as f:
         metadata = json.load(f)
+
     return dict(
-        df_all=df_all, df_fnb=df_fnb, df_it=df_it, pred=pred,
-        cat_shap=cat_shap, shap_all=shap_all, shap_fnb=shap_fnb, shap_it=shap_it,
-        eda_day=eda_day, eda_hour=eda_hour, eda_ctype=eda_ctype, eda_cta=eda_cta,
-        eda_len=eda_len, eda_caption=eda_caption,
-        eda_stats=eda_stats, strategy=strategy, model_perf=model_perf, metadata=metadata
+        df_all=df_all,
+        df_fnb=df_fnb,
+        df_it=df_it,
+        pred=pred,
+        cat_shap=cat_shap,
+        shap_all=shap_all,
+        shap_fnb=shap_fnb,
+        shap_it=shap_it,
+        eda_day=eda_day,
+        eda_hour=eda_hour,
+        eda_ctype=eda_ctype,
+        eda_cta=eda_cta,
+        eda_len=eda_len,
+        eda_caption=eda_caption,
+        eda_stats=eda_stats,
+        strategy=strategy,
+        model_perf=model_perf,
+        metadata=metadata,
     )
+
 
 @st.cache_resource  # 모델 객체는 cache_resource (직렬화 안되는 객체용)
 def load_models():
     """학습된 ML 모델 + SHAP explainer 로드"""
-    m_fnb = joblib.load(f"{DATA_PATH}/longform_FnB_best_perf_CatBoost.joblib")
-    m_it  = joblib.load(f"{DATA_PATH}/longform_IT_best_perf_RandomForest.joblib")
-    m_all = joblib.load(f"{DATA_PATH}/longform_ALL_best_perf_CatBoost.joblib")
-    shap_fnb = joblib.load(f"{DATA_PATH}/longform_FnB_shap_catboost.joblib")
-    shap_it  = joblib.load(f"{DATA_PATH}/longform_IT_shap_catboost.joblib")
-    shap_all = joblib.load(f"{DATA_PATH}/longform_ALL_shap_catboost.joblib")
-    return dict(m_fnb=m_fnb, m_it=m_it, m_all=m_all,
-                shap_fnb=shap_fnb, shap_it=shap_it, shap_all=shap_all)
+    m_fnb = joblib.load(DATA_PATH / "longform_FnB_best_perf_CatBoost.joblib")
+    m_it  = joblib.load(DATA_PATH / "longform_IT_best_perf_RandomForest.joblib")
+    m_all = joblib.load(DATA_PATH / "longform_ALL_best_perf_CatBoost.joblib")
+    shap_fnb = joblib.load(DATA_PATH / "longform_FnB_shap_catboost.joblib")
+    shap_it  = joblib.load(DATA_PATH / "longform_IT_shap_catboost.joblib")
+    shap_all = joblib.load(DATA_PATH / "longform_ALL_shap_catboost.joblib")
+
+    return dict(
+        m_fnb=m_fnb,
+        m_it=m_it,
+        m_all=m_all,
+        shap_fnb=shap_fnb,
+        shap_it=shap_it,
+        shap_all=shap_all,
+    )
 
 # 전역 데이터/모델 객체는 탭 렌더링 시 지연 로드합니다.
 D = None

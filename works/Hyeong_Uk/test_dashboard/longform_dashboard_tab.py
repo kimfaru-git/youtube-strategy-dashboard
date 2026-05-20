@@ -41,16 +41,16 @@ DASHBOARD_SECTIONS = {
         "render": page_strategy,
         "need_model": False,
     },
-    "영상 진단": {
-        "desc": "개별 롱폼 영상의 성공 확률과 주요 기여 요인을 Waterfall 방식으로 확인합니다.",
+    "분석한 영상": {
+        "desc": "분석한 롱폼 영상의 성공 확률과 주요 기여 요인을 Waterfall 방식으로 확인합니다.",
         "render": page_waterfall,
         "need_model": True,
     },
-    "AI 시뮬레이터": {
-        "desc": "영상 제작 조건을 입력해 롱폼 성공 가능성과 개선 전략을 시뮬레이션합니다.",
-        "render": page_simulator,
-        "need_model": True,
-    },
+    # "AI 시뮬레이터": {
+    #     "desc": "영상 제작 조건을 입력해 롱폼 성공 가능성과 개선 전략을 시뮬레이션합니다.",
+    #     "render": page_simulator,
+    #     "need_model": True,
+    # },
     "전략 로드맵": {
         "desc": "도메인별 롱폼 운영 전략을 기획 → 제작 → 업로드 → 배포 → 분석 흐름으로 정리합니다.",
         "render": page_roadmap,
@@ -72,8 +72,8 @@ def _render_tab_intro():
                 📊 롱폼 분석 결과 대시보드
             </div>
             <div style="font-size:14px;color:#6b7280;line-height:1.6;">
-                롱폼 성과 분석, 성공 요인, 영상 진단, 댓글 반응, AI 시뮬레이터, 전략 로드맵을 한 곳에서 확인합니다.
-                분석 결과와 진단형 기능을 함께 활용해 롱폼 운영 전략을 정리하세요.
+                롱폼 성과 분석, 성공 요인, 분석한 영상, 댓글 반응, 전략 로드맵을 한 곳에서 확인합니다.
+                분석 결과를 바탕으로 롱폼 운영 전략을 정리하세요.
             </div>
         </div>
         """,
