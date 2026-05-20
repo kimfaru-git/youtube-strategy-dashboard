@@ -6,7 +6,7 @@ try:
     from shorts_comment_dashboard_tab import render_shorts_comment_analysis
 except Exception as _shorts_comment_import_error:
     def render_shorts_comment_analysis():
-        st.error("숏츠 댓글 분석 섹션을 불러오지 못했습니다.")
+        st.error("쇼츠 댓글 분석 섹션을 불러오지 못했습니다.")
         st.exception(_shorts_comment_import_error)
 
 from shorts_core import (
@@ -493,10 +493,10 @@ def _render_header():
     st.markdown(
         """
         <div class="shorts-hero">
-            <div class="shorts-hero-title">숏츠 분석 결과</div>
+            <div class="shorts-hero-title">쇼츠 분석 결과</div>
             <div class="shorts-hero-desc">
-                성공한 기업 숏츠에서 반복적으로 나타나는 <b>첫 3초 구성, 인물·얼굴 비율, 텍스트 비율, 모션그래픽, 영상 포맷</b>을 도메인별로 비교합니다.
-                분석 결과는 숏츠 agent와 최종 가이드라인의 기준으로 활용됩니다.
+                성공한 기업 쇼츠에서 반복적으로 나타나는 <b>첫 3초 구성, 인물·얼굴 비율, 텍스트 비율, 모션그래픽, 영상 포맷</b>을 도메인별로 비교합니다.
+                분석 결과는 쇼츠 agent와 최종 가이드라인의 기준으로 활용됩니다.
             </div>
         </div>
         """,
@@ -566,7 +566,7 @@ def _domain_band(domain: str, pattern: dict):
     st.markdown(
         f"""
         <div class="domain-band" style="background:{style['gradient']};">
-            <div class="domain-band-title">{style['emoji']} {domain} 성공 숏츠 기준</div>
+            <div class="domain-band-title">{style['emoji']} {domain} 성공 쇼츠 기준</div>
             <div class="domain-band-desc">{pattern.get("summary", "")}</div>
         </div>
         """,
@@ -612,17 +612,17 @@ def _render_insights(domain: str, style: dict):
 
     if domain == "FnB":
         main_title = "사람의 반응이 곧 후킹 요소"
-        main_desc = "FnB 숏츠는 제품을 설명하기보다 <b>사람이 먹고, 쓰고, 반응하는 장면</b>을 빠르게 보여줄 때 이해와 몰입이 쉬워집니다."
+        main_desc = "FnB 쇼츠는 제품을 설명하기보다 <b>사람이 먹고, 쓰고, 반응하는 장면</b>을 빠르게 보여줄 때 이해와 몰입이 쉬워집니다."
     else:
         main_title = "핵심 메시지를 먼저 보여주기"
-        main_desc = "IT 숏츠는 분위기보다 <b>문제, 기능, 혜택</b>을 초반에 바로 보여줘야 짧은 시간 안에 가치를 전달할 수 있습니다."
+        main_desc = "IT 쇼츠는 분위기보다 <b>문제, 기능, 혜택</b>을 초반에 바로 보여줘야 짧은 시간 안에 가치를 전달할 수 있습니다."
 
     st.markdown(
         f"""
         <div class="insight-card" style="--insight-glow:{style['light']};">
             <div class="insight-head">
                 <span>{style['emoji']}</span>
-                <span>{domain} 숏츠 운영 인사이트</span>
+                <span>{domain} 쇼츠 운영 인사이트</span>
             </div>
             <div class="insight-main" style="background:{style['light']};border:1px solid {style['border']};">
                 <div class="insight-main-title">{main_title}</div>
@@ -717,17 +717,17 @@ def render_shorts_dashboard():
 
     k1, k2, k3, k4 = st.columns(4)
     with k1:
-        _kpi("분석 숏츠 수", f"{counts['total']:,}개" if counts["total"] else "-", "전체 분석 표본", "#111827")
+        _kpi("분석 쇼츠 수", f"{counts['total']:,}개" if counts["total"] else "-", "전체 분석 표본", "#111827")
     with k2:
-        _kpi("성공 숏츠 수", f"{counts['success']:,}개" if counts["total"] else "-", "참여율 기준 성공 라벨", "#ef233c")
+        _kpi("성공 쇼츠 수", f"{counts['success']:,}개" if counts["total"] else "-", "참여율 기준 성공 라벨", "#ef233c")
     with k3:
         _kpi("핵심 분석 축", "첫 3초 · 인물 · 텍스트", "짧은 영상 구성 요소 중심", "#2563eb")
     with k4:
-        _kpi("활용 목적", "운영 가이드라인", "숏츠 제작 방향 제안", "#f97316")
+        _kpi("활용 목적", "운영 가이드라인", "쇼츠 제작 방향 제안", "#f97316")
 
-    st.markdown('<div class="section-title">도메인별 성공 숏츠 기준</div>', unsafe_allow_html=True)
+    st.markdown('<div class="section-title">도메인별 성공 쇼츠 기준</div>', unsafe_allow_html=True)
     st.markdown(
-        '<div class="section-caption">도메인을 선택하면 해당 산업에서 성공 숏츠에 자주 나타난 영상 구성 특징을 확인할 수 있습니다.</div>',
+        '<div class="section-caption">도메인을 선택하면 해당 산업에서 성공 쇼츠에 자주 나타난 영상 구성 특징을 확인할 수 있습니다.</div>',
         unsafe_allow_html=True,
     )
 
@@ -788,7 +788,7 @@ def render_shorts_dashboard():
 
     st.markdown('<div class="section-title">구성 요소 분포</div>', unsafe_allow_html=True)
     st.markdown(
-        '<div class="section-caption">성공 숏츠에서 초반 장면, 모션그래픽, 영상 포맷이 어떻게 나타났는지 확인합니다.</div>',
+        '<div class="section-caption">성공 쇼츠에서 초반 장면, 모션그래픽, 영상 포맷이 어떻게 나타났는지 확인합니다.</div>',
         unsafe_allow_html=True,
     )
 
@@ -798,9 +798,9 @@ def render_shorts_dashboard():
     with d2:
         _distribution_chart(pattern, "motion_graphic", "모션그래픽", "#7c3aed", "모션그래픽 활용", "자막, 아이콘, 화면 전환 등 그래픽 활용 정도입니다.")
     with d3:
-        _distribution_chart(pattern, "video_format", "영상 포맷", style["accent"], "영상 포맷", "성공 숏츠에서 자주 사용된 콘텐츠 형식입니다.")
+        _distribution_chart(pattern, "video_format", "영상 포맷", style["accent"], "영상 포맷", "성공 쇼츠에서 자주 사용된 콘텐츠 형식입니다.")
 
-    st.markdown('<div class="section-title">대표 성공 숏츠 사례</div>', unsafe_allow_html=True)
+    st.markdown('<div class="section-title">대표 성공 쇼츠 사례</div>', unsafe_allow_html=True)
     st.markdown(
         '<div class="section-caption">선택한 도메인의 성공 패턴을 잘 보여주는 대표 영상을 확인합니다.</div>',
         unsafe_allow_html=True,
@@ -808,7 +808,7 @@ def render_shorts_dashboard():
 
     reps = choose_representative_videos(df, domain, n=3)
     if reps.empty:
-        st.info("대표 영상 사례를 표시하려면 숏츠 분석 결과 CSV에 video_id, title, success_label, domain 컬럼이 필요합니다.")
+        st.info("대표 영상 사례를 표시하려면 쇼츠 분석 결과 CSV에 video_id, title, success_label, domain 컬럼이 필요합니다.")
     else:
         case_cols = st.columns(3, gap="medium")
         for idx, (_, row) in enumerate(reps.iterrows()):
@@ -895,9 +895,9 @@ def render_shorts_dashboard():
             <div class="guide-title-row">
                 <div class="guide-icon" style="background:{style['gradient']};">🎬</div>
                 <div>
-                    <div class="guide-title">숏츠 운영 가이드라인 연결</div>
+                    <div class="guide-title">쇼츠 운영 가이드라인 연결</div>
                     <div class="guide-subtitle">
-                        분석 결과를 <b>숏츠 agent 진단</b>과 <b>최종 가이드라인</b>에서 바로 활용할 수 있도록 정리했습니다.
+                        분석 결과를 <b>쇼츠 agent 진단</b>과 <b>최종 가이드라인</b>에서 바로 활용할 수 있도록 정리했습니다.
                     </div>
                 </div>
             </div>

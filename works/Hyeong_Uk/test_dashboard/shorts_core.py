@@ -155,7 +155,7 @@ def load_shorts_data() -> tuple[pd.DataFrame, Optional[Path]]:
 
 @st.cache_data(show_spinner=False)
 def load_shap_data() -> tuple[pd.DataFrame, Optional[Path]]:
-    """숏츠 중요 요소 파일 로드.
+    """쇼츠 중요 요소 파일 로드.
 
     기본은 원핫 인코딩된 중요도 파일을 우선 사용합니다.
     원핫 파일이 없을 때만 원본 피처 기준 중요도 파일을 사용합니다.
@@ -241,9 +241,9 @@ def compute_domain_pattern(df: pd.DataFrame, domain: str) -> dict:
     }
 
     if domain == "FnB":
-        pattern["summary"] = "성공 숏츠는 인물·얼굴·제품 경험 장면이 더 두드러지는 경향이 있습니다."
+        pattern["summary"] = "성공 쇼츠는 인물·얼굴·제품 경험 장면이 더 두드러지는 경향이 있습니다."
     else:
-        pattern["summary"] = "성공 숏츠는 텍스트와 모션그래픽으로 핵심 메시지를 빠르게 전달하는 경향이 있습니다."
+        pattern["summary"] = "성공 쇼츠는 텍스트와 모션그래픽으로 핵심 메시지를 빠르게 전달하는 경향이 있습니다."
 
     return pattern
 

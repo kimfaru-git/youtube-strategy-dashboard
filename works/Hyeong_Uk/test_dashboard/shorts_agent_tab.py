@@ -80,7 +80,7 @@ def extract_video_id(url_or_id: str) -> str:
 
 @st.cache_data(show_spinner=False)
 def load_baseline() -> pd.DataFrame:
-    """기존 200개 숏츠 영상 분석 결과 로드"""
+    """기존 200개 쇼츠 영상 분석 결과 로드"""
     if not BASELINE_PATH.exists():
         return pd.DataFrame()
 
@@ -95,7 +95,7 @@ def load_baseline() -> pd.DataFrame:
 
 def get_domain_success_baseline(baseline_df: pd.DataFrame, domain: str) -> dict:
     """
-    도메인 성공 숏츠 기준 패턴 생성
+    도메인 성공 쇼츠 기준 패턴 생성
     - 수치형 평균
     - 주요 범주형 비율
     """
@@ -144,7 +144,7 @@ def get_domain_success_baseline(baseline_df: pd.DataFrame, domain: str) -> dict:
 
 
 def summarize_persona_result(result_df: pd.DataFrame) -> dict:
-    """페르소나 기업 최근 숏츠 분석 결과 요약"""
+    """페르소나 기업 최근 쇼츠 분석 결과 요약"""
     if result_df.empty:
         return {}
 
@@ -264,12 +264,12 @@ def build_improvement_tasks(domain: str, compare_df: pd.DataFrame) -> list[dict]
                 tasks.append({
                     "title": "인물 경험 장면 강화",
                     "desc": "제품 단독 컷보다 사람이 제품을 먹거나 사용하는 장면을 늘려야 합니다.",
-                    "action": "다음 숏츠는 첫 컷 또는 3초 안에 인물의 사용·섭취·반응 장면을 배치하세요."
+                    "action": "다음 쇼츠는 첫 컷 또는 3초 안에 인물의 사용·섭취·반응 장면을 배치하세요."
                 })
             elif item == "얼굴 등장 비율" and diagnosis == "부족":
                 tasks.append({
                     "title": "얼굴·반응 컷 강화",
-                    "desc": "FnB 성공 숏츠는 얼굴과 반응이 더 자주 노출되는 경향이 있습니다.",
+                    "desc": "FnB 성공 쇼츠는 얼굴과 반응이 더 자주 노출되는 경향이 있습니다.",
                     "action": "맛, 놀람, 만족, 호기심 등 감정이 보이는 얼굴 클로즈업을 포함하세요."
                 })
             elif item == "영상 오프닝(3초 이내) 인물 비율" and diagnosis == "부족":
@@ -287,7 +287,7 @@ def build_improvement_tasks(domain: str, compare_df: pd.DataFrame) -> list[dict]
             elif item == "모션그래픽 핵심요소 비율" and diagnosis == "과다":
                 tasks.append({
                     "title": "과한 모션그래픽 비중 축소",
-                    "desc": "FnB 성공 숏츠에서는 모션그래픽이 핵심요소인 비율이 낮게 나타났습니다.",
+                    "desc": "FnB 성공 쇼츠에서는 모션그래픽이 핵심요소인 비율이 낮게 나타났습니다.",
                     "action": "그래픽 연출보다 실제 제품 사용 장면과 인물 반응을 중심에 두세요."
                 })
 
@@ -295,7 +295,7 @@ def build_improvement_tasks(domain: str, compare_df: pd.DataFrame) -> list[dict]
         if len(tasks) < 3:
             tasks.append({
                 "title": "경험형 포맷 강화",
-                "desc": "FnB 숏츠는 제품을 설명하기보다 경험하게 만드는 구성이 중요합니다.",
+                "desc": "FnB 쇼츠는 제품을 설명하기보다 경험하게 만드는 구성이 중요합니다.",
                 "action": "제품리뷰, 웹예능형 반응 콘텐츠, 짧은 상황극 포맷을 우선 고려하세요."
             })
 
@@ -307,20 +307,20 @@ def build_improvement_tasks(domain: str, compare_df: pd.DataFrame) -> list[dict]
             if item == "영상 오프닝(3초 이내) 텍스트 비율" and diagnosis == "부족":
                 tasks.append({
                     "title": "영상 오프닝(3초 이내) 텍스트 후킹 강화",
-                    "desc": "IT 성공 숏츠는 초반에 핵심 메시지를 텍스트로 제시하는 경향이 있습니다.",
+                    "desc": "IT 성공 쇼츠는 초반에 핵심 메시지를 텍스트로 제시하는 경향이 있습니다.",
                     "action": "문제 상황, 기능명, 혜택을 영상 오프닝(3초 이내)에 짧은 자막으로 제시하세요."
                 })
             elif item == "모션그래픽 핵심요소 비율" and diagnosis == "부족":
                 tasks.append({
                     "title": "모션그래픽 기반 정보 시각화 강화",
-                    "desc": "IT 성공 숏츠는 모션그래픽을 핵심요소로 활용하는 비율이 높았습니다.",
+                    "desc": "IT 성공 쇼츠는 모션그래픽을 핵심요소로 활용하는 비율이 높았습니다.",
                     "action": "서비스 구조, 기능 흐름, 기술 개념을 아이콘·화면전환·인포그래픽으로 설명하세요."
                 })
             elif item == "기술설명형 포맷 비율" and diagnosis == "부족":
                 tasks.append({
                     "title": "기술설명형 포맷 강화",
-                    "desc": "IT 성공 숏츠에서는 기술설명형 포맷이 상대적으로 많이 나타났습니다.",
-                    "action": "인터뷰형 긴 설명보다 문제-해결-기능 제시 흐름의 짧은 기술설명형 숏츠를 제작하세요."
+                    "desc": "IT 성공 쇼츠에서는 기술설명형 포맷이 상대적으로 많이 나타났습니다.",
+                    "action": "인터뷰형 긴 설명보다 문제-해결-기능 제시 흐름의 짧은 기술설명형 쇼츠를 제작하세요."
                 })
             elif item == "텍스트/자막 비율" and diagnosis == "부족":
                 tasks.append({
@@ -332,7 +332,7 @@ def build_improvement_tasks(domain: str, compare_df: pd.DataFrame) -> list[dict]
         if len(tasks) < 3:
             tasks.append({
                 "title": "정보 전달 구조 단순화",
-                "desc": "IT 숏츠는 복잡한 내용을 짧은 시간에 이해시키는 구성이 중요합니다.",
+                "desc": "IT 쇼츠는 복잡한 내용을 짧은 시간에 이해시키는 구성이 중요합니다.",
                 "action": "문제 제기 → 기능 시연 → 결과/효용 제시 흐름으로 구성하세요."
             })
 
@@ -345,7 +345,7 @@ def build_rule_based_guideline(domain: str, persona_summary: dict, compare_df: p
 
     if domain == "FnB":
         guideline = {
-            "핵심 전략": "인물·경험 중심 숏츠를 강화하세요.",
+            "핵심 전략": "인물·경험 중심 쇼츠를 강화하세요.",
             "영상 오프닝(3초 이내) 전략": "제품 설명 텍스트보다 사람이 제품을 먹거나 사용하는 장면으로 시작하세요.",
             "추천 포맷": "제품리뷰, 웹예능형 반응 콘텐츠, 짧은 상황극, 제품 경험형 콘텐츠",
             "모션그래픽 활용": "모션그래픽은 핵심 연출보다 제품명, 반응 포인트, CTA를 강조하는 보조 장치로 활용하세요.",
@@ -357,15 +357,15 @@ def build_rule_based_guideline(domain: str, persona_summary: dict, compare_df: p
                 "모션그래픽은 보조적으로 쓰이고 있는가?",
                 "경험형/오락형 포맷을 활용했는가?",
             ],
-            "다음 숏츠 기획안": [
-                "인물이 제품을 처음 먹고 반응하는 15초 숏츠",
-                "제품 사용 상황을 짧은 상황극으로 보여주는 숏츠",
-                "제품의 장점을 하나만 잡아 반응 컷과 함께 보여주는 숏츠",
+            "다음 쇼츠 기획안": [
+                "인물이 제품을 처음 먹고 반응하는 15초 쇼츠",
+                "제품 사용 상황을 짧은 상황극으로 보여주는 쇼츠",
+                "제품의 장점을 하나만 잡아 반응 컷과 함께 보여주는 쇼츠",
             ]
         }
     else:
         guideline = {
-            "핵심 전략": "정보 시각화형 숏츠를 강화하세요.",
+            "핵심 전략": "정보 시각화형 쇼츠를 강화하세요.",
             "영상 오프닝(3초 이내) 전략": "문제 상황, 기능명, 혜택을 짧은 텍스트로 먼저 제시하세요.",
             "추천 포맷": "기술설명형, 기능 시연형, 문제 해결형, 짧은 튜토리얼형 콘텐츠",
             "모션그래픽 활용": "서비스 구조, 작동 방식, 기능 흐름을 아이콘, 자막, 화면 전환으로 시각화하세요.",
@@ -377,10 +377,10 @@ def build_rule_based_guideline(domain: str, persona_summary: dict, compare_df: p
                 "인터뷰형 장황한 설명보다 짧은 기술설명형 구조인가?",
                 "시청자가 3초 안에 영상 주제를 이해할 수 있는가?",
             ],
-            "다음 숏츠 기획안": [
-                "문제 상황을 텍스트로 던지고 기능으로 해결하는 15초 숏츠",
-                "서비스 작동 방식을 모션그래픽으로 설명하는 숏츠",
-                "사용 전/후 차이를 짧게 보여주는 기능 시연 숏츠",
+            "다음 쇼츠 기획안": [
+                "문제 상황을 텍스트로 던지고 기능으로 해결하는 15초 쇼츠",
+                "서비스 작동 방식을 모션그래픽으로 설명하는 쇼츠",
+                "사용 전/후 차이를 짧게 보여주는 기능 시연 쇼츠",
             ]
         }
 
@@ -389,7 +389,7 @@ def build_rule_based_guideline(domain: str, persona_summary: dict, compare_df: p
 
 def generate_ai_guideline(prompt_text: str) -> str:
     """
-    Gemini / Vertex AI를 사용해 맞춤형 숏츠 가이드라인 생성
+    Gemini / Vertex AI를 사용해 맞춤형 쇼츠 가이드라인 생성
     """
     if not GOOGLE_CLOUD_PROJECT or not GOOGLE_CLOUD_REGION or not GEMINI_MODEL:
         raise ValueError(
@@ -408,9 +408,9 @@ def generate_ai_guideline(prompt_text: str) -> str:
     agent = Agent(
         model,
         system_prompt="""
-        너는 기업 유튜브 숏츠 전략 컨설턴트다.
-        사용자가 제공한 숏츠 영상 분석 결과와 도메인 성공 패턴을 바탕으로,
-        실무자가 바로 실행할 수 있는 구체적인 숏츠 제작 가이드라인을 작성한다.
+        너는 기업 유튜브 쇼츠 전략 컨설턴트다.
+        사용자가 제공한 쇼츠 영상 분석 결과와 도메인 성공 패턴을 바탕으로,
+        실무자가 바로 실행할 수 있는 구체적인 쇼츠 제작 가이드라인을 작성한다.
 
         답변은 한국어로 작성한다.
         분석 결과에 없는 내용을 과장하지 않는다.
@@ -432,13 +432,13 @@ def generate_ai_guideline(prompt_text: str) -> str:
     return result.output
 
 # ============================================================
-# 2. 채널/숏츠 수집 함수
+# 2. 채널/쇼츠 수집 함수
 # ============================================================
 
 
 def collect_recent_shorts(shorts_url: str, channel_name: str, limit: int = 5) -> pd.DataFrame:
     """
-    채널 숏츠 탭 URL에서 최근 숏츠 수집.
+    채널 쇼츠 탭 URL에서 최근 쇼츠 수집.
     yt_channel_info 에서 반환된 shorts_url을 바로 사용 — resolve 단계 없음.
     """
     ydl_opts = {
@@ -478,7 +478,7 @@ def collect_recent_shorts(shorts_url: str, channel_name: str, limit: int = 5) ->
             break
 
     if not rows:
-        raise ValueError("최근 숏츠를 찾지 못했습니다. 채널의 /shorts 탭이 공개되어 있는지 확인해 주세요.")
+        raise ValueError("최근 쇼츠를 찾지 못했습니다. 채널의 /shorts 탭이 공개되어 있는지 확인해 주세요.")
 
     return pd.DataFrame(rows)
 
@@ -781,10 +781,10 @@ def _render_shorts_agent_header():
     st.markdown(
         """
         <div class="shorts-agent-head">
-            <div class="shorts-agent-title">숏츠 분석 agent</div>
+            <div class="shorts-agent-title">쇼츠 분석 agent</div>
             <div class="shorts-agent-desc">
-                기업 공식 채널의 최근 숏츠를 수집하고, 영상 분석 agent 결과를 도메인별 성공 패턴과 비교해
-                바로 실행할 수 있는 숏츠 운영 가이드라인을 제안합니다.
+                기업 공식 채널의 최근 쇼츠를 수집하고, 영상 분석 agent 결과를 도메인별 성공 패턴과 비교해
+                바로 실행할 수 있는 쇼츠 운영 가이드라인을 제안합니다.
             </div>
         </div>
         """,
@@ -887,7 +887,7 @@ def render_shorts_agent_tab():
     if selected_channel:
         with st.expander("⚙️ 분석 설정", expanded=True):
             limit = st.number_input(
-                "분석할 숏츠 개수",
+                "분석할 쇼츠 개수",
                 min_value=1, max_value=10, value=5, step=1,
                 help="빠른 진단을 위해 기본값 5개를 추천합니다. (최대 10개 분석 가능)",
             )
@@ -895,7 +895,7 @@ def render_shorts_agent_tab():
         st.markdown(
             f'<div style="background:#f9fafb;border:1px solid #e5e7eb;border-radius:8px;'
             f'padding:10px 14px;font-size:12px;color:#6b7280;line-height:1.8;margin-bottom:10px">'
-            f'숏츠 <b style="color:#111827">{int(limit)}개</b>를 수집한 뒤, 각 영상을 프레임 단위로 분석합니다.<br>'
+            f'쇼츠 <b style="color:#111827">{int(limit)}개</b>를 수집한 뒤, 각 영상을 프레임 단위로 분석합니다.<br>'
             f'영상 1개당 약 <b style="color:#111827">1~2분</b>이 소요되며, '
             f'{int(limit)}개 기준 최대 <b style="color:#111827">{int(limit)*2}분</b> 정도 걸릴 수 있습니다.<br>'
             f'분석이 진행되는 동안 이 페이지를 닫지 마세요.'
@@ -904,7 +904,7 @@ def render_shorts_agent_tab():
         )
 
         run_button = st.button(
-            f"'{selected_channel['name']}' 숏츠 분석 실행",
+            f"'{selected_channel['name']}' 쇼츠 분석 실행",
             key="run_btn",
             use_container_width=True,
         )
@@ -917,13 +917,13 @@ def render_shorts_agent_tab():
             input_csv_path = PERSONA_DATA_DIR / f"{csv_stem}.csv"
 
             try:
-                with st.status("숏츠 수집 및 영상 분석 중...", expanded=True) as status:
+                with st.status("쇼츠 수집 및 영상 분석 중...", expanded=True) as status:
 
-                    # 1단계: 숏츠 URL 수집
-                    status.update(label="1/2 최근 숏츠 수집 중...")
+                    # 1단계: 쇼츠 URL 수집
+                    status.update(label="1/2 최근 쇼츠 수집 중...")
                     shorts_df = collect_recent_shorts(selected_channel["shorts_url"], selected_channel["name"], limit=int(limit))
                     shorts_df.to_csv(input_csv_path, index=False, encoding="utf-8-sig")
-                    st.write(f"✅ 수집 완료: {len(shorts_df)}개 숏츠")
+                    st.write(f"✅ 수집 완료: {len(shorts_df)}개 쇼츠")
                     st.dataframe(
                         shorts_df[["video_id", "title", "final_url", "채널명"]],
                         use_container_width=True,
@@ -987,7 +987,7 @@ def render_shorts_agent_tab():
             '<div style="font-size:12px;color:#9ca3af;line-height:2">' +
             '1. 업종(FnB / IT)을 선택합니다<br>' +
             '2. 채널명을 검색해 공식 채널을 선택합니다<br>' +
-            '3. 분석을 실행하면 최근 숏츠를 수집하고 성공 패턴과 비교합니다' +
+            '3. 분석을 실행하면 최근 쇼츠를 수집하고 성공 패턴과 비교합니다' +
             '</div></div>',
             unsafe_allow_html=True,
         )
@@ -1018,15 +1018,15 @@ def render_shorts_agent_tab():
         return f"{v*100:.0f}%" if v is not None and str(v) not in ("nan", "None") else "-"
 
     # ──────────────────────────────────────────────────────────────
-    # 채널 숏츠 분석 현황
+    # 채널 쇼츠 분석 현황
     # ──────────────────────────────────────────────────────────────
     st.markdown(
         f'<div class="sec-title"><span class="tbar" style="background:{accent_color}"></span>'
-        f'{channel_input} 숏츠 분석 현황 ({domain})</div>',
+        f'{channel_input} 쇼츠 분석 현황 ({domain})</div>',
         unsafe_allow_html=True,
     )
     m1, m2, m3, m4, m5, m6, m7 = st.columns(7)
-    m1.metric("분석한 숏츠",   f"{persona_summary.get('n', 0)}개")
+    m1.metric("분석한 쇼츠",   f"{persona_summary.get('n', 0)}개")
     m2.metric("영상 오프닝(3초 이내) 전략",   persona_summary.get("main_first_3sec",    "-"))
     m3.metric("모션그래픽",    persona_summary.get("main_motion_graphic", "-"))
     m4.metric("주요 포맷",     persona_summary.get("main_video_format",   "-"))
@@ -1126,7 +1126,7 @@ def render_shorts_agent_tab():
         f'</div></div>'
         f'</div>'
         f'<div style="font-size:11px;color:#9ca3af;border-top:1px solid #f3f4f6;padding-top:8px">'
-        f'※ 최근 숏츠 {persona_summary.get("n", 0)}개 기반 빠른 진단입니다. 영상 수가 적을수록 대표성이 제한될 수 있습니다.'
+        f'※ 최근 쇼츠 {persona_summary.get("n", 0)}개 기반 빠른 진단입니다. 영상 수가 적을수록 대표성이 제한될 수 있습니다.'
         f'</div></div>',
         unsafe_allow_html=True,
     )
@@ -1134,11 +1134,11 @@ def render_shorts_agent_tab():
     st.markdown("<hr style='border-color:#e5e7eb;margin:24px 0 16px'>", unsafe_allow_html=True)
 
     # ──────────────────────────────────────────────────────────────
-    # 숏츠 제작 가이드라인
+    # 쇼츠 제작 가이드라인
     # ──────────────────────────────────────────────────────────────
     st.markdown(
         f'<div class="sec-title"><span class="tbar" style="background:{accent_color}"></span>'
-        f'숏츠 제작 가이드라인 — {domain}</div>',
+        f'쇼츠 제작 가이드라인 — {domain}</div>',
         unsafe_allow_html=True,
     )
     gl_left, gl_right = st.columns([3, 2])
@@ -1172,11 +1172,11 @@ def render_shorts_agent_tab():
         st.markdown("<div style='height:8px'></div>", unsafe_allow_html=True)
         ideas_html = "".join(
             f'<div style="padding:6px 0;border-bottom:1px solid #f3f4f6;font-size:12px;color:#374151;line-height:1.6">{idea}</div>'
-            for idea in guideline["다음 숏츠 기획안"]
+            for idea in guideline["다음 쇼츠 기획안"]
         )
         st.markdown(
             f'<div class="yt-card">'
-            f'<div style="font-size:14px;font-weight:700;color:#111827;margin-bottom:10px">다음 숏츠 기획 아이디어</div>'
+            f'<div style="font-size:14px;font-weight:700;color:#111827;margin-bottom:10px">다음 쇼츠 기획 아이디어</div>'
             f'{ideas_html}</div>',
             unsafe_allow_html=True,
         )
@@ -1192,7 +1192,7 @@ def render_shorts_agent_tab():
         unsafe_allow_html=True,
     )
     st.caption(
-        f"분석 결과·요약·가이드라인을 종합해 AI가 {channel_input} 채널의 숏츠 전략을 평가합니다."
+        f"분석 결과·요약·가이드라인을 종합해 AI가 {channel_input} 채널의 쇼츠 전략을 평가합니다."
     )
 
     good_items_text = "\n".join(
@@ -1205,12 +1205,12 @@ def render_shorts_agent_tab():
         for _, r in bad_rows.iterrows()
     ) or "해당 없음"
 
-    prompt_text = f"""너는 기업 유튜브 숏츠 전략 컨설턴트다.
-    아래 분석 데이터를 바탕으로 {channel_input} 채널의 숏츠 전략을 종합 평가하고, 실무자가 바로 실행할 수 있는 제언을 작성하라.
+    prompt_text = f"""너는 기업 유튜브 쇼츠 전략 컨설턴트다.
+    아래 분석 데이터를 바탕으로 {channel_input} 채널의 쇼츠 전략을 종합 평가하고, 실무자가 바로 실행할 수 있는 제언을 작성하라.
 
     [채널 정보]
     - 채널: {channel_input} / 도메인: {domain}
-    - 분석 숏츠 수: {persona_summary.get("n", 0)}개
+    - 분석 쇼츠 수: {persona_summary.get("n", 0)}개
     - 영상 오프닝(3초 이내) 전략: {persona_summary.get("main_first_3sec", "-")}
     - 모션그래픽: {persona_summary.get("main_motion_graphic", "-")}
     - 주요 포맷: {persona_summary.get("main_video_format", "-")}
@@ -1237,7 +1237,7 @@ def render_shorts_agent_tab():
     아래 형식으로 작성하라:
 
     ## 1. 종합 진단
-    (현재 채널의 숏츠 전략 수준을 2~3문장으로 요약)
+    (현재 채널의 쇼츠 전략 수준을 2~3문장으로 요약)
 
     ## 2. 강점(Strengths)
     (성공 기준에 부합하는 강점을 구체적으로 서술)
@@ -1245,14 +1245,14 @@ def render_shorts_agent_tab():
     ## 3. 취약점(Weaknesses) 및 개선 방안
     (가장 시급한 항목과 이유, 실행 방법 포함)
 
-    ## 4. 숏츠 제작 전략 추천
+    ## 4. 쇼츠 제작 전략 추천
     (성공 기준을 반영한 구체적인 제작 방향)
 
-    ## 5. 향후 숏츠 기획안 제안
+    ## 5. 향후 쇼츠 기획안 제안
     (바로 실행 가능한 구체적인 기획안)
 
     주의:
-    - 최근 {persona_summary.get("n", 0)}개 숏츠 기반 빠른 진단임을 명시할 것
+    - 최근 {persona_summary.get("n", 0)}개 쇼츠 기반 빠른 진단임을 명시할 것
     - 데이터에 없는 내용을 과장하지 말 것
     - 실무자가 바로 실행할 수 있도록 구체적으로 작성할 것"""
 
@@ -1287,13 +1287,13 @@ def render_shorts_agent_tab():
     if not ai_eval_text:
         st.info("'AI 종합 평가 생성' 버튼을 먼저 누르면 평가 내용이 보고서에 함께 포함됩니다.")
 
-    report_md = f"""# 숏츠 영상 전략 진단 보고서
+    report_md = f"""# 쇼츠 영상 전략 진단 보고서
 
     > **채널** {channel_input} | **도메인** {domain} | **분석 영상** {persona_summary.get("n", 0)}개 | **작성일** {datetime.now().strftime("%Y-%m-%d %H:%M")}
 
     ---
 
-    ## 1. 채널 숏츠 분석 현황
+    ## 1. 채널 쇼츠 분석 현황
 
     | 항목 | 현재 값 |
     |---|---|
@@ -1320,7 +1320,7 @@ def render_shorts_agent_tab():
 
     ---
 
-    ## 3. 숏츠 제작 가이드라인
+    ## 3. 쇼츠 제작 가이드라인
 
     ### 핵심 전략
     {guideline["핵심 전략"]}
@@ -1340,11 +1340,11 @@ def render_shorts_agent_tab():
     ### 우선 개선 과제
     {chr(10).join([f"#### {i+1}. {t['title']}{chr(10)}{t['desc']}{chr(10)}> 실행 방법: {t['action']}" for i, t in enumerate(tasks)])}
 
-    ### 숏츠 제작 전 체크리스트
+    ### 쇼츠 제작 전 체크리스트
     {chr(10).join([f"- [ ] {x}" for x in guideline["체크리스트"]])}
 
-    ### 향후 숏츠 기획 아이디어 제안
-    {chr(10).join([f"- {x}" for x in guideline["다음 숏츠 기획안"]])}
+    ### 향후 쇼츠 기획 아이디어 제안
+    {chr(10).join([f"- {x}" for x in guideline["다음 쇼츠 기획안"]])}
 
     ---
 
@@ -1353,7 +1353,7 @@ def render_shorts_agent_tab():
     {ai_eval_text if ai_eval_text else "_아직 AI 종합 평가가 생성되지 않았습니다._"}
     """
 
-    file_name = f"숏츠_채널_전략_진단_보고서_{safe_filename(channel_input)}_{domain}_{datetime.now().strftime('%Y%m%d_%H%M')}.md"
+    file_name = f"쇼츠_채널_전략_진단_보고서_{safe_filename(channel_input)}_{domain}_{datetime.now().strftime('%Y%m%d_%H%M')}.md"
     st.download_button(
         "Markdown 보고서 다운로드",
         data=report_md,

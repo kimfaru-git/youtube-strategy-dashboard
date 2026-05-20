@@ -117,18 +117,18 @@ except Exception:
 try:
     from shorts_dashboard_tab import render_shorts_dashboard
 except Exception:
-    render_shorts_dashboard = _missing_tab("숏츠 분석 결과", "shorts_dashboard_tab", "render_shorts_dashboard")
+    render_shorts_dashboard = _missing_tab("쇼츠 분석 결과", "shorts_dashboard_tab", "render_shorts_dashboard")
 
 # try:
 #     from shorts_agent_tab import render_shorts_agent
 # except Exception:
-#     render_shorts_agent = _missing_tab("숏츠 분석 agent", "shorts_agent_tab", "render_shorts_agent")
+#     render_shorts_agent = _missing_tab("쇼츠 분석 agent", "shorts_agent_tab", "render_shorts_agent")
 
 try:
     from shorts_agent_tab import render_shorts_agent_tab
 except Exception:
     render_shorts_agent_tab = _missing_tab(
-        "숏츠 분석 agent",
+        "쇼츠 분석 agent",
         "shorts_agent_tab",
         "render_shorts_agent_tab"
     )
@@ -137,13 +137,13 @@ except Exception:
 #     from comment_dashboard_tab import render_comment_dashboard
 # except Exception:
 #     def render_comment_dashboard(mode: str = "longform"):
-#         name = "롱폼 댓글 분석" if mode == "longform" else "숏츠 댓글 분석"
+#         name = "롱폼 댓글 분석" if mode == "longform" else "쇼츠 댓글 분석"
 #         _missing_tab(name, "comment_dashboard_tab", "render_comment_dashboard")()
 
 try:
     from shorts_comment_dashboard_tab import render_shorts_comment_dashboard
 except Exception:
-    render_shorts_comment_dashboard = _missing_tab("숏츠 댓글 분석", "shorts_comment_dashboard_tab", "render_shorts_comment_dashboard")
+    render_shorts_comment_dashboard = _missing_tab("쇼츠 댓글 분석", "shorts_comment_dashboard_tab", "render_shorts_comment_dashboard")
 
 # -----------------------------
 # 1. Streamlit 기본 설정
@@ -427,7 +427,7 @@ PAGE_SLUG_MAP = {
     "landing": "Home",
     "longform": "롱폼 분석",
     "thumbnail": "썸네일 분석",
-    "shorts": "숏츠 분석",
+    "shorts": "쇼츠 분석",
 }
 
 PAGE_TO_SLUG = {value: key for key, value in PAGE_SLUG_MAP.items()}
@@ -476,10 +476,10 @@ def render_sidebar_info(page: str):
             "desc": "썸네일의 인물, 텍스트, 색감, 브랜드 노출 요소를 확인하고 클릭을 유도하는 시각 전략을 정리하세요.",
             "items": ["🖼️ 썸네일 분석 결과", " 썸네일 agent", "🎨 썸네일 제작/개선"],
         },
-        "숏츠 분석": {
-            "title": "숏츠 분석 활용 방법",
-            "desc": "숏츠 영상 구성 요소와 댓글 반응, 최근 채널 진단 결과를 바탕으로 짧은 영상 운영 전략을 정리하세요.",
-            "items": ["🎬 숏츠 분석 결과", " 숏츠 agent", "💬 숏츠 댓글 분석"],
+        "쇼츠 분석": {
+            "title": "쇼츠 분석 활용 방법",
+            "desc": "쇼츠 영상 구성 요소와 댓글 반응, 최근 채널 진단 결과를 바탕으로 짧은 영상 운영 전략을 정리하세요.",
+            "items": ["🎬 쇼츠 분석 결과", " 쇼츠 agent", "💬 쇼츠 댓글 분석"],
         },
     }.get(page, {
         "title": "대시보드 활용 방법",
@@ -512,7 +512,7 @@ with st.sidebar:
     sidebar_button("Home", "🏠", "Home")
     sidebar_button("롱폼 분석", "📺", "롱폼 분석")
     sidebar_button("썸네일 분석", "🖼️", "썸네일 분석")
-    sidebar_button("숏츠 분석", "🎬", "숏츠 분석")
+    sidebar_button("쇼츠 분석", "🎬", "쇼츠 분석")
 
     st.markdown("---")
     render_sidebar_info(st.session_state["current_page"])
@@ -580,15 +580,15 @@ elif page == "썸네일 분석":
     with tab3:
         render_thumbnail_creator_tab()
 
-elif page == "숏츠 분석":
+elif page == "쇼츠 분석":
     render_page_header(
-        "숏츠 분석",
-        "숏츠 영상 성과, 영상 구성 요소, agent 진단, 댓글 반응을 확인합니다.",
+        "쇼츠 분석",
+        "쇼츠 영상 성과, 영상 구성 요소, agent 진단, 댓글 반응을 확인합니다.",
     )
 
     tab1, tab2 = st.tabs([
-        "🎬 숏츠 분석 결과",
-        "🤖 숏츠 분석 agent",
+        "🎬 쇼츠 분석 결과",
+        "🤖 쇼츠 분석 agent",
     ])
 
     with tab1:

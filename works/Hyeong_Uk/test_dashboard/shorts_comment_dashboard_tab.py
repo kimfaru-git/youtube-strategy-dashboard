@@ -275,7 +275,7 @@ def _positive_factor_data(domain: str) -> pd.DataFrame:
     """분석 정리문에서 대시보드용으로 선별한 대표 긍정 반응 요소."""
     rows = {
         "FnB": [
-            {"요소": "보통 편집 × 비비드", "긍정비율": 96.77, "설명": "일반적인 숏츠 속도와 선명한 색감 조합"},
+            {"요소": "보통 편집 × 비비드", "긍정비율": 96.77, "설명": "일반적인 쇼츠 속도와 선명한 색감 조합"},
             {"요소": "빠른 편집 × 따뜻함", "긍정비율": 95.55, "설명": "음식·공간 분위기와 역동적 편집 조합"},
             {"요소": "따뜻함 × 실내", "긍정비율": 95.53, "설명": "붉고 노란 계열 색감과 실내/매장 배경"},
             {"요소": "시설소개", "긍정비율": 92.80, "설명": "공간과 분위기를 직접 보여주는 포맷"},
@@ -357,13 +357,13 @@ def _render_factor_table(domain: str):
         )
 
 def render_shorts_comment_analysis():
-    """숏츠 분석 결과 탭 중간에 들어가는 간략 댓글 반응 보조 분석."""
+    """쇼츠 분석 결과 탭 중간에 들어가는 간략 댓글 반응 보조 분석."""
     _inject_compact_css()
 
     raw_df = _load_shorts_comment_data()
 
     if raw_df.empty:
-        st.warning("숏츠 댓글 분석 CSV 파일을 찾지 못했습니다.")
+        st.warning("쇼츠 댓글 분석 CSV 파일을 찾지 못했습니다.")
         return
 
     clean_df = _clean_comments(raw_df)
@@ -379,7 +379,7 @@ def render_shorts_comment_analysis():
 
     st.markdown('<div class="section-title">댓글 반응 보조 분석</div>', unsafe_allow_html=True)
     st.markdown(
-        '<div class="section-caption">성공 숏츠 댓글의 감성 분포를 보조 근거로 확인합니다.</div>',
+        '<div class="section-caption">성공 쇼츠 댓글의 감성 분포를 보조 근거로 확인합니다.</div>',
         unsafe_allow_html=True,
     )
 
@@ -399,9 +399,9 @@ def render_shorts_comment_analysis():
         st.markdown(
             """
             <div class="shorts-comment-compact-card">
-                <div class="shorts-comment-mini-title">도메인별 성공 숏츠 댓글 감성 비율</div>
+                <div class="shorts-comment-mini-title">도메인별 성공 쇼츠 댓글 감성 비율</div>
                 <div class="shorts-comment-mini-desc">
-                    성공 숏츠 댓글만 기준으로 긍정·중립·부정 비중을 비교합니다.
+                    성공 쇼츠 댓글만 기준으로 긍정·중립·부정 비중을 비교합니다.
                 </div>
             """,
             unsafe_allow_html=True,
@@ -419,7 +419,7 @@ def render_shorts_comment_analysis():
             <div class="shorts-comment-summary-box"
                  style="--bg:#fff1f2;--border:#fecdd3;--accent:#ef233c;--text:#881337;">
                 <b>FnB 댓글 반응</b><br>
-                성공 숏츠 댓글 중 <b>{_fmt_pct(fnb_pos)}</b>가 긍정 반응입니다.
+                성공 쇼츠 댓글 중 <b>{_fmt_pct(fnb_pos)}</b>가 긍정 반응입니다.
                 전체 감성 분포만 보면 FnB는 댓글 반응이 긍정 중심으로 강하게 형성되는 편입니다.
             </div>
             """,
@@ -431,7 +431,7 @@ def render_shorts_comment_analysis():
             <div class="shorts-comment-summary-box"
                  style="--bg:#eff6ff;--border:#bfdbfe;--accent:#2563eb;--text:#1e3a8a;margin-top:10px;">
                 <b>IT 댓글 반응</b><br>
-                IT 성공 숏츠의 긍정 비율은 <b>{_fmt_pct(it_pos)}</b>이고,
+                IT 성공 쇼츠의 긍정 비율은 <b>{_fmt_pct(it_pos)}</b>이고,
                 부정·중립 비중은 <b>{_fmt_pct(it_negneu)}</b>입니다.
                 긍정이 가장 많지만, FnB보다 의견 차이나 해석 반응이 함께 나타나는 구조입니다.
             </div>

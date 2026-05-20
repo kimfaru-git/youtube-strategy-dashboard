@@ -450,13 +450,13 @@ def render_landing_page():
                     신규 기업을 위한 운영 가이드라인을 제시합니다.
                 </div>
                 <div class="hero-desc">
-                    FnB와 IT 기업 유튜브 채널을 대상으로 롱폼, 썸네일, 숏츠, 댓글 데이터를 종합 분석합니다.
+                    FnB와 IT 기업 유튜브 채널을 대상으로 롱폼, 썸네일, 쇼츠, 댓글 데이터를 종합 분석합니다.
                     단순 조회수 비교가 아니라 참여율 기반 성공 패턴과 AI agent 진단 결과를 연결해
                     실무자가 바로 활용할 수 있는 콘텐츠 운영 전략을 도출합니다.
                 </div>
                 <div class="hero-actions">
                     <a href="?page=longform" target="_self"><div class="hero-primary">▶ 롱폼 분석 보러가기</div></a>
-                    <a href="?page=shorts" target="_self"><div class="hero-secondary">🎬 숏츠 분석 보러가기</div></a>
+                    <a href="?page=shorts" target="_self"><div class="hero-secondary">🎬 쇼츠 분석 보러가기</div></a>
                 </div>
             </div>
             <div class="hero-visual"></div>
@@ -477,7 +477,7 @@ def render_landing_page():
     with c2:
         _module_card("🖼️", "썸네일 분석", "클릭을 유도하는 시각 요소와 제작 방향을 분석합니다.")
     with c3:
-        _module_card("🎬", "숏츠 분석", "짧은 영상의 구성 요소와 성공 패턴을 분석합니다.")
+        _module_card("🎬", "쇼츠 분석", "짧은 영상의 구성 요소와 성공 패턴을 분석합니다.")
     with c4:
         _module_card("💬", "댓글 분석", "댓글 감성, 키워드, 반응을 바탕으로 시청자 인사이트를 확인합니다.")
     with c5:
@@ -548,7 +548,7 @@ def render_landing_page():
                     <div class="scope-icon">▶</div>
                     <div>
                         <div class="scope-title">콘텐츠 포맷</div>
-                        <div class="scope-desc">롱폼 · 썸네일 · 숏츠</div>
+                        <div class="scope-desc">롱폼 · 썸네일 · 쇼츠</div>
                     </div>
                 </div>
                 <div class="scope-card">
